@@ -8,42 +8,40 @@ angular.module('copayApp.services')
     root.availableLanguages = [{
       name: 'English',
       isoCode: 'en',
-        }, {
-      name: 'Español',
-      isoCode: 'es',
-        }, {
+    }, {
+      name: 'Český',
+      isoCode: 'cs',
+    }, {
       name: 'Français',
       isoCode: 'fr',
-        }, {
+    }, {
+      name: 'Italiano',
+      isoCode: 'it',
+    }, {
       name: 'Deutsch',
       isoCode: 'de',
-       }, {
+    }, {
+      name: 'Español',
+      isoCode: 'es',
+    }, {
+      name: '日本語',
+      isoCode: 'ja',
+      useIdeograms: true,
+    }, {
       name: '中文（简体）',
       isoCode: 'zh',
       useIdeograms: true,
-      }];
+    }, {
+      name: 'Polski',
+      isoCode: 'pl',
+    }, {
+      name: 'Pусский',
+      isoCode: 'ru',
+    }];
 
-    // }, {
-    //   name: 'Český',
-    //   isoCode: 'cs',
-    // }, {
-    //   name: 'Italiano',
-    //   isoCode: 'it',
-    //   name: '日本語',
-    //   isoCode: 'ja',
-    //   useIdeograms: true,
-    // }, {
-    //   name: '中文（简体）',
-    //   isoCode: 'zh',
-    //   useIdeograms: true,
-    // }, {
-    //   name: 'Polski',
-    //   isoCode: 'pl',
-    // }, {
-    //   name: 'Pусский',
-    //   isoCode: 'ru',
 
     root._detect = function(cb) {
+
       var userLang, androidLang;
       if (navigator && navigator.globalization) {
 
@@ -74,8 +72,7 @@ angular.module('copayApp.services')
     root._set = function(lang) {
       $log.debug('Setting default language: ' + lang);
       gettextCatalog.setCurrentLanguage(lang);
-      root.currentLanguage = lang;
-
+      root.currentLanguage = lang; 
       if (lang == 'zh') lang = lang + '-CN'; // Fix for Chinese Simplified
       amMoment.changeLocale(lang);
     };
@@ -98,19 +95,31 @@ angular.module('copayApp.services')
       return root.availableLanguages;
     };
 
-    root.init = function(cb) {
-      configService.whenAvailable(function(config) {
-        var userLang = config.wallet.settings.defaultLanguage;
-
-        if (userLang && userLang != root.currentLanguage) {
-          root._set(userLang);
-        } else {
-          root._detect(function(lang) {
-            root._set(lang);
-          });
-        }
-        if (cb) return cb();
+    root.init = function() {
+      root._detect(function(lang) {
+        root._set(lang);
       });
+    };
+
+    root.update = function(cb) {
+      var userLang = configService.getSync().wallet.settings.defaultLanguage;
+
+      if (!userLang) {
+        root._detect(function(lang) {
+          userLang = lang;
+
+          if (userLang != root.currentLanguage) {
+            root._set(lang);
+          }
+          if (cb) return cb(userLang);
+        });
+      } else {
+        if (userLang != root.currentLanguage) {
+          root._set(userLang);
+        }
+
+        if (cb) return cb(userLang);
+      }
     };
 
     root.getName = function(lang) {

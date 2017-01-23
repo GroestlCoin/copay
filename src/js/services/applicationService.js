@@ -1,10 +1,10 @@
 'use strict';
 angular.module('copayApp.services')
-  .factory('applicationService', function($rootScope, $timeout, $ionicHistory, platformInfo, $state) {
+  .factory('applicationService', function($rootScope, $timeout, platformInfo, go) {
     var root = {};
 
-    var isChromeApp = platformInfo.isChromeApp;
-    var isNW = platformInfo.isNW;
+    var isChromeApp  = platformInfo.isChromeApp;
+    var isNW  = platformInfo.isNW;
 
     root.restart = function() {
       var hashIndex = window.location.href.indexOf('#/');
@@ -19,8 +19,7 @@ angular.module('copayApp.services')
         if (isChromeApp) {
           chrome.runtime.reload();
         } else if (isNW) {
-          $ionicHistory.removeBackView();
-          $state.go('tabs.home');
+          go.walletHome();
           $timeout(function() {
             var win = require('nw.gui').Window.get();
             win.reload(3);

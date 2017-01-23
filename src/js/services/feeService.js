@@ -1,6 +1,6 @@
 'use strict';
 
-angular.module('copayApp.services').factory('feeService', function($log, $stateParams, bwcService, walletService, configService, gettext, lodash, txFormatService, gettextCatalog) {
+angular.module('copayApp.services').factory('feeService', function($log, bwcService, profileService, configService, gettext, lodash) {
   var root = {};
 
   // Constant fee options to translate
@@ -15,48 +15,46 @@ angular.module('copayApp.services').factory('feeService', function($log, $stateP
     return configService.getSync().wallet.settings.feeLevel || 'normal';
   };
 
-  root.getCurrentFeeValue = function(network, cb) {
-    network = network || 'livenet';
+  root.getCurrentFeeValue = function(cb) {
+    var fc = profileService.focusedClient;
     var feeLevel = root.getCurrentFeeLevel();
 
-    root.getFeeLevels(function(err, levels) {
-      if (err) return cb(err);
+    fc.getFeeLevels(fc.credentials.network, function(err, levels) {
+      if (err)
+        return cb({
+          message: 'Could not get dynamic fee'
+        });
 
-      var feeLevelValue = lodash.find(levels[network], {
+      var feeLevelValue = lodash.find(levels, {
         level: feeLevel
       });
-
-      if (!feeLevelValue || !feeLevelValue.feePerKB) {
+      if (!feeLevelValue || !feeLevelValue.feePerKB)
         return cb({
-          message: gettextCatalog.getString("Could not get dynamic fee for level: {{feeLevel}}", {
-            feeLevel: feeLevel
-          })
+          message: 'Could not get dynamic fee for level: ' + feeLevel
         });
-      }
 
       var fee = feeLevelValue.feePerKB;
       $log.debug('Dynamic fee: ' + feeLevel + ' ' + fee + ' SAT');
-
       return cb(null, fee);
     });
   };
 
   root.getFeeLevels = function(cb) {
     var walletClient = bwcService.getClient();
+
     var unitName = configService.getSync().wallet.settings.unitName;
 
     walletClient.getFeeLevels('livenet', function(errLivenet, levelsLivenet) {
       walletClient.getFeeLevels('testnet', function(errTestnet, levelsTestnet) {
-        if (errLivenet || errTestnet) {
-          return cb(gettextCatalog.getString('Could not get dynamic fee'));
-        } else {
+        if (errLivenet || errTestnet) $log.debug('Could not get dynamic fee');
+        else {
           for (var i = 0; i < 4; i++) {
-            levelsLivenet[i]['feePerKBUnit'] = txFormatService.formatAmount(levelsLivenet[i].feePerKB) + ' ' + unitName;
-            levelsTestnet[i]['feePerKBUnit'] = txFormatService.formatAmount(levelsTestnet[i].feePerKB) + ' ' + unitName;
+            levelsLivenet[i]['feePerKBUnit'] = profileService.formatAmount(levelsLivenet[i].feePerKB) + ' ' + unitName;
+            levelsTestnet[i]['feePerKBUnit'] = profileService.formatAmount(levelsTestnet[i].feePerKB) + ' ' + unitName;
           }
         }
 
-        return cb(null, {
+        return cb({
           'livenet': levelsLivenet,
           'testnet': levelsTestnet
         });

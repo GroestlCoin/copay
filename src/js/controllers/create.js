@@ -1,11 +1,16 @@
 'use strict';
 
 angular.module('copayApp.controllers').controller('createController',
-  function($scope, $rootScope, $timeout, $log, lodash, $state, $ionicScrollDelegate, $ionicHistory, profileService, configService, gettextCatalog, ledger, trezor, platformInfo, derivationPathHelper, ongoingProcess, walletService, storageService, popupService, appConfigService) {
+  function($scope, $rootScope, $timeout, $log, lodash, go, profileService, configService, gettext, ledger, trezor, platformInfo, derivationPathHelper, ongoingProcess) {
 
     var isChromeApp = platformInfo.isChromeApp;
     var isCordova = platformInfo.isCordova;
     var isDevel = platformInfo.isDevel;
+
+    var self = this;
+    var defaults = configService.getDefaults();
+    this.isWindowsPhoneApp = platformInfo.isWP && isCordova;
+    $scope.account = 1;
 
     /* For compressed keys, m*73 + n*34 <= 496 */
     var COPAYER_PAIR_LIMITS = {
@@ -23,118 +28,94 @@ angular.module('copayApp.controllers').controller('createController',
       12: 1,
     };
 
-    $scope.init = function(tc) {
-      $scope.formData = {};
-      var defaults = configService.getDefaults();
-      $scope.formData.account = 1;
-      $scope.formData.bwsurl = defaults.bws.url;
-      $scope.TCValues = lodash.range(2, defaults.limits.totalCopayers + 1);
-      $scope.formData.totalCopayers = defaults.wallet.totalCopayers;
-      $scope.formData.derivationPath = derivationPathHelper.default;
-      $scope.setTotalCopayers(tc);
-      updateRCSelect(tc);
+    var defaults = configService.getDefaults();
+    $scope.bwsurl = defaults.bws.url;
+    $scope.derivationPath = derivationPathHelper.default;
+
+    // ng-repeat defined number of times instead of repeating over array?
+    this.getNumber = function(num) {
+      return new Array(num);
+    }
+
+    var updateRCSelect = function(n) {
+      $scope.totalCopayers = n;
+      var maxReq = COPAYER_PAIR_LIMITS[n];
+      self.RCValues = lodash.range(1, maxReq + 1);
+      $scope.requiredCopayers = Math.min(parseInt(n / 2 + 1), maxReq);
     };
 
-    $scope.showAdvChange = function() {
-      $scope.showAdv = !$scope.showAdv;
-      $scope.resizeView();
-    };
+    var updateSeedSourceSelect = function(n) {
 
-    $scope.resizeView = function() {
-      $timeout(function() {
-        $ionicScrollDelegate.resize();
-      }, 10);
-      checkPasswordFields();
-    };
+      self.seedOptions = [{
+        id: 'new',
+        label: gettext('Random'),
+      }, {
+        id: 'set',
+        label: gettext('Specify Recovery Phrase...'),
+      }];
+      $scope.seedSource = self.seedOptions[0];
 
-    function checkPasswordFields() {
-      if (!$scope.encrypt) {
-        $scope.formData.passphrase = $scope.formData.createPassphrase = $scope.formData.passwordSaved = null;
-        $timeout(function() {
-          $scope.$apply();
+      if (n > 1 && isChromeApp)
+        self.seedOptions.push({
+          id: 'ledger',
+          label: 'Ledger Hardware Wallet',
+        });
+
+      if (isChromeApp || isDevel) {
+        self.seedOptions.push({
+          id: 'trezor',
+          label: 'Trezor Hardware Wallet',
         });
       }
     };
 
-    function updateRCSelect(n) {
-      $scope.formData.totalCopayers = n;
-      var maxReq = COPAYER_PAIR_LIMITS[n];
-      $scope.RCValues = lodash.range(1, maxReq + 1);
-      $scope.formData.requiredCopayers = Math.min(parseInt(n / 2 + 1), maxReq);
-    };
+    this.TCValues = lodash.range(2, defaults.limits.totalCopayers + 1);
+    $scope.totalCopayers = defaults.wallet.totalCopayers;
 
-    function updateSeedSourceSelect(n) {
-      var seedOptions = [{
-        id: 'new',
-        label: gettextCatalog.getString('Random'),
-      }, {
-        id: 'set',
-        label: gettextCatalog.getString('Specify Recovery Phrase...'),
-      }];
-
-      $scope.seedSource = seedOptions[0];
-
-      /*
-
-      Disable Hardware Wallets for BitPay distribution
-
-      */
-
-      if (appConfigService.name == 'copay') {
-        if (n > 1 && isChromeApp) {
-          seedOptions.push({
-            id: 'ledger',
-            label: 'Ledger Hardware Wallet',
-          });
-        }
-        if (isChromeApp || isDevel) {
-          seedOptions.push({
-            id: 'trezor',
-            label: 'Trezor Hardware Wallet',
-          });
-        }
-      }
-
-      $scope.seedOptions = seedOptions;
-    };
-
-    $scope.setTotalCopayers = function(tc) {
-      $scope.formData.totalCopayers = tc;
+    this.setTotalCopayers = function(tc) {
       updateRCSelect(tc);
       updateSeedSourceSelect(tc);
+      self.seedSourceId = $scope.seedSource.id;
     };
 
-    $scope.create = function(form) {
+    this.setSeedSource = function(src) {
+      self.seedSourceId = $scope.seedSource.id;
+
+      $timeout(function() {
+        $rootScope.$apply();
+      });
+    };
+
+    this.create = function(form) {
       if (form && form.$invalid) {
-        popupService.showAlert(gettextCatalog.getString('Error'), gettextCatalog.getString('Please enter the required fields'));
+        this.error = gettext('Please enter the required fields');
         return;
       }
 
       var opts = {
-        name: $scope.formData.walletName,
-        m: $scope.formData.requiredCopayers,
-        n: $scope.formData.totalCopayers,
-        myName: $scope.formData.totalCopayers > 1 ? $scope.formData.myName : null,
-        networkName: $scope.formData.testnetEnabled ? 'testnet' : 'livenet',
-        bwsurl: $scope.formData.bwsurl,
-        singleAddress: $scope.formData.singleAddressEnabled,
-        walletPrivKey: $scope.formData._walletPrivKey, // Only for testing
+        m: $scope.requiredCopayers,
+        n: $scope.totalCopayers,
+        name: $scope.walletName,
+        myName: $scope.totalCopayers > 1 ? $scope.myName : null,
+        networkName: $scope.testnetEnabled ? 'testnet' : 'livenet',
+        bwsurl: $scope.bwsurl,
+        singleAddress: $scope.singleAddressEnabled,
+        walletPrivKey: $scope._walletPrivKey, // Only for testing
       };
-
-      var setSeed = $scope.seedSource.id == 'set';
+      var setSeed = self.seedSourceId == 'set';
       if (setSeed) {
 
-        var words = $scope.formData.privateKey || '';
+        var words = $scope.privateKey || '';
         if (words.indexOf(' ') == -1 && words.indexOf('prv') == 1 && words.length > 108) {
           opts.extendedPrivateKey = words;
         } else {
           opts.mnemonic = words;
         }
-        opts.passphrase = $scope.formData.passphrase;
+        opts.passphrase = $scope.passphrase;
 
-        var pathData = derivationPathHelper.parse($scope.formData.derivationPath);
+        var pathData = derivationPathHelper.parse($scope.derivationPath);
         if (!pathData) {
-          popupService.showAlert(gettextCatalog.getString('Error'), gettextCatalog.getString('Invalid derivation path'));
+          this.error = gettext('Invalid derivation path');
           return;
         }
 
@@ -143,74 +124,90 @@ angular.module('copayApp.controllers').controller('createController',
         opts.derivationStrategy = pathData.derivationStrategy;
 
       } else {
-        opts.passphrase = $scope.formData.createPassphrase;
+        opts.passphrase = $scope.createPassphrase;
       }
 
       if (setSeed && !opts.mnemonic && !opts.extendedPrivateKey) {
-        popupService.showAlert(gettextCatalog.getString('Error'), gettextCatalog.getString('Please enter the wallet recovery phrase'));
+        this.error = gettext('Please enter the wallet recovery phrase');
         return;
       }
 
-      if ($scope.seedSource.id == 'ledger' || $scope.seedSource.id == 'trezor') {
-        var account = $scope.formData.account;
+      if (self.seedSourceId == 'ledger' || self.seedSourceId == 'trezor') {
+        var account = $scope.account;
         if (!account || account < 1) {
-          popupService.showAlert(gettextCatalog.getString('Error'), gettextCatalog.getString('Invalid account number'));
+          this.error = gettext('Invalid account number');
           return;
         }
 
-        if ($scope.seedSource.id == 'trezor')
+        if (self.seedSourceId == 'trezor')
           account = account - 1;
 
         opts.account = account;
-        ongoingProcess.set('connecting' + $scope.seedSource.id, true);
+        ongoingProcess.set('connecting' + self.seedSourceId, true);
 
-        var src = $scope.seedSource.id == 'ledger' ? ledger : trezor;
+        var src = self.seedSourceId == 'ledger' ? ledger : trezor;
 
         src.getInfoForNewWallet(opts.n > 1, account, function(err, lopts) {
-          ongoingProcess.set('connecting' + $scope.seedSource.id, false);
+          ongoingProcess.set('connecting' + self.seedSourceId, false);
           if (err) {
-            popupService.showAlert(gettextCatalog.getString('Error'), err);
+            self.error = err;
+            $scope.$apply();
             return;
           }
           opts = lodash.assign(lopts, opts);
-          _create(opts);
+          self._create(opts);
         });
       } else {
-        _create(opts);
+        self._create(opts);
       }
     };
 
-    function _create(opts) {
+    this._create = function(opts) {
       ongoingProcess.set('creatingWallet', true);
       $timeout(function() {
-        profileService.createWallet(opts, function(err, client) {
+
+        profileService.createWallet(opts, function(err) {
           ongoingProcess.set('creatingWallet', false);
           if (err) {
             $log.warn(err);
-            popupService.showAlert(gettextCatalog.getString('Error'), err);
+            self.error = err;
+            $timeout(function() {
+              $rootScope.$apply();
+            });
             return;
           }
-
-          walletService.updateRemotePreferences(client);
-
-          if ($scope.seedSource.id == 'set') {
-            profileService.setBackupFlag(client.credentials.walletId);
-          }
-
-          $ionicHistory.removeBackView();
-
-          if (!client.isComplete()) {
-            $ionicHistory.nextViewOptions({
-              disableAnimate: true
-            });
-            $state.go('tabs.home');
+          if (self.seedSourceId == 'set') {
             $timeout(function() {
-              $state.transitionTo('tabs.copayers', {
-                walletId: client.credentials.walletId
-              });
-            }, 100);
-          } else $state.go('tabs.home');
+              $rootScope.$emit('Local/BackupDone');
+            }, 1);
+          }
+          go.walletHome();
+
         });
       }, 100);
     }
+
+    this.formFocus = function(what) {
+      if (!this.isWindowsPhoneApp) return
+
+      if (what && what == 'my-name') {
+        this.hideWalletName = true;
+        this.hideTabs = true;
+      } else if (what && what == 'wallet-name') {
+        this.hideTabs = true;
+      } else {
+        this.hideWalletName = false;
+        this.hideTabs = false;
+      }
+      $timeout(function() {
+        $rootScope.$digest();
+      }, 1);
+    };
+
+    $scope.$on("$destroy", function() {
+      $rootScope.hideWalletNavigation = false;
+    });
+
+    updateSeedSourceSelect(1);
+    self.setSeedSource();
   });

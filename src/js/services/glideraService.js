@@ -1,67 +1,48 @@
 'use strict';
 
-angular.module('copayApp.services').factory('glideraService', function($http, $log, $window, platformInfo, storageService) {
+angular.module('copayApp.services').factory('glideraService', function($http, $log, platformInfo) {
   var root = {};
   var credentials = {};
   var isCordova = platformInfo.isCordova;
 
-  var _setCredentials = function() {
-    if (!$window.externalServices || !$window.externalServices.glidera) {
-      return;
-    }
-
-    var glidera = $window.externalServices.glidera;
-
-    /*
-     * Development: 'testnet'
-     * Production: 'livenet'
-     */
-    credentials.NETWORK = 'livenet';
-
-    if (credentials.NETWORK == 'testnet') {
-      credentials.HOST = glidera.sandbox.host;
+  root.setCredentials = function(network) {
+    if (network == 'testnet') {
+      credentials.HOST = 'https://sandbox.glidera.io';
       if (isCordova) {
-        credentials.REDIRECT_URI = glidera.sandbox.mobile.redirect_uri;
-        credentials.CLIENT_ID = glidera.sandbox.mobile.client_id;
-        credentials.CLIENT_SECRET = glidera.sandbox.mobile.client_secret;
-      } else {
-        credentials.REDIRECT_URI = glidera.sandbox.desktop.redirect_uri;
-        credentials.CLIENT_ID = glidera.sandbox.desktop.client_id;
-        credentials.CLIENT_SECRET = glidera.sandbox.desktop.client_secret;
+        credentials.REDIRECT_URI = 'copay://glidera';
+        credentials.CLIENT_ID = '6163427a2f37d1b2022ececd6d6c9cdd';
+        credentials.CLIENT_SECRET = '599cc3af26108c6fece8ab17c3f35867';
       }
-    } else {
-      credentials.HOST = glidera.production.host;
+      else {
+        credentials.REDIRECT_URI = 'urn:ietf:wg:oauth:2.0:oob';
+        credentials.CLIENT_ID = 'c402f4a753755456e8c384fb65b7be1d';
+        credentials.CLIENT_SECRET = '3ce826198e3618d0b8ed341ab91fe4e5';
+      }
+    }
+    else {
+      credentials.HOST = 'https://glidera.io';
       if (isCordova) {
-        credentials.REDIRECT_URI = glidera.production.mobile.redirect_uri;
-        credentials.CLIENT_ID = glidera.production.mobile.client_id;
-        credentials.CLIENT_SECRET = glidera.production.mobile.client_secret;
-      } else {
-        credentials.REDIRECT_URI = glidera.production.desktop.redirect_uri;
-        credentials.CLIENT_ID = glidera.production.desktop.client_id;
-        credentials.CLIENT_SECRET = glidera.production.desktop.client_secret;
+        credentials.REDIRECT_URI = 'copay://glidera';
+        credentials.CLIENT_ID = '9c8023f0ac0128235b7b27a6f2610c83';
+        credentials.CLIENT_SECRET = '30431511407b47f25a83bffd72881d55';
+      }
+      else {
+        credentials.REDIRECT_URI = 'urn:ietf:wg:oauth:2.0:oob';
+        credentials.CLIENT_ID = '8a9e8a9cf155db430c1ea6c7889afed1';
+        credentials.CLIENT_SECRET = '24ddec578f38d5488bfe13601933c05f';
       }
     };
   };
 
-  root.getEnvironment = function() {
-    _setCredentials();
-    return credentials.NETWORK;
-  };
-
   root.getOauthCodeUrl = function() {
-    _setCredentials();
-    return credentials.HOST + '/oauth2/auth?response_type=code&client_id=' + credentials.CLIENT_ID + '&redirect_uri=' + credentials.REDIRECT_URI;
-  };
-
-  root.removeToken = function(cb) {
-    _setCredentials();
-    storageService.removeGlideraToken(credentials.NETWORK, function() {
-      return cb();
-    });
+    return credentials.HOST 
+      + '/oauth2/auth?response_type=code&client_id=' 
+      + credentials.CLIENT_ID 
+      + '&redirect_uri='
+      + credentials.REDIRECT_URI;
   };
 
   root.getToken = function(code, cb) {
-    _setCredentials();
     var req = {
       method: 'POST',
       url: credentials.HOST + '/api/v1/oauth/token',
@@ -69,10 +50,10 @@ angular.module('copayApp.services').factory('glideraService', function($http, $l
         'Content-Type': 'application/json',
         'Accept': 'application/json'
       },
-      data: {
-        grant_type: 'authorization_code',
+      data: { 
+        grant_type : 'authorization_code',
         code: code,
-        client_id: credentials.CLIENT_ID,
+        client_id : credentials.CLIENT_ID,
         client_secret: credentials.CLIENT_SECRET,
         redirect_uri: credentials.REDIRECT_URI
       }
@@ -80,9 +61,7 @@ angular.module('copayApp.services').factory('glideraService', function($http, $l
 
     $http(req).then(function(data) {
       $log.info('Glidera Authorization Access Token: SUCCESS');
-      // Show pending task from the UI
-      storageService.setNextStep('BuyAndSell', 'true', function(err) {});
-      return cb(null, data.data);
+      return cb(null, data.data); 
     }, function(data) {
       $log.error('Glidera Authorization Access Token: ERROR ' + data.statusText);
       return cb('Glidera Authorization Access Token: ERROR ' + data.statusText);
@@ -90,7 +69,6 @@ angular.module('copayApp.services').factory('glideraService', function($http, $l
   };
 
   var _get = function(endpoint, token) {
-    _setCredentials();
     return {
       method: 'GET',
       url: credentials.HOST + '/api/v1' + endpoint,
@@ -192,13 +170,8 @@ angular.module('copayApp.services').factory('glideraService', function($http, $l
   };
 
   root.get2faCode = function(token, cb) {
-    if (!token) {
-      $log.error('Glidera Sent 2FA code by SMS: ERROR Invalid Token');
-      return cb('Invalid Token');
-    }
-
+    if (!token) return cb('Invalid Token');
     $http(_get('/authentication/get2faCode', token)).then(function(data) {
-
       $log.info('Glidera Sent 2FA code by SMS: SUCCESS');
       return cb(null, data.status == 200 ? true : false);
     }, function(data) {
@@ -208,7 +181,6 @@ angular.module('copayApp.services').factory('glideraService', function($http, $l
   };
 
   var _post = function(endpoint, token, twoFaCode, data) {
-    _setCredentials();
     return {
       method: 'POST',
       url: credentials.HOST + '/api/v1' + endpoint,
@@ -229,12 +201,12 @@ angular.module('copayApp.services').factory('glideraService', function($http, $l
     };
     $http(_post('/prices/sell', token, null, data)).then(function(data) {
       $log.info('Glidera Sell Price: SUCCESS');
-      return cb(null, data.data);
+      return cb(null, data.data); 
     }, function(data) {
       $log.error('Glidera Sell Price: ERROR ' + data.statusText);
       return cb('Glidera Sell Price: ERROR ' + data.statusText);
     });
-  };
+  }; 
 
   root.sell = function(token, twoFaCode, data, cb) {
     var data = {
@@ -246,7 +218,7 @@ angular.module('copayApp.services').factory('glideraService', function($http, $l
     };
     $http(_post('/sell', token, twoFaCode, data)).then(function(data) {
       $log.info('Glidera Sell: SUCCESS');
-      return cb(null, data.data);
+      return cb(null, data.data); 
     }, function(data) {
       $log.error('Glidera Sell Request: ERROR ' + data.statusText);
       return cb('Glidera Sell Request: ERROR ' + data.statusText);
@@ -260,7 +232,7 @@ angular.module('copayApp.services').factory('glideraService', function($http, $l
     };
     $http(_post('/prices/buy', token, null, data)).then(function(data) {
       $log.info('Glidera Buy Price: SUCCESS');
-      return cb(null, data.data);
+      return cb(null, data.data); 
     }, function(data) {
       $log.error('Glidera Buy Price: ERROR ' + data.statusText);
       return cb('Glidera Buy Price: ERROR ' + data.statusText);
@@ -277,43 +249,10 @@ angular.module('copayApp.services').factory('glideraService', function($http, $l
     };
     $http(_post('/buy', token, twoFaCode, data)).then(function(data) {
       $log.info('Glidera Buy: SUCCESS');
-      return cb(null, data.data);
+      return cb(null, data.data); 
     }, function(data) {
       $log.error('Glidera Buy Request: ERROR ' + data.statusText);
       return cb('Glidera Buy Request: ERROR ' + data.statusText);
-    });
-  };
-
-  root.init = function(accessToken, cb) {
-    _setCredentials();
-    $log.debug('Init Glidera...');
-
-    var glidera = {
-      token: null,
-      permissions: null
-    }
-
-    var getToken = function(cb) {
-      if (accessToken) {
-        cb(null, accessToken);
-      } else {
-        storageService.getGlideraToken(credentials.NETWORK, cb);
-      }
-    };
-
-    getToken(function(err, accessToken) {
-      if (err || !accessToken) return cb();
-      else {
-        root.getAccessTokenPermissions(accessToken, function(err, p) {
-          if (err) {
-            return cb(err);
-          } else {
-            glidera.token = accessToken;
-            glidera.permissions = p;
-            return cb(null, glidera);
-          }
-        });
-      }
     });
   };
 

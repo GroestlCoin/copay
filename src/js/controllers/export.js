@@ -1,125 +1,135 @@
 'use strict';
 
 angular.module('copayApp.controllers').controller('exportController',
-  function($scope, $timeout, $log, $ionicHistory, $ionicScrollDelegate, backupService, walletService, storageService, profileService, platformInfo, gettextCatalog, $state, $stateParams, popupService, appConfigService) {
-    var wallet = profileService.getWallet($stateParams.walletId);
-    $scope.wallet = wallet;
+  function($rootScope, $scope, $timeout, $log, lodash, backupService, walletService, fingerprintService, configService, storageService, profileService, platformInfo, notification, go, gettext, gettextCatalog) {
+    var prevState;
+    var isWP = platformInfo.isWP;
+    var isAndroid = platformInfo.isAndroid;
+    var fc = profileService.focusedClient;
+    $scope.isEncrypted = fc.isPrivKeyEncrypted();
+    $scope.isCordova = platformInfo.isCordova;
+    $scope.isSafari = platformInfo.isSafari;
+    $scope.error = null;
 
-    $scope.showAdvChange = function() {
-      $scope.showAdv = !$scope.showAdv;
-      $scope.resizeView();
-    };
+    $scope.init = function(state) {
+      $scope.supported = true;
+      $scope.exportQR = false;
+      $scope.noSignEnabled = false;
+      $scope.showAdvanced = false;
+      prevState = state || 'walletHome';
 
-    $scope.resizeView = function() {
-      $timeout(function() {
-        $ionicScrollDelegate.resize();
-      }, 10);
-    };
-
-    function getPassword(cb) {
-      if ($scope.password) return cb(null, $scope.password);
-
-      walletService.prepare(wallet, function(err, password) {
-        if (err) return cb(err);
-        $scope.password = password;
-        return cb(null, password);
-      });
-    };
-
-    $scope.generateQrCode = function() {
-      if ($scope.formData.exportWalletInfo || !walletService.isEncrypted(wallet)) {
-        $scope.file.value = false;
-      }
-
-      getPassword(function(err, password) {
+      fingerprintService.check(fc, function(err) {
         if (err) {
-          popupService.showAlert(gettextCatalog.getString('Error'), err);
+          go.path(prevState);
           return;
         }
 
-        walletService.getEncodedWalletInfo(wallet, password, function(err, code) {
-          if (err) return cb(err);
-
-          if (!code)
-            $scope.formData.supported = false;
-          else {
-            $scope.formData.supported = true;
-            $scope.formData.exportWalletInfo = code;
+        handleEncryptedWallet(fc, function(err) {
+          if (err) {
+            go.path(prevState);
+            return;
           }
 
-          $scope.file.value = false;
+          $scope.exportWalletInfo = encodeWalletInfo();
           $timeout(function() {
             $scope.$apply();
-          });
+          }, 1);
         });
       });
     };
 
-    var init = function() {
-      $scope.formData = {};
-      $scope.isEncrypted = wallet.isPrivKeyEncrypted();
-      $scope.isCordova = platformInfo.isCordova;
-      $scope.isSafari = platformInfo.isSafari;
-      $scope.formData.noSignEnabled = false;
-      $scope.showAdvanced = false;
-      $scope.wallet = wallet;
-      $scope.canSign = wallet.canSign();
-    };
-
     /*
       EXPORT WITHOUT PRIVATE KEY - PENDING
-    */
 
     $scope.noSignEnabledChange = function() {
-      if (!$scope.formData.supported) return;
+      $scope.exportWalletInfo = encodeWalletInfo();
+      $timeout(function() {
+        $scope.$apply();
+      }, 1);
+    };
+    */
 
-      walletService.getEncodedWalletInfo(wallet, function(err, code) {
-        if (err) {
-          $log.error(err);
-          $scope.formData.supported = false;
-          $scope.formData.exportWalletInfo = null;
-        } else {
-          $scope.formData.supported = true;
-          $scope.formData.exportWalletInfo = code;
-        }
-        $timeout(function() {
-          $scope.$apply();
-        }, 1);
+    $scope.$on('$destroy', function() {
+      walletService.lock(fc);
+    });
+
+    function handleEncryptedWallet(client, cb) {
+      if (!walletService.isEncrypted(client)) {
+        $scope.credentialsEncrypted = false;
+        return cb();
+      }
+
+      $rootScope.$emit('Local/NeedsPassword', false, function(err, password) {
+        if (err) return cb(err);
+        return cb(walletService.unlock(client, password));
       });
     };
 
+    function encodeWalletInfo() {
+      var c = fc.credentials;
+      var derivationPath = fc.credentials.getBaseAddressDerivationPath();
+      var encodingType = {
+        mnemonic: 1,
+        xpriv: 2,
+        xpub: 3
+      };
+      var info;
+
+      $scope.supported = (c.derivationStrategy == 'BIP44' && c.canSign());
+
+      if ($scope.supported) {
+        if (c.mnemonic) {
+          info = {
+            type: encodingType.mnemonic,
+            data: c.mnemonic,
+          }
+        } else {
+          info = {
+            type: encodingType.xpriv,
+            data: c.xPrivKey
+          }
+        }
+      } else {
+        /*
+          EXPORT WITHOUT PRIVATE KEY - PENDING
+
+        info = {
+          type: encodingType.xpub,
+          data: c.xPubKey
+        }
+        */
+
+        return null;
+      }
+
+      var code = info.type + '|' + info.data + '|' + c.network.toLowerCase() + '|' + derivationPath + '|' + (c.mnemonicHasPassphrase);
+      return code;
+    };
+
     $scope.downloadWalletBackup = function() {
-      getPassword(function(err, password) {
+      $scope.getAddressbook(function(err, localAddressBook) {
         if (err) {
-          popupService.showAlert(gettextCatalog.getString('Error'), err);
+          $scope.error = true;
           return;
         }
+        var opts = {
+          noSign: $scope.noSignEnabled,
+          addressBook: localAddressBook
+        };
 
-        $scope.getAddressbook(function(err, localAddressBook) {
+        backupService.walletDownload($scope.password, opts, function(err) {
           if (err) {
-            popupService.showAlert(gettextCatalog.getString('Error'), gettextCatalog.getString('Failed to export'));
+            $scope.error = true;
             return;
           }
-          var opts = {
-            noSign: $scope.formData.noSignEnabled,
-            addressBook: localAddressBook,
-            password: password
-          };
-
-          backupService.walletDownload($scope.formData.password, opts, function(err) {
-            if (err) {
-              popupService.showAlert(gettextCatalog.getString('Error'), gettextCatalog.getString('Failed to export'));
-              return;
-            }
-            $ionicHistory.removeBackView();
-            $state.go('tabs.home');
-          });
+          notification.success(gettext('Success'), gettext('Encrypted export file saved'));
+          go.walletHome();
         });
       });
     };
 
     $scope.getAddressbook = function(cb) {
-      storageService.getAddressbook(wallet.credentials.network, function(err, addressBook) {
+      storageService.getAddressbook(fc.credentials.network, function(err, addressBook) {
         if (err) return cb(err);
 
         var localAddressBook = [];
@@ -134,29 +144,23 @@ angular.module('copayApp.controllers').controller('exportController',
     };
 
     $scope.getBackup = function(cb) {
-      getPassword(function(err, password) {
+      $scope.getAddressbook(function(err, localAddressBook) {
         if (err) {
-          popupService.showAlert(gettextCatalog.getString('Error'), err);
-          return;
+          $scope.error = true;
+          return cb(null);
         }
+        var opts = {
+          noSign: $scope.noSignEnabled,
+          addressBook: localAddressBook
+        };
 
-        $scope.getAddressbook(function(err, localAddressBook) {
-          if (err) {
-            popupService.showAlert(gettextCatalog.getString('Error'), gettextCatalog.getString('Failed to export'));
-            return cb(null);
-          }
-          var opts = {
-            noSign: $scope.formData.noSignEnabled,
-            addressBook: localAddressBook,
-            password: password
-          };
-
-          var ew = backupService.walletExport($scope.formData.password, opts);
-          if (!ew) {
-            popupService.showAlert(gettextCatalog.getString('Error'), gettextCatalog.getString('Failed to export'));
-          }
-          return cb(ew);
-        });
+        var ew = backupService.walletExport($scope.password, opts);
+        if (!ew) {
+          $scope.error = true;
+        } else {
+          $scope.error = false;
+        }
+        return cb(ew);
       });
     };
 
@@ -180,19 +184,20 @@ angular.module('copayApp.controllers').controller('exportController',
     };
 
     $scope.sendWalletBackup = function() {
+      var fc = profileService.focusedClient;
       window.plugins.toast.showShortCenter(gettextCatalog.getString('Preparing backup...'));
-      var name = (wallet.credentials.walletName || wallet.credentials.walletId);
-      if (wallet.alias) {
-        name = wallet.alias + ' [' + name + ']';
+      var name = (fc.credentials.walletName || fc.credentials.walletId);
+      if (fc.alias) {
+        name = fc.alias + ' [' + name + ']';
       }
       $scope.getBackup(function(backup) {
         var ew = backup;
         if (!ew) return;
 
-        if ($scope.formData.noSignEnabled)
+        if ($scope.noSignEnabled)
           name = name + '(No Private Key)';
 
-        var subject = appConfigService.nameCase + ' Wallet Backup: ' + name;
+        var subject = 'Copay Wallet Backup: ' + name;
         var body = 'Here is the encrypted backup of the wallet ' + name + ': \n\n' + ew + '\n\n To import this backup, copy all text between {...}, including the symbols {}';
         window.plugins.socialsharing.shareViaEmail(
           body,
@@ -206,14 +211,5 @@ angular.module('copayApp.controllers').controller('exportController',
         );
       });
     };
-
-    $scope.$on("$ionicView.beforeEnter", function(event, data) {
-      init();
-      $scope.file = {
-        value: true
-      };
-      $scope.formData.exportWalletInfo = null;
-      $scope.password = null;
-    });
 
   });

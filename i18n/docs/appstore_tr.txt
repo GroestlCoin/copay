@@ -1,4 +1,4 @@
-Bitcoinlerinizi kendi kurallarınıza göre BitPay tarafından oluşturulan açık kaynak, çoklu imzalı bir cüzdan ile koruyun. 
+Groestlcoinlerinizi kendi kurallarınıza göre BitPay tarafından oluşturulan açık kaynak, çoklu imzalı bir cüzdan ile koruyun. 
 Copay kullanıcıları paralarını ayrı ayrı tutabilir veya çoklu imzalı cüzdanlar ile diğer kullanıcılarla arasında mali durumları paylaşabilirler ki birden fazla onay isteyen yetkilendirilmemiş ödemeleri önleyebilirler. Diğerleri ile kullanmak için bazı Copay yolları:
 
 Tatil veya arkadaşlarınızla ortak siparişler vermek için 
@@ -12,7 +12,7 @@ Bireysel veya paylaşılan cüzdanlar için çoklu imzalı sezgisel güvenlik
 Paylaşılan cüzdan ve grup ödemeler için kolay harcama teklifi
 Hiyerarşik belirleyici (HD) adres oluşturma ve cüzdan yedekleme 
 Donanım tabanlı güvenlik: tüm özel anahtarlar yerel olarak depolanır, asla bulutta tutulmaz
-Bitcoin testnet cüzdanlarını destekler
+Groestlcoin testnet cüzdanlarını destekler
 Başlıca mobil ve masaüstü platformlarına senkronize erişim
 Ödeme Protokolü (BIP70-BIP73) desteği: kolayca tanımlanabilen ödeme talepleri ve doğrulanabilir güvenli bitcoin ödemeleri
 150'den fazla para birimi desteği ve BTC&Bits arasında birim gösterim seçimi

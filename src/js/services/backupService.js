@@ -1,6 +1,6 @@
 'use strict';
 angular.module('copayApp.services')
-  .factory('backupService', function backupServiceFactory($log, $timeout, $stateParams, profileService, sjcl, appConfigService) {
+  .factory('backupService', function backupServiceFactory($log, $timeout, profileService, sjcl) {
 
     var root = {};
 
@@ -57,10 +57,10 @@ angular.module('copayApp.services')
       if (!password) {
         return null;
       }
-      var wallet = profileService.getWallet($stateParams.walletId);
+      var fc = profileService.focusedClient;
       try {
         opts = opts || {};
-        var b = wallet.export(opts);
+        var b = fc.export(opts);
         if (opts.addressBook) b = root.addMetadata(b, opts);
 
         var e = sjcl.encrypt(password, b, {
@@ -74,13 +74,13 @@ angular.module('copayApp.services')
     };
 
     root.walletDownload = function(password, opts, cb) {
-      var wallet = profileService.getWallet($stateParams.walletId);
+      var fc = profileService.focusedClient;
       var ew = root.walletExport(password, opts);
       if (!ew) return cb('Could not create backup');
 
-      var walletName = (wallet.alias || '') + (wallet.alias ? '-' : '') + wallet.credentials.walletName;
+      var walletName = (fc.alias || '') + (fc.alias ? '-' : '') + fc.credentials.walletName;
       if (opts.noSign) walletName = walletName + '-noSign'
-      var filename = walletName + '-' + appConfigService.nameCase + 'backup.aes.json';
+      var filename = walletName + '-Copaybackup.aes.json';
       _download(ew, filename, cb)
     };
     return root;

@@ -11,14 +11,10 @@ angular.module('copayApp.services')
 
     root.init = function(walletsClients) {
       var defaults = configService.getDefaults();
-      try {
-        var push = PushNotification.init(defaults.pushNotifications.config);
-      } catch(e) {
-        $log.error(e);
-        return;
-      };
+      var push = PushNotification.init(defaults.pushNotifications.config);
 
       push.on('registration', function(data) {
+        if (root.token) return;
         $log.debug('Starting push notification registration');
         root.token = data.registrationId;
         var config = configService.getSync();
@@ -35,7 +31,7 @@ angular.module('copayApp.services')
       if (!config.pushNotifications.enabled) return;
 
       if (!root.token) {
-        $log.warn('No token available for this device. Cannot set push notifications. Needs registration.');
+        $log.warn('No token available for this device. Cannot set push notifications');
         return;
       }
 

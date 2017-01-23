@@ -12,7 +12,7 @@ Intuitivní více-podpisové zabezpečení pro osobní nebo sdílené peněženk
 Snadná tvorba návrhů plateb pro sdílené peněženky s skupinové platby
 Hierarchicky deterministické (HD) vytváření adres a záloh peněženky 
 Device-based zabezpečení: všechny soukromé klíče jsou uloženy na zařízení, ne v Cloud
-Podpora Bitcoin test sítě
+Podpora Groestlcoin test sítě
 Synchronizovaný přístup všech hlavních mobilních a Pc platforem
 Platební protokol (BIP70-BIP73): snadno identifikovatelný platební požadavek a bezpečně ověřitelné platby bitcoinem
 Podpora pro více než 150 měn a denominace BTC nebo bitů
