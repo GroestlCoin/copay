@@ -1,19 +1,20 @@
 {
-  "name": "copay",
-  "description": "A multisignature bitcoin wallet",
-  "author": "BitPay",
+  "name": "GroestlPay",
+  "description": "A multisignature Groestlcoin wallet",
+  "author": "Groetlcoin Project",
   "version": "2.7.0",
-  "androidVersionCode": "117",
+  "androidVersionCode": "100",
   "keywords": [
     "wallet",
     "copay",
     "multisignature",
     "bitcoin",
+    "Groetlcoin",
     "bitcore"
   ],
   "main": "public/index.html",
   "window": {
-    "title": "Copay - A multisignature bitcoin wallet",
+    "title": "Copay - A multisignature Groetlcoin wallet",
     "icon": "./public/img/icons/icon-256.png",
     "show": true,
     "visible": true,
