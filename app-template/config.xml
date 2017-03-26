@@ -7,8 +7,8 @@
     <description>
       *APPDESCRIPTION*
     </description>
-    <author email="Groestlcoinofficial@gmail.com" href="*URL*">
-        Groestlcoin Official.
+    <author email="Groestlcoin@gmail.com" href="*URL*">
+        GroestlPay.
     </author>
     <content src="index.html" />
     <access origin="*" />

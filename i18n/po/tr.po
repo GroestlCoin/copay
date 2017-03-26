@@ -2,10 +2,10 @@ msgid ""
 msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Project-Id-Version: copay\n"
+"Project-Id-Version: GroestlPay\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n\n"
 "X-Generator: crowdin.com\n"
-"X-Crowdin-Project: copay\n"
+"X-Crowdin-Project: GroestlPay\n"
 "X-Crowdin-Language: tr\n"
 "X-Crowdin-File: template.pot\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -23,10 +23,10 @@ msgid "(Trusted)"
 msgstr "(Güvenilir)"
 
 #: src/js/controllers/walletHome.js
-msgid "{{fee}} will be deducted for bitcoin networking fees"
+msgid "{{fee}} will be deducted for groestlcoin networking fees"
 msgstr "{{fee}} Groestlcoin ağ ücreti olarak düşülecektir"
 
-#: public/views/copayers.html
+#: public/views/GroestlPayers.html
 #: public/views/includes/walletInfo.html
 msgid "{{index.m}}-of-{{index.n}}"
 msgstr "{{index.m}} te {{index.n}}"
@@ -40,7 +40,7 @@ msgid "{{len}} wallets imported. Funds scanning in progress. Hold on to see upda
 msgstr "{{len}} cüzdanı içe aktarıldı. Fonlar taranırken ve güncellenirken bekleyiniz"
 
 #: public/views/modals/txp-details.html
-msgid "* A payment proposal can be deleted if 1) you are the creator, and no other copayer has signed, or 2) 24 hours have passed since the proposal was created."
+msgid "* A payment proposal can be deleted if 1) you are the creator, and no other GroestlPayer has signed, or 2) 24 hours have passed since the proposal was created."
 msgstr "* Ödeme isteği; 1) kaynağı sizseniz, başka bir kullanıcı tarafından imzalanmamışsa veya 2) üzerinden 24 saat geçmişse silinebilir."
 
 #: public/views/disclaimer.html
@@ -48,28 +48,28 @@ msgid "<b>IF YOU LOSE ACCESS TO YOUR Groestlcoin Mobile Wallet WALLET OR YOUR EN
 msgstr "<b>Groestlcoin Mobile Wallet CÜZDANINIZA ERİŞİMİNİZİ KAYBEDER VEYA GEREKLİ ŞİFRESİ İLE BİRLİKTE CÜZDANINIZI ÖZEL ANAHTARLA BİRLİKTE YEDEKLEMEZSENİZ, Groestlcoin Mobile Wallet CÜZDANINIZDAKİ BİTCOİN'LERE ERİŞİMİNİZİN KALMAYACAĞINI KABUL EDER VE ONAYLIYORSUNUZ DEMEKTİR.</b>"
 
 #: public/views/backup.html
-msgid "<b>OR</b> 1 wallet export file and the remaining quorum of wallet seeds (e.g. in a 3-5 wallet: 1 wallet export file + 2 wallet seeds of any of the other copayers)."
+msgid "<b>OR</b> 1 wallet export file and the remaining quorum of wallet seeds (e.g. in a 3-5 wallet: 1 wallet export file + 2 wallet seeds of any of the other GroestlPayers)."
 msgstr ""
 
 #: public/views/backup.html
-msgid "<b>OR</b> the wallet seed of <b>all</b> copayers in the wallet"
+msgid "<b>OR</b> the wallet seed of <b>all</b> GroestlPayers in the wallet"
 msgstr ""
 
 #: public/views/backup.html
-msgid "<b>OR</b> the wallet seeds of <b>all</b> copayers in the wallet"
+msgid "<b>OR</b> the wallet seeds of <b>all</b> GroestlPayers in the wallet"
 msgstr ""
 
 #: public/views/splash.html
-msgid "A multisignature bitcoin wallet"
+msgid "A multisignature groestlcoin wallet"
 msgstr "Çoklu imzalı Groestlcoin cüzdanı"
 
 #: public/views/preferences.html
-msgid "About Copay"
+msgid "About GroestlPay"
 msgstr "Groestlcoin Mobile Wallet Hakkında"
 
 #: public/views/modals/txp-details.html
 #: src/js/services/confirmDialog.js
-#: src/js/controllers/copayers.js
+#: src/js/controllers/GroestlPayers.js
 #: src/js/controllers/preferencesDelete.js
 #: src/js/controllers/walletHome.js
 msgid "Accept"
@@ -135,7 +135,7 @@ msgid "Alias for <i>{{index.walletName}}</i>"
 msgstr "<i>{{index.walletName}}</i> için takma ad"
 
 #: public/views/translators.html
-msgid "All contributions to Copay's translation are welcome. Sign up at crowdin.com and join the Copay project at"
+msgid "All contributions to GroestlPay's translation are welcome. Sign up at crowdin.com and join the GroestlPay project at"
 msgstr "Groestlcoin Mobile Wallet'nın çevirisi için tüm katkılarınızı bekliyoruz. Crowdin.com sitesine kayıt olun ve Groestlcoin Mobile Wallet Projesi'ne katılın"
 
 #: public/views/disclaimer.html
@@ -171,7 +171,7 @@ msgstr "Tutar"
 msgid "Are you sure you want to delete the backup words?"
 msgstr "Yedekleme kelimelerini silmek istediğinizden emin misiniz?"
 
-#: src/js/controllers/copayers.js
+#: src/js/controllers/GroestlPayers.js
 #: src/js/controllers/preferencesDelete.js
 msgid "Are you sure you want to delete this wallet?"
 msgstr "Bu cüzdanı silmek istediğinizden emin misiniz?"
@@ -253,12 +253,12 @@ msgstr "İşlem yayınlanıyor"
 msgid "Browser unsupported"
 msgstr "Desteklenmeyen tarayıcı"
 
-#: public/views/copayers.html
+#: public/views/GroestlPayers.html
 #: public/views/walletHome.html
 #: public/views/modals/confirmation.html
 #: public/views/modals/destination-address.html
 #: src/js/services/confirmDialog.js
-#: src/js/controllers/copayers.js
+#: src/js/controllers/GroestlPayers.js
 #: src/js/controllers/preferencesDelete.js
 #: src/js/controllers/walletHome.js
 msgid "Cancel"
@@ -306,7 +306,7 @@ msgid "Commit hash"
 msgstr "Commit hash"
 
 #: src/js/services/confirmDialog.js
-#: src/js/controllers/copayers.js
+#: src/js/controllers/GroestlPayers.js
 #: src/js/controllers/preferencesDelete.js
 #: src/js/controllers/walletHome.js
 msgid "Confirm"
@@ -329,22 +329,22 @@ msgid "Connecting to {{join.hwWallet}} Wallet..."
 msgstr ""
 
 #: src/js/services/bwsError.js
-msgid "Copayer already in this wallet"
+msgid "GroestlPayer already in this wallet"
 msgstr "Groestlcoin Mobile Walleter zaten bu cüzdan içinde"
 
 #: src/js/services/bwsError.js
-msgid "Copayer already voted on this spend proposal"
+msgid "GroestlPayer already voted on this spend proposal"
 msgstr "Groestlcoin Mobile Walleter bu teklifi oylamış"
 
 #: src/js/services/bwsError.js
-msgid "Copayer data mismatch"
+msgid "GroestlPayer data mismatch"
 msgstr "Groestlcoin Mobile Walleter veri uyuşmazlığı"
 
 #: public/views/preferencesInformation.html
-msgid "Copayers"
+msgid "GroestlPayers"
 msgstr "Groestlcoin Mobile Walleters"
 
-#: src/js/controllers/copayers.js
+#: src/js/controllers/GroestlPayers.js
 #: src/js/controllers/export.js
 #: src/js/controllers/walletHome.js
 msgid "Copied to clipboard"
@@ -443,8 +443,8 @@ msgid "Create"
 msgstr "Oluştur"
 
 #: public/views/create.html
-msgid "Create {{requiredCopayers}}-of-{{totalCopayers}} wallet"
-msgstr "{{totalCopayers}} {{requiredCopayers}} için cüzdan oluştur"
+msgid "Create {{requiredGroestlPayers}}-of-{{totalGroestlPayers}} wallet"
+msgstr "{{totalGroestlPayers}} {{requiredGroestlPayers}} için cüzdan oluştur"
 
 #: public/views/add.html
 #: public/views/create.html
@@ -484,7 +484,7 @@ msgstr "Tarih"
 msgid "Decrypting a paper wallet could take around 5 minutes on this device. please be patient and keep the app open."
 msgstr ""
 
-#: public/views/copayers.html
+#: public/views/GroestlPayers.html
 msgid "Delete it and create a new one"
 msgstr "Sil ve yeni bir tane oluştur"
 
@@ -710,7 +710,7 @@ msgid "Hardware wallet"
 msgstr "Donanım cüzdanı"
 
 #: public/views/import.html
-msgid "Have a Backup from Copay v0.9?"
+msgid "Have a Backup from GroestlPay v0.9?"
 msgstr "Groestlcoin Mobile Wallet v0.9 sürümünden bir yedeğiniz mi var?"
 
 #: public/views/create.html
@@ -811,8 +811,8 @@ msgstr ""
 msgid "Invalid Touch ID"
 msgstr ""
 
-#: src/js/controllers/copayers.js
-msgid "Invitation to share a Copay Wallet"
+#: src/js/controllers/GroestlPayers.js
+msgid "Invitation to share a GroestlPay Wallet"
 msgstr "Groestlcoin Mobile Wallet cüzdanını paylaşmak için davet"
 
 #: public/views/translators.html
@@ -832,9 +832,9 @@ msgstr "John"
 msgid "Join"
 msgstr "Katıl"
 
-#: src/js/controllers/copayers.js
-msgid "Join my Copay wallet. Here is the invitation code: {{secret}} You can download Copay for your phone or desktop at https://copay.io"
-msgstr "Groestlcoin Mobile Wallet cüzdanıma katılın. İşte davetiye kodu: {{secret}} Groestlcoin Mobile Wallet'i telefon veya masaüstü ortamlarına indirmek için https://copay.io"
+#: src/js/controllers/GroestlPayers.js
+msgid "Join my GroestlPay wallet. Here is the invitation code: {{secret}} You can download GroestlPay for your phone or desktop at https://GroestlPay.io"
+msgstr "Groestlcoin Mobile Wallet cüzdanıma katılın. İşte davetiye kodu: {{secret}} Groestlcoin Mobile Wallet'i telefon veya masaüstü ortamlarına indirmek için https://GroestlPay.io"
 
 #: public/views/add.html
 msgid "Join shared wallet"
@@ -861,7 +861,7 @@ msgid "Last Wallet Addresses"
 msgstr "Son Cüzdan Adresleri"
 
 #: public/views/backup.html
-msgid "Learn more about Copay backups"
+msgid "Learn more about GroestlPay backups"
 msgstr "Groestlcoin Mobile Wallet yedeklemeleri hakkında daha fazla bilgi edinin"
 
 #: public/views/importLegacy.html
@@ -893,7 +893,7 @@ msgid "me"
 msgstr "ben"
 
 #: public/views/preferencesInformation.html
-#: public/views/includes/copayers.html
+#: public/views/includes/GroestlPayers.html
 #: public/views/modals/tx-details.html
 #: public/views/modals/txp-details.html
 msgid "Me"
@@ -1057,11 +1057,11 @@ msgid "Payment Proposal Rejected"
 msgstr "Ödeme Teklifi Reddedildi"
 
 #: src/js/services/notificationsService.js
-msgid "Payment Proposal Rejected by Copayer"
+msgid "Payment Proposal Rejected by GroestlPayer"
 msgstr "Ödeme teklifi bir Groestlcoin Mobile Walleter tarafından reddedildi"
 
 #: src/js/services/notificationsService.js
-msgid "Payment Proposal Signed by Copayer"
+msgid "Payment Proposal Signed by GroestlPayer"
 msgstr "Ödeme teklifi bir Groestlcoin Mobile Walleter tarafından kabul edildi"
 
 #: public/views/walletHome.html
@@ -1129,7 +1129,7 @@ msgid "Please enter the wallet seed"
 msgstr "Lütfen cüzdan sözcüklerini girin"
 
 #: src/js/services/bwsError.js
-msgid "Please upgrade Copay to perform this action"
+msgid "Please upgrade GroestlPay to perform this action"
 msgstr "Bu eylemi gerçekleştirmek için lütfen Groestlcoin Mobile Wallet sürümünü yükseltin"
 
 #: src/js/controllers/import.js
@@ -1368,13 +1368,13 @@ msgstr "E-posta bildirimleri ayarlamak gizliliğinizi zayıflatabilir. Cüzdan s
 msgid "Share address"
 msgstr "Adresi paylaş"
 
-#: public/views/copayers.html
+#: public/views/GroestlPayers.html
 msgid "Share invitation"
 msgstr "Davet paylaş"
 
-#: public/views/copayers.html
-msgid "Share this invitation with your copayers"
-msgstr "Bu daveti copayers ile paylaş"
+#: public/views/GroestlPayers.html
+msgid "Share this invitation with your GroestlPayers"
+msgstr "Bu daveti GroestlPayers ile paylaş"
 
 #: public/views/walletHome.html
 msgid "Share this wallet address to receive payments. To protect your privacy, new addresses are generated automatically once you use them."
@@ -1437,7 +1437,7 @@ msgstr ""
 msgid "Still not done"
 msgstr "Halen tamamlanmadı"
 
-#: src/js/controllers/copayers.js
+#: src/js/controllers/GroestlPayers.js
 #: src/js/controllers/export.js
 #: src/js/controllers/import.js
 #: src/js/controllers/preferencesDelete.js
@@ -1499,7 +1499,7 @@ msgid "The seed could require a passphrase to be imported"
 msgstr "Kurtarma sözcükleri içe alım için parola gerektirebilir"
 
 #: public/views/disclaimer.html
-msgid "The software does not constitute an account where other third parties serve as financial intermediaries or custodians of your bitcoin."
+msgid "The software does not constitute an account where other third parties serve as financial intermediaries or custodians of your groestlcoin."
 msgstr ""
 
 #: public/views/disclaimer.html
@@ -1510,7 +1510,7 @@ msgstr ""
 msgid "The spend proposal is not pending"
 msgstr "Harcama teklifi beklemede değil"
 
-#: src/js/controllers/copayers.js
+#: src/js/controllers/GroestlPayers.js
 #: src/js/controllers/preferencesDelete.js
 msgid "The wallet \"{{walletName}}\" was deleted"
 msgstr "\"{{walletName}}\" cüzdanı silindi"
@@ -1564,7 +1564,7 @@ msgid "Total Locked Balance"
 msgstr "Toplam Kilitli Bakiye"
 
 #: public/views/create.html
-msgid "Total number of copayers"
+msgid "Total number of GroestlPayers"
 msgstr "Groestlcoin Mobile Walleters toplam sayısı"
 
 #: public/views/modals/tx-details.html
@@ -1633,11 +1633,11 @@ msgstr "Sürüm"
 msgid "View"
 msgstr ""
 
-#: public/views/copayers.html
-msgid "Waiting for copayers"
+#: public/views/GroestlPayers.html
+msgid "Waiting for GroestlPayers"
 msgstr "Groestlcoin Mobile Walleters bekleniyor"
 
-#: public/views/copayers.html
+#: public/views/GroestlPayers.html
 msgid "Waiting..."
 msgstr "Bekliyor..."
 
@@ -1658,7 +1658,7 @@ msgid "Wallet Already Imported:"
 msgstr "Cüzdan zaten içe alındı:"
 
 #: src/js/services/profileService.js
-msgid "Wallet already in Copay:"
+msgid "Wallet already in GroestlPay:"
 msgstr "Groestlcoin Mobile Wallet'de kayıtlı olan cüzdan:"
 
 #: public/views/preferencesInformation.html
@@ -1673,7 +1673,7 @@ msgstr ""
 msgid "Wallet Id"
 msgstr "Cüzdan Id"
 
-#: public/views/copayers.html
+#: public/views/GroestlPayers.html
 msgid "Wallet incomplete and broken"
 msgstr "Cüzdan eksik ve arızalı"
 

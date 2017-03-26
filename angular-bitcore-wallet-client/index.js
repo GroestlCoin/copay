@@ -34,7 +34,7 @@ bwcModule.provider("bwcService", function() {
 
       //note opts use `bwsurl` all lowercase;
       var bwc = new Client({
-        baseUrl: opts.bwsurl || 'https://cws.Groestlcoin.org/bws/api',
+        baseUrl: opts.bwsurl || 'https://grsbws.mmitech.info/bws/api',
         verbose: opts.verbose,
         transports: ['polling'],
       });

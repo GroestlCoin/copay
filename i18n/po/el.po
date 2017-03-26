@@ -2,10 +2,10 @@ msgid ""
 msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Project-Id-Version: copay\n"
+"Project-Id-Version: GroestlPay\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 "X-Generator: crowdin.com\n"
-"X-Crowdin-Project: copay\n"
+"X-Crowdin-Project: GroestlPay\n"
 "X-Crowdin-Language: el\n"
 "X-Crowdin-File: template.pot\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -28,14 +28,14 @@ msgid "[Balance Hidden]"
 msgstr "[Υπόλοιπο Κρυμένο]"
 
 #: src/js/controllers/walletHome.js
-msgid "{{fee}} will be deducted for bitcoin networking fees"
+msgid "{{fee}} will be deducted for groestlcoin networking fees"
 msgstr "{{fee}}, θα προεξοφληθεί ώς τέλος του δικτύου Groestlcoin"
 
 #: public/views/includes/confirm-tx.html
 msgid "{{feeRateStr}} of the transaction"
 msgstr "{{feeRateStr}} της συναλλαγής"
 
-#: public/views/copayers.html
+#: public/views/GroestlPayers.html
 #: public/views/includes/walletInfo.html
 msgid "{{index.m}}-of-{{index.n}}"
 msgstr "{{index.m}}-του-{{index.n}}"
@@ -53,36 +53,36 @@ msgid "{{item.m}}-of-{{item.n}}"
 msgstr "{{item.m}}-του-{{item.n}}"
 
 #: public/views/modals/txp-details.html
-msgid "* A payment proposal can be deleted if 1) you are the creator, and no other copayer has signed, or 2) 24 hours have passed since the proposal was created."
-msgstr "Μια πρόταση πληρωμής μπορεί να διαγραφεί εάν 1) είστε ο δημιουργός, και κανένας άλλος χρήστης του copay δεν έχει υπογράψει, ή 2) έχουν περάσει 24 ώρες απο την ώρα που η πρόταση δημιουργήθηκε."
+msgid "* A payment proposal can be deleted if 1) you are the creator, and no other GroestlPayer has signed, or 2) 24 hours have passed since the proposal was created."
+msgstr "Μια πρόταση πληρωμής μπορεί να διαγραφεί εάν 1) είστε ο δημιουργός, και κανένας άλλος χρήστης του GroestlPay δεν έχει υπογράψει, ή 2) έχουν περάσει 24 ώρες απο την ώρα που η πρόταση δημιουργήθηκε."
 
 #: public/views/includes/terms.html
 msgid "<b>IF YOU LOSE ACCESS TO YOUR Groestlcoin Mobile Wallet WALLET OR YOUR ENCRYPTED PRIVATE KEYS AND YOU HAVE NOT SEPARATELY STORED A BACKUP OF YOUR WALLET AND CORRESPONDING PASSWORD, YOU ACKNOWLEDGE AND AGREE THAT ANY CAPRICOINS YOU HAVE ASSOCIATED WITH THAT Groestlcoin Mobile Wallet WALLET WILL BECOME INACCESSIBLE.</b>"
 msgstr "<b>ΕΑΝ ΧΑΣΕΤΕ ΤΗΝ ΠΡΟΣΒΑΣΗ ΝΑ ΣΑΣ ΣΤΟ ΠΟΡΤΟΦΌΛΙ Groestlcoin Mobile Wallet Ή ΣΤΑ ΚΡΥΠΤΟΓΡΑΦΗΜΕΝΑ ΙΔΙΩΤΙΚΑ ΣΑΣ ΚΛΕΙΔΙΑ ΚΑΙ ΔΕΝ ΑΠΟΘΗΚΕΥΣΑΤΕ ΧΩΡΙΣΤΆ ΕΝΑ ΑΝΤΙΓΡΑΦΟ ΑΣΦΑΛΕΙΑΣ ΤΟΥ ΠΟΡΤΟΦΟΛΙΟΥ ΚΑΙ ΤΟΥ ΑΝΤΙΣΤΟΙΧΟΥ ΚΩΔΙΚΟΥ ΠΡΌΣΒΑΣΗΣ, ΑΠΟΔΕΧΕΣΤΕ ΚΑΙ ΣΥΜΦΩΝΕΙΤΕ ΟΤΙ ΟΠΟΙΑΔΗΠΟΤΕ ΠΟΣΟΤΗΤΑ CAPRICOIN ΠΟΥ ΕΧΕΤΕ ΣΥΣΧΕΤΙΣΕΙ ΜΕ ΤΟ ΠΟΡΤΟΦΟΛΙ ΤΟΥ Groestlcoin Mobile Wallet ΘΑ ΓΙΝΟΥΝ ΑΠΡΟΣΠΕΛΑΣΤΑ.</b>"
 
 #: public/views/backup.html
-msgid "<b>OR</b> 1 wallet export file and the remaining quorum of wallet recovery phrases (e.g. in a 3-5 wallet: 1 wallet export file + 2 wallet recovery phrases of any of the other copayers)."
+msgid "<b>OR</b> 1 wallet export file and the remaining quorum of wallet recovery phrases (e.g. in a 3-5 wallet: 1 wallet export file + 2 wallet recovery phrases of any of the other GroestlPayers)."
 msgstr ""
 
 #: public/views/backup.html
-msgid "<b>OR</b> the wallet recovery phrase of <b>all</b> copayers in the wallet"
+msgid "<b>OR</b> the wallet recovery phrase of <b>all</b> GroestlPayers in the wallet"
 msgstr ""
 
 #: public/views/backup.html
-msgid "<b>OR</b> the wallet recovery phrases of <b>all</b> copayers in the wallet"
+msgid "<b>OR</b> the wallet recovery phrases of <b>all</b> GroestlPayers in the wallet"
 msgstr ""
 
 #: public/views/disclaimer.html
-msgid "A multisignature bitcoin wallet"
+msgid "A multisignature groestlcoin wallet"
 msgstr "Ένα πορτοφόλι Groestlcoin με δυνατότητα πολλαπλών υπογραφών"
 
 #: public/views/preferencesGlobal.html
-msgid "About Copay"
-msgstr "Σχετικά με το Copay"
+msgid "About GroestlPay"
+msgstr "Σχετικά με το GroestlPay"
 
 #: public/views/modals/txp-details.html
 #: src/js/services/confirmDialog.js
-#: src/js/controllers/copayers.js
+#: src/js/controllers/GroestlPayers.js
 #: src/js/controllers/preferencesDelete.js
 #: src/js/controllers/walletHome.js
 msgid "Accept"
@@ -151,8 +151,8 @@ msgstr "Ψευδώνυμο για <i>{{index.walletName}}</i>"
 
 #: public/views/preferencesLanguage.html
 #: public/views/translators.html
-msgid "All contributions to Copay's translation are welcome. Sign up at crowdin.com and join the Copay project at"
-msgstr "Όλες οι εισηγήσεις στην μετάφραση του Copay είναι ευπρόσδεκτες. Εγγραφείτε στο crowdin.com για να συμμετάσχετε στο έργο Copay"
+msgid "All contributions to GroestlPay's translation are welcome. Sign up at crowdin.com and join the GroestlPay project at"
+msgstr "Όλες οι εισηγήσεις στην μετάφραση του GroestlPay είναι ευπρόσδεκτες. Εγγραφείτε στο crowdin.com για να συμμετάσχετε στο έργο GroestlPay"
 
 #: public/views/includes/terms.html
 msgid "All transaction requests are irreversible."
@@ -182,7 +182,7 @@ msgstr "Ποσό εισόδου"
 msgid "Are you sure you want to delete the recovery phrase?"
 msgstr "Σίγουρα θέλετε να σβήσετε τη φράση επαναφοράς;"
 
-#: src/js/controllers/copayers.js
+#: src/js/controllers/GroestlPayers.js
 #: src/js/controllers/preferencesDelete.js
 msgid "Are you sure you want to delete this wallet?"
 msgstr "Είσαι σίγουρος ότι θέλετε να διαγράψετε αυτό το πορτοφόλι?"
@@ -286,13 +286,13 @@ msgstr "Υπολογισμός αμοιβής"
 #: public/views/modals/confirmation.html
 #: public/views/walletHome.html
 #: src/js/services/confirmDialog.js
-#: src/js/controllers/copayers.js
+#: src/js/controllers/GroestlPayers.js
 #: src/js/controllers/preferencesDelete.js
 #: src/js/controllers/walletHome.js
 msgid "Cancel"
 msgstr "Άκυρο"
 
-#: public/views/copayers.html
+#: public/views/GroestlPayers.html
 msgid "Cancel and delete the wallet"
 msgstr "Ακύρωση και διαγραφή του πορτοφολιού"
 
@@ -353,7 +353,7 @@ msgstr "Δέσμευση λύσης"
 
 #: public/views/includes/confirm-tx.html
 #: src/js/services/confirmDialog.js
-#: src/js/controllers/copayers.js
+#: src/js/controllers/GroestlPayers.js
 #: src/js/controllers/preferencesDelete.js
 #: src/js/controllers/walletHome.js
 msgid "Confirm"
@@ -388,22 +388,22 @@ msgid "Continue"
 msgstr "Συνεχίστε"
 
 #: src/js/services/bwcError.js
-msgid "Copayer already in this wallet"
-msgstr "Copayers ήδη σε αυτό το πορτοφόλι"
+msgid "GroestlPayer already in this wallet"
+msgstr "GroestlPayers ήδη σε αυτό το πορτοφόλι"
 
 #: src/js/services/bwcError.js
-msgid "Copayer already voted on this spend proposal"
-msgstr "Copayer που έχουν ήδη ψηφίσει αυτή την πρόταση"
+msgid "GroestlPayer already voted on this spend proposal"
+msgstr "GroestlPayer που έχουν ήδη ψηφίσει αυτή την πρόταση"
 
 #: src/js/services/bwcError.js
-msgid "Copayer data mismatch"
-msgstr "Ασυμφωνία δεδομένων του copayer"
+msgid "GroestlPayer data mismatch"
+msgstr "Ασυμφωνία δεδομένων του GroestlPayer"
 
 #: public/views/preferencesInformation.html
-msgid "Copayers"
-msgstr "Μέλη του πορτοφολιού Copay"
+msgid "GroestlPayers"
+msgstr "Μέλη του πορτοφολιού GroestlPay"
 
-#: src/js/controllers/copayers.js
+#: src/js/controllers/GroestlPayers.js
 #: src/js/controllers/export.js
 #: src/js/controllers/preferencesInformation.js
 #: src/js/controllers/walletHome.js
@@ -507,8 +507,8 @@ msgid "Create"
 msgstr "Δημιουργία"
 
 #: public/views/create.html
-msgid "Create {{requiredCopayers}}-of-{{totalCopayers}} wallet"
-msgstr "Δημιουργία {{requiredCopayers}} των {{totalCopayers}} του πορτοφολιού"
+msgid "Create {{requiredGroestlPayers}}-of-{{totalGroestlPayers}} wallet"
+msgstr "Δημιουργία {{requiredGroestlPayers}} των {{totalGroestlPayers}} του πορτοφολιού"
 
 #: public/views/add.html
 #: public/views/create.html
@@ -547,7 +547,7 @@ msgstr "Ημερομηνία"
 msgid "Decrypting a paper wallet could take around 5 minutes on this device. please be patient and keep the app open."
 msgstr "Η αποκρυπτογράφηση ενός χάρτινου πορτοφολιού μπορεί να πάρει περίπου 5 λεπτά σε αυτή την συσκευή. Κάντε υπομονή και κρατήστε την εφαρμογή ανοικτή."
 
-#: public/views/copayers.html
+#: public/views/GroestlPayers.html
 msgid "Delete it and create a new one"
 msgstr "Διαγράψετε το και δημιουργήστε ένα νέο"
 
@@ -892,9 +892,9 @@ msgstr "Μη έγκυρη διεύθυνση"
 msgid "Invalid derivation path"
 msgstr ""
 
-#: src/js/controllers/copayers.js
-msgid "Invitation to share a Copay Wallet"
-msgstr "Πρόσκληση για τον διαμοιρασμό ενός πορτοφολιού Copay"
+#: src/js/controllers/GroestlPayers.js
+msgid "Invitation to share a GroestlPay Wallet"
+msgstr "Πρόσκληση για τον διαμοιρασμό ενός πορτοφολιού GroestlPay"
 
 #: public/views/translators.html
 msgid "Italian"
@@ -913,9 +913,9 @@ msgstr "Ιωάννης"
 msgid "Join"
 msgstr "Συμμετοχή"
 
-#: src/js/controllers/copayers.js
-msgid "Join my Copay wallet. Here is the invitation code: {{secret}} You can download Copay for your phone or desktop at https://copay.io"
-msgstr "Συμμετάσχετε στο πορτοφόλι μου Copay. Εδώ είναι ο κωδικός πρόσκλησης: {{secret}} μπορείτε να κατεβάσετε το Copay για το τηλέφωνο σας ή τον υπολογιστή σας στο https://copay.io"
+#: src/js/controllers/GroestlPayers.js
+msgid "Join my GroestlPay wallet. Here is the invitation code: {{secret}} You can download GroestlPay for your phone or desktop at https://GroestlPay.io"
+msgstr "Συμμετάσχετε στο πορτοφόλι μου GroestlPay. Εδώ είναι ο κωδικός πρόσκλησης: {{secret}} μπορείτε να κατεβάσετε το GroestlPay για το τηλέφωνο σας ή τον υπολογιστή σας στο https://GroestlPay.io"
 
 #: public/views/add.html
 msgid "Join shared wallet"
@@ -942,7 +942,7 @@ msgid "Last Wallet Addresses"
 msgstr "Διευθύνσεις τελευταίων πορτοφολιών"
 
 #: public/views/backup.html
-msgid "Learn more about Copay backups"
+msgid "Learn more about GroestlPay backups"
 msgstr ""
 
 #: public/views/preferencesFee.html
@@ -973,7 +973,7 @@ msgstr ""
 msgid "me"
 msgstr "Εγώ"
 
-#: public/views/includes/copayers.html
+#: public/views/includes/GroestlPayers.html
 #: public/views/modals/tx-details.html
 #: public/views/modals/txp-details.html
 #: public/views/preferencesInformation.html
@@ -1192,12 +1192,12 @@ msgid "Payment Proposal Rejected"
 msgstr "Πρόταση Πληρωμής Απορρίφθηκε"
 
 #: src/js/services/notificationsService.js
-msgid "Payment Proposal Rejected by Copayer"
-msgstr "Το Copayer Απέρριψε την Πρόταση Πληρωμής"
+msgid "Payment Proposal Rejected by GroestlPayer"
+msgstr "Το GroestlPayer Απέρριψε την Πρόταση Πληρωμής"
 
 #: src/js/services/notificationsService.js
-msgid "Payment Proposal Signed by Copayer"
-msgstr "Η Πρόταση Πληρωμής Υπογράφηκε από το Copayer"
+msgid "Payment Proposal Signed by GroestlPayer"
+msgstr "Η Πρόταση Πληρωμής Υπογράφηκε από το GroestlPayer"
 
 #: public/views/walletHome.html
 msgid "Payment Proposals"
@@ -1261,8 +1261,8 @@ msgid "Please tap the words in order to confirm your backup phrase is correctly 
 msgstr ""
 
 #: src/js/services/bwcError.js
-msgid "Please upgrade Copay to perform this action"
-msgstr "Παρακαλώ αναβαθμίστε το Copay για να εκτελέσετε αυτήν την ενέργεια"
+msgid "Please upgrade GroestlPay to perform this action"
+msgstr "Παρακαλώ αναβαθμίστε το GroestlPay για να εκτελέσετε αυτήν την ενέργεια"
 
 #: public/views/uri.html
 msgid "Please wait to be redirected..."
@@ -1301,8 +1301,8 @@ msgid "Private key is encrypted, cannot sign"
 msgstr "Το ιδιωτικό κλειδί είναι κρυπτογραφημένο, η υπογραφή δεν ήταν εφικτή"
 
 #: public/views/preferencesGlobal.html
-msgid "Push notifications for Copay are currently disabled. Enable them in the Settings app."
-msgstr "Οι ειδοποιήσεις push για Copay είναι απενεργοποιημένη αυτήν τη στιγμή. Ενεργοποιήστε τες στις Ρυθμίσεις της εφαρμογής."
+msgid "Push notifications for GroestlPay are currently disabled. Enable them in the Settings app."
+msgstr "Οι ειδοποιήσεις push για GroestlPay είναι απενεργοποιημένη αυτήν τη στιγμή. Ενεργοποιήστε τες στις Ρυθμίσεις της εφαρμογής."
 
 #: public/views/export.html
 #: public/views/modals/customized-amount.html
@@ -1467,7 +1467,7 @@ msgid "Send addresses by email"
 msgstr ""
 
 #: public/views/includes/confirm-tx.html
-msgid "Send bitcoin"
+msgid "Send groestlcoin"
 msgstr ""
 
 #: public/views/export.html
@@ -1531,13 +1531,13 @@ msgstr ""
 msgid "Share address"
 msgstr "Μοιραστείτε τη διεύθυνση"
 
-#: public/views/copayers.html
+#: public/views/GroestlPayers.html
 msgid "Share invitation"
 msgstr "Μοιραστείτε μια πρόσκληση"
 
-#: public/views/copayers.html
-msgid "Share this invitation with your copayers"
-msgstr "Μοιραστείτε αυτήν την πρόσκληση με άλλους copayers"
+#: public/views/GroestlPayers.html
+msgid "Share this invitation with your GroestlPayers"
+msgstr "Μοιραστείτε αυτήν την πρόσκληση με άλλους GroestlPayers"
 
 #: public/views/walletHome.html
 msgid "Share this wallet address to receive payments"
@@ -1596,7 +1596,7 @@ msgstr ""
 msgid "Spending Passwords do not match"
 msgstr ""
 
-#: src/js/controllers/copayers.js
+#: src/js/controllers/GroestlPayers.js
 #: src/js/controllers/export.js
 #: src/js/controllers/import.js
 #: src/js/controllers/preferencesDelete.js
@@ -1666,7 +1666,7 @@ msgid "The request could not be understood by the server"
 msgstr ""
 
 #: public/views/includes/terms.html
-msgid "The software does not constitute an account other third parties serve as financial intermediaries or custodians of your bitcoin."
+msgid "The software does not constitute an account other third parties serve as financial intermediaries or custodians of your groestlcoin."
 msgstr "Το λογισμικό δεν αποτελεί ένα λογαριασμό όπου άλλα τρίτα μέρη χρησιμεύουν ως ενδιάμεσοι χρηματοπιστωτικοί οργανισμοί ή θεματοφύλακες των Groestlcoin σας."
 
 #: public/views/includes/terms.html
@@ -1677,7 +1677,7 @@ msgstr "Το λογισμικό που πρόκειται να χρησιμοπ�
 msgid "The spend proposal is not pending"
 msgstr "Δεν εκκρεμεί η πρόταση"
 
-#: src/js/controllers/copayers.js
+#: src/js/controllers/GroestlPayers.js
 #: src/js/controllers/preferencesDelete.js
 msgid "The wallet \"{{walletName}}\" was deleted"
 msgstr "Διαγράφηκε το πορτοφόλι \"{{walletName}}\""
@@ -1695,7 +1695,7 @@ msgid "There are no wallets to make this payment"
 msgstr "Δεν υπάρχουν πορτοφόλια για να πραγματοποιηθεί η πληρωμή"
 
 #: src/js/controllers/index.js
-msgid "There is a new version of Copay. Please update"
+msgid "There is a new version of GroestlPay. Please update"
 msgstr ""
 
 #: src/js/controllers/import.js
@@ -1742,7 +1742,7 @@ msgid "Total Locked Balance"
 msgstr "Συνολικό Κλειδωμένο Υπόλοιπο"
 
 #: public/views/create.html
-msgid "Total number of copayers"
+msgid "Total number of GroestlPayers"
 msgstr ""
 
 #: src/js/services/fingerprintService.js
@@ -1819,9 +1819,9 @@ msgstr "Έκδοση"
 msgid "View"
 msgstr ""
 
-#: public/views/copayers.html
-msgid "Waiting for copayers"
-msgstr "Αναμονή για copayers"
+#: public/views/GroestlPayers.html
+msgid "Waiting for GroestlPayers"
+msgstr "Αναμονή για GroestlPayers"
 
 #: src/js/services/onGoingProcess.js
 msgid "Waiting for Ledger..."
@@ -1831,7 +1831,7 @@ msgstr ""
 msgid "Waiting for Trezor..."
 msgstr ""
 
-#: public/views/copayers.html
+#: public/views/GroestlPayers.html
 msgid "Waiting..."
 msgstr "Σε αναμονή..."
 
@@ -1840,7 +1840,7 @@ msgid "Wallet already exists"
 msgstr "Υπάρχει ήδη το πορτοφόλι"
 
 #: src/js/services/profileService.js
-msgid "Wallet already in Copay"
+msgid "Wallet already in GroestlPay"
 msgstr ""
 
 #: public/views/preferencesInformation.html
@@ -1855,7 +1855,7 @@ msgstr ""
 msgid "Wallet Id"
 msgstr ""
 
-#: public/views/copayers.html
+#: public/views/GroestlPayers.html
 msgid "Wallet incomplete and broken"
 msgstr "Πορτοφόλι ελλιπές και χαλασμένο"
 

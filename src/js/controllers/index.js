@@ -569,7 +569,7 @@ angular.module('copayApp.controllers').controller('indexController', function($r
   self.updateColor = function() {
     var config = configService.getSync();
     config.colorFor = config.colorFor || {};
-    self.backgroundColor = config.colorFor[self.walletId] || '#D0B136';
+    self.backgroundColor = config.colorFor[self.walletId] || '#85A6B1';
     var fc = profileService.focusedClient;
     fc.backgroundColor = self.backgroundColor;
     if (isCordova && StatusBar.isVisible) {
@@ -1691,7 +1691,7 @@ angular.module('copayApp.controllers').controller('indexController', function($r
 
       var config = configService.getSync();
 
-      $scope.color = config.colorFor[txp.walletId] || '#D0B136';
+      $scope.color = config.colorFor[txp.walletId] || '#85A6B1';
       $scope.tx = txFormatService.processTx(txp);
 
       self.confirmationPopup = $ionicPopup.show({

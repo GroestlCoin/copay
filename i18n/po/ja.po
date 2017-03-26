@@ -2,10 +2,10 @@ msgid ""
 msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Project-Id-Version: copay\n"
+"Project-Id-Version: GroestlPay\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
 "X-Generator: crowdin.com\n"
-"X-Crowdin-Project: copay\n"
+"X-Crowdin-Project: GroestlPay\n"
 "X-Crowdin-Language: ja\n"
 "X-Crowdin-File: template.pot\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -28,14 +28,14 @@ msgid "[Balance Hidden]"
 msgstr "[残高非表示中]"
 
 #: src/js/controllers/walletHome.js
-msgid "{{fee}} will be deducted for bitcoin networking fees"
+msgid "{{fee}} will be deducted for groestlcoin networking fees"
 msgstr "{{fee}} のビットコインネットワーク手数料が差し引かれます。"
 
 #: public/views/includes/confirm-tx.html
 msgid "{{feeRateStr}} of the transaction"
 msgstr "{{feeRateStr}} のレート"
 
-#: public/views/copayers.html
+#: public/views/GroestlPayers.html
 #: public/views/includes/walletInfo.html
 msgid "{{index.m}}-of-{{index.n}}"
 msgstr "{{index.m}}-of-{{index.n}}"
@@ -53,36 +53,36 @@ msgid "{{item.m}}-of-{{item.n}}"
 msgstr "{{item.m}}-of-{{item.n}}"
 
 #: public/views/modals/txp-details.html
-msgid "* A payment proposal can be deleted if 1) you are the creator, and no other copayer has signed, or 2) 24 hours have passed since the proposal was created."
+msgid "* A payment proposal can be deleted if 1) you are the creator, and no other GroestlPayer has signed, or 2) 24 hours have passed since the proposal was created."
 msgstr "* 送金の提案の取下げは①他のウォレット参加者に署名されていなかった場合、提案者に提案を取り下げることができます。②提案の起案から24時間が経っても解決しなかった場合、全員に取り下げることができます。"
 
 #: public/views/includes/terms.html
 msgid "<b>IF YOU LOSE ACCESS TO YOUR Groestlcoin Mobile Wallet WALLET OR YOUR ENCRYPTED PRIVATE KEYS AND YOU HAVE NOT SEPARATELY STORED A BACKUP OF YOUR WALLET AND CORRESPONDING PASSWORD, YOU ACKNOWLEDGE AND AGREE THAT ANY CAPRICOINS YOU HAVE ASSOCIATED WITH THAT Groestlcoin Mobile Wallet WALLET WILL BECOME INACCESSIBLE.</b>"
-msgstr "<b>Copayウォレットとその中にある秘密鍵の情報を紛失してしまい、尚且つバックアップが無い、若しくはそのバックアップを暗号化した際のパスワードが分からないなどの状況に陥ってしまえば、そのウォレットに含まれた全てのビットコインが永久送金不可能となってしまうことを認識し、同意するものとします。</b>"
+msgstr "<b>GroestlPayウォレットとその中にある秘密鍵の情報を紛失してしまい、尚且つバックアップが無い、若しくはそのバックアップを暗号化した際のパスワードが分からないなどの状況に陥ってしまえば、そのウォレットに含まれた全てのビットコインが永久送金不可能となってしまうことを認識し、同意するものとします。</b>"
 
 #: public/views/backup.html
-msgid "<b>OR</b> 1 wallet export file and the remaining quorum of wallet recovery phrases (e.g. in a 3-5 wallet: 1 wallet export file + 2 wallet recovery phrases of any of the other copayers)."
+msgid "<b>OR</b> 1 wallet export file and the remaining quorum of wallet recovery phrases (e.g. in a 3-5 wallet: 1 wallet export file + 2 wallet recovery phrases of any of the other GroestlPayers)."
 msgstr "<b>または</b> 従来ウォレットエクスポートファイル１つに加えて残りの必須人数の復元フレーズ (例： 3-of-5 ウォレットでは従来ウォレットバックアップ１つに加え、他の参加者２人分の復元フレーズさえあればウォレットは復元できます)"
 
 #: public/views/backup.html
-msgid "<b>OR</b> the wallet recovery phrase of <b>all</b> copayers in the wallet"
+msgid "<b>OR</b> the wallet recovery phrase of <b>all</b> GroestlPayers in the wallet"
 msgstr "<b>または</b> 参加者 <b>全員</b> のウォレット復元フレーズ"
 
 #: public/views/backup.html
-msgid "<b>OR</b> the wallet recovery phrases of <b>all</b> copayers in the wallet"
+msgid "<b>OR</b> the wallet recovery phrases of <b>all</b> GroestlPayers in the wallet"
 msgstr "<b>または</b> 参加者 <b>全員</b> のウォレット復元フレーズ"
 
 #: public/views/disclaimer.html
-msgid "A multisignature bitcoin wallet"
+msgid "A multisignature groestlcoin wallet"
 msgstr "マルチシグネチャビットコインウォレット"
 
 #: public/views/preferencesGlobal.html
-msgid "About Copay"
-msgstr "Copayについて"
+msgid "About GroestlPay"
+msgstr "GroestlPayについて"
 
 #: public/views/modals/txp-details.html
 #: src/js/services/confirmDialog.js
-#: src/js/controllers/copayers.js
+#: src/js/controllers/GroestlPayers.js
 #: src/js/controllers/preferencesDelete.js
 #: src/js/controllers/walletHome.js
 msgid "Accept"
@@ -151,8 +151,8 @@ msgstr "<i>{{index.walletName}}</i> の通称設定"
 
 #: public/views/preferencesLanguage.html
 #: public/views/translators.html
-msgid "All contributions to Copay's translation are welcome. Sign up at crowdin.com and join the Copay project at"
-msgstr "Copayの翻訳は簡単に投稿することができます。crowdin.comのアカウント作成の後、自由にご参加いただけるプロジェクトページはこちら"
+msgid "All contributions to GroestlPay's translation are welcome. Sign up at crowdin.com and join the GroestlPay project at"
+msgstr "GroestlPayの翻訳は簡単に投稿することができます。crowdin.comのアカウント作成の後、自由にご参加いただけるプロジェクトページはこちら"
 
 #: public/views/includes/terms.html
 msgid "All transaction requests are irreversible."
@@ -182,7 +182,7 @@ msgstr "換算済金額"
 msgid "Are you sure you want to delete the recovery phrase?"
 msgstr "復元フレーズを削除してもよろしいですか？"
 
-#: src/js/controllers/copayers.js
+#: src/js/controllers/GroestlPayers.js
 #: src/js/controllers/preferencesDelete.js
 msgid "Are you sure you want to delete this wallet?"
 msgstr "本当にこのウォレットを削除しても\n"
@@ -287,13 +287,13 @@ msgstr "手数料計算中..."
 #: public/views/modals/confirmation.html
 #: public/views/walletHome.html
 #: src/js/services/confirmDialog.js
-#: src/js/controllers/copayers.js
+#: src/js/controllers/GroestlPayers.js
 #: src/js/controllers/preferencesDelete.js
 #: src/js/controllers/walletHome.js
 msgid "Cancel"
 msgstr "キャンセル"
 
-#: public/views/copayers.html
+#: public/views/GroestlPayers.html
 msgid "Cancel and delete the wallet"
 msgstr "キャンセルし、ウォレットを削除"
 
@@ -354,7 +354,7 @@ msgstr "コミットのハッシュ値"
 
 #: public/views/includes/confirm-tx.html
 #: src/js/services/confirmDialog.js
-#: src/js/controllers/copayers.js
+#: src/js/controllers/GroestlPayers.js
 #: src/js/controllers/preferencesDelete.js
 #: src/js/controllers/walletHome.js
 msgid "Confirm"
@@ -389,22 +389,22 @@ msgid "Continue"
 msgstr "続ける"
 
 #: src/js/services/bwcError.js
-msgid "Copayer already in this wallet"
+msgid "GroestlPayer already in this wallet"
 msgstr "ウォレット参加者が既に存在しています。"
 
 #: src/js/services/bwcError.js
-msgid "Copayer already voted on this spend proposal"
+msgid "GroestlPayer already voted on this spend proposal"
 msgstr "ウォレット参加者が既に送金の提案の意思表明をしています。"
 
 #: src/js/services/bwcError.js
-msgid "Copayer data mismatch"
+msgid "GroestlPayer data mismatch"
 msgstr "ウォレット参加者のデータ不整合"
 
 #: public/views/preferencesInformation.html
-msgid "Copayers"
+msgid "GroestlPayers"
 msgstr "ウォレット参加者"
 
-#: src/js/controllers/copayers.js
+#: src/js/controllers/GroestlPayers.js
 #: src/js/controllers/export.js
 #: src/js/controllers/preferencesInformation.js
 #: src/js/controllers/walletHome.js
@@ -508,8 +508,8 @@ msgid "Create"
 msgstr "作成"
 
 #: public/views/create.html
-msgid "Create {{requiredCopayers}}-of-{{totalCopayers}} wallet"
-msgstr "{{requiredCopayers}}-of-{{totalCopayers}} ウォレットを作成"
+msgid "Create {{requiredGroestlPayers}}-of-{{totalGroestlPayers}} wallet"
+msgstr "{{requiredGroestlPayers}}-of-{{totalGroestlPayers}} ウォレットを作成"
 
 #: public/views/add.html
 #: public/views/create.html
@@ -548,7 +548,7 @@ msgstr "日付"
 msgid "Decrypting a paper wallet could take around 5 minutes on this device. please be patient and keep the app open."
 msgstr "暗号化されたペーパーウォレットはこの端末だと解読に5分以上掛かる場合がございます。アプリを閉じたり他のアプリに切り替えたりせずに、終了するまでそのままお待ち下さい。"
 
-#: public/views/copayers.html
+#: public/views/GroestlPayers.html
 msgid "Delete it and create a new one"
 msgstr "削除して新規作成"
 
@@ -893,9 +893,9 @@ msgstr "不正アドレス"
 msgid "Invalid derivation path"
 msgstr "無効な派生パス"
 
-#: src/js/controllers/copayers.js
-msgid "Invitation to share a Copay Wallet"
-msgstr "Copay共有ウォレットへの招待"
+#: src/js/controllers/GroestlPayers.js
+msgid "Invitation to share a GroestlPay Wallet"
+msgstr "GroestlPay共有ウォレットへの招待"
 
 #: public/views/translators.html
 msgid "Italian"
@@ -914,9 +914,9 @@ msgstr "山田太郎"
 msgid "Join"
 msgstr "参加"
 
-#: src/js/controllers/copayers.js
-msgid "Join my Copay wallet. Here is the invitation code: {{secret}} You can download Copay for your phone or desktop at https://copay.io"
-msgstr "Copayの共有ウォレット作りました： {{secret}} この招待コードを入力して、ウォレットに参加して下さい。アプリのダウンロードは https://copay.io にてどうぞ！"
+#: src/js/controllers/GroestlPayers.js
+msgid "Join my GroestlPay wallet. Here is the invitation code: {{secret}} You can download GroestlPay for your phone or desktop at https://GroestlPay.io"
+msgstr "GroestlPayの共有ウォレット作りました： {{secret}} この招待コードを入力して、ウォレットに参加して下さい。アプリのダウンロードは https://GroestlPay.io にてどうぞ！"
 
 #: public/views/add.html
 msgid "Join shared wallet"
@@ -943,8 +943,8 @@ msgid "Last Wallet Addresses"
 msgstr "最新ウォレットアドレス"
 
 #: public/views/backup.html
-msgid "Learn more about Copay backups"
-msgstr "Copay のバックアップの種類について"
+msgid "Learn more about GroestlPay backups"
+msgstr "GroestlPay のバックアップの種類について"
 
 #: public/views/preferencesFee.html
 msgid "Loading..."
@@ -974,7 +974,7 @@ msgstr "結果:"
 msgid "me"
 msgstr "自分"
 
-#: public/views/includes/copayers.html
+#: public/views/includes/GroestlPayers.html
 #: public/views/modals/tx-details.html
 #: public/views/modals/txp-details.html
 #: public/views/preferencesInformation.html
@@ -1193,11 +1193,11 @@ msgid "Payment Proposal Rejected"
 msgstr "送金の提案が却下されました"
 
 #: src/js/services/notificationsService.js
-msgid "Payment Proposal Rejected by Copayer"
+msgid "Payment Proposal Rejected by GroestlPayer"
 msgstr "送金の提案が他の参加者によって却下されました。"
 
 #: src/js/services/notificationsService.js
-msgid "Payment Proposal Signed by Copayer"
+msgid "Payment Proposal Signed by GroestlPayer"
 msgstr "送金の提案が他の参加者によって署名されました。"
 
 #: public/views/walletHome.html
@@ -1263,8 +1263,8 @@ msgid "Please tap the words in order to confirm your backup phrase is correctly 
 msgstr "正しい順番に単語をタップして、ちゃんと書き留めてあることをご確認下さい。"
 
 #: src/js/services/bwcError.js
-msgid "Please upgrade Copay to perform this action"
-msgstr "この操作を実行するにはCopayを最新バージョンに更新してください"
+msgid "Please upgrade GroestlPay to perform this action"
+msgstr "この操作を実行するにはGroestlPayを最新バージョンに更新してください"
 
 #: public/views/uri.html
 msgid "Please wait to be redirected..."
@@ -1303,8 +1303,8 @@ msgid "Private key is encrypted, cannot sign"
 msgstr "秘密鍵が暗号化されており署名できません。"
 
 #: public/views/preferencesGlobal.html
-msgid "Push notifications for Copay are currently disabled. Enable them in the Settings app."
-msgstr "Copayのプッシュ通知は現在無効です。アプリ設定で有効にします。"
+msgid "Push notifications for GroestlPay are currently disabled. Enable them in the Settings app."
+msgstr "GroestlPayのプッシュ通知は現在無効です。アプリ設定で有効にします。"
 
 #: public/views/export.html
 #: public/views/modals/customized-amount.html
@@ -1469,7 +1469,7 @@ msgid "Send addresses by email"
 msgstr "ビットコインアドレスをメールにて共有"
 
 #: public/views/includes/confirm-tx.html
-msgid "Send bitcoin"
+msgid "Send groestlcoin"
 msgstr "ビットコインを送金"
 
 #: public/views/export.html
@@ -1533,12 +1533,12 @@ msgstr "設定"
 msgid "Share address"
 msgstr "アドレスを共有"
 
-#: public/views/copayers.html
+#: public/views/GroestlPayers.html
 msgid "Share invitation"
 msgstr "招待コードを共有"
 
-#: public/views/copayers.html
-msgid "Share this invitation with your copayers"
+#: public/views/GroestlPayers.html
+msgid "Share this invitation with your GroestlPayers"
 msgstr "ウォレット参加者に\n"
 "この招待コードを\n"
 "送って下さい。"
@@ -1600,7 +1600,7 @@ msgstr "パスワードが必要"
 msgid "Spending Passwords do not match"
 msgstr "パスワードが一致しません"
 
-#: src/js/controllers/copayers.js
+#: src/js/controllers/GroestlPayers.js
 #: src/js/controllers/export.js
 #: src/js/controllers/import.js
 #: src/js/controllers/preferencesDelete.js
@@ -1670,7 +1670,7 @@ msgid "The request could not be understood by the server"
 msgstr "サーバーが要求を処理できませんでした。"
 
 #: public/views/includes/terms.html
-msgid "The software does not constitute an account where other third parties serve as financial intermediaries or custodians of your bitcoin."
+msgid "The software does not constitute an account where other third parties serve as financial intermediaries or custodians of your groestlcoin."
 msgstr "若しくはその他の第三者がアクセス権限を管理する、若しくはデジタル資産の代理保管を行うサービスではありません。"
 
 #: public/views/includes/terms.html
@@ -1681,7 +1681,7 @@ msgstr "当ソフトウェアは無料のオープンソースプロジェクト
 msgid "The spend proposal is not pending"
 msgstr "送金の提案が協議中ではありません。"
 
-#: src/js/controllers/copayers.js
+#: src/js/controllers/GroestlPayers.js
 #: src/js/controllers/preferencesDelete.js
 msgid "The wallet \"{{walletName}}\" was deleted"
 msgstr "ウォレット \"{{walletName}}\" が削除されました"
@@ -1699,8 +1699,8 @@ msgid "There are no wallets to make this payment"
 msgstr "送金可能なウォレットがありません"
 
 #: src/js/controllers/index.js
-msgid "There is a new version of Copay. Please update"
-msgstr "Copay の新しいバージョンがあります。更新してください。"
+msgid "There is a new version of GroestlPay. Please update"
+msgstr "GroestlPay の新しいバージョンがあります。更新してください。"
 
 #: src/js/controllers/import.js
 msgid "There is an error in the form"
@@ -1746,7 +1746,7 @@ msgid "Total Locked Balance"
 msgstr "ロック中の残高"
 
 #: public/views/create.html
-msgid "Total number of copayers"
+msgid "Total number of GroestlPayers"
 msgstr "参加人数を選択して下さい。"
 
 #: src/js/services/fingerprintService.js
@@ -1823,8 +1823,8 @@ msgstr "バージョン"
 msgid "View"
 msgstr "表示"
 
-#: public/views/copayers.html
-msgid "Waiting for copayers"
+#: public/views/GroestlPayers.html
+msgid "Waiting for GroestlPayers"
 msgstr "ウォレット参加者を待っています"
 
 #: src/js/services/onGoingProcess.js
@@ -1835,7 +1835,7 @@ msgstr "Ledger を待っています..."
 msgid "Waiting for Trezor..."
 msgstr "Trezor を待っています..."
 
-#: public/views/copayers.html
+#: public/views/GroestlPayers.html
 msgid "Waiting..."
 msgstr "少々お待ち下さい…"
 
@@ -1844,8 +1844,8 @@ msgid "Wallet already exists"
 msgstr "既存のウォレットです"
 
 #: src/js/services/profileService.js
-msgid "Wallet already in Copay"
-msgstr "Copay内の既存のウォレットです"
+msgid "Wallet already in GroestlPay"
+msgstr "GroestlPay内の既存のウォレットです"
 
 #: public/views/preferencesInformation.html
 msgid "Wallet Configuration (m-n)"
@@ -1859,7 +1859,7 @@ msgstr "ウォレットのエクスポート"
 msgid "Wallet Id"
 msgstr "ウォレットID"
 
-#: public/views/copayers.html
+#: public/views/GroestlPayers.html
 msgid "Wallet incomplete and broken"
 msgstr "ウォレットが未完成で破損しています"
 
@@ -2045,7 +2045,7 @@ msgstr "ウォレットが正常にインポートされました。"
 
 #: public/views/includes/password.html
 msgid "Your wallet key will be encrypted. The Spending Password cannot be recovered. Be sure to write it down"
-msgstr "ウォレットの鍵が暗号化されます。Copayでは送金時のパスワードをリセットしてくれる機能がありませんので、パスワードを忘れないよう、控えておいて下さい。"
+msgstr "ウォレットの鍵が暗号化されます。GroestlPayでは送金時のパスワードをリセットしてくれる機能がありませんので、パスワードを忘れないよう、控えておいて下さい。"
 
 #: public/views/backup.html
 msgid "Your wallet recovery phrase and access to the server that coordinated the initial wallet creation. You still need {{index.m}} keys to spend."
