@@ -35,7 +35,7 @@ msgstr "{{fee}} verranno detratti come commissione del network"
 msgid "{{feeRateStr}} of the transaction"
 msgstr "{{feeRateStr}} della transazione"
 
-#: public/views/GroestlPayers.html
+#: public/views/copayers.html
 #: public/views/includes/walletInfo.html
 msgid "{{index.m}}-of-{{index.n}}"
 msgstr "{{index.m}}-di-{{index.n}}"
@@ -53,24 +53,24 @@ msgid "{{item.m}}-of-{{item.n}}"
 msgstr "{{item.m}}-di-{{item.n}}"
 
 #: public/views/modals/txp-details.html
-msgid "* A payment proposal can be deleted if 1) you are the creator, and no other GroestlPayer has signed, or 2) 24 hours have passed since the proposal was created."
-msgstr "* Una proposta di pagamento può essere eliminata se 1) Tu sei il creatore e nessun altro GroestlPayer ha firmato, oppure 2) Sono passate 24 ore da quando la proposta e' stata creata."
+msgid "* A payment proposal can be deleted if 1) you are the creator, and no other copayer has signed, or 2) 24 hours have passed since the proposal was created."
+msgstr "* Una proposta di pagamento può essere eliminata se 1) Tu sei il creatore e nessun altro copayer ha firmato, oppure 2) Sono passate 24 ore da quando la proposta e' stata creata."
 
 #: public/views/includes/terms.html
 msgid "<b>IF YOU LOSE ACCESS TO YOUR Groestlcoin Mobile Wallet WALLET OR YOUR ENCRYPTED PRIVATE KEYS AND YOU HAVE NOT SEPARATELY STORED A BACKUP OF YOUR WALLET AND CORRESPONDING PASSWORD, YOU ACKNOWLEDGE AND AGREE THAT ANY CAPRICOINS YOU HAVE ASSOCIATED WITH THAT Groestlcoin Mobile Wallet WALLET WILL BECOME INACCESSIBLE.</b>"
 msgstr "<b>Se perdi l'accesso al tuo portafoglio Groestlcoin Mobile Wallet o tuo crittografato chiavi PRIVATE e non hai archiviato separatamente una copia di BACKUP del vostro portafoglio e la corrispondente PASSWORD, tu riconosci e accetti che qualsiasi CAPRICOIN associato con quel portafoglio Groestlcoin Mobile Wallet diventerà inaccessibile.</b>"
 
 #: public/views/backup.html
-msgid "<b>OR</b> 1 wallet export file and the remaining quorum of wallet recovery phrases (e.g. in a 3-5 wallet: 1 wallet export file + 2 wallet recovery phrases of any of the other GroestlPayers)."
-msgstr "<b>O</b> 1 file di portafoglio esportato e il restante quorum di frasi di recupero portafoglio (ad esempio in un 3-5 portafogli: 1 file di portafoglio esportato + 2 frasi di recupero portafoglio di qualsiasi degli altri GroestlPayers)."
+msgid "<b>OR</b> 1 wallet export file and the remaining quorum of wallet recovery phrases (e.g. in a 3-5 wallet: 1 wallet export file + 2 wallet recovery phrases of any of the other copayers)."
+msgstr "<b>O</b> 1 file di portafoglio esportato e il restante quorum di frasi di recupero portafoglio (ad esempio in un 3-5 portafogli: 1 file di portafoglio esportato + 2 frasi di recupero portafoglio di qualsiasi degli altri copayers)."
 
 #: public/views/backup.html
-msgid "<b>OR</b> the wallet recovery phrase of <b>all</b> GroestlPayers in the wallet"
-msgstr "<b>O</b> la frase di recupero di portafoglio di <b>tutti</b> i GroestlPayers nel portafoglio"
+msgid "<b>OR</b> the wallet recovery phrase of <b>all</b> copayers in the wallet"
+msgstr "<b>O</b> la frase di recupero di portafoglio di <b>tutti</b> i copayers nel portafoglio"
 
 #: public/views/backup.html
-msgid "<b>OR</b> the wallet recovery phrases of <b>all</b> GroestlPayers in the wallet"
-msgstr "<b>O</b> le frasi di recupero di portafoglio di <b>tutti</b> i GroestlPayers nel portafoglio"
+msgid "<b>OR</b> the wallet recovery phrases of <b>all</b> copayers in the wallet"
+msgstr "<b>O</b> le frasi di recupero di portafoglio di <b>tutti</b> i copayers nel portafoglio"
 
 #: public/views/disclaimer.html
 msgid "A multisignature groestlcoin wallet"
@@ -82,7 +82,7 @@ msgstr "Circa Groestlcoin Mobile Wallet"
 
 #: public/views/modals/txp-details.html
 #: src/js/services/confirmDialog.js
-#: src/js/controllers/GroestlPayers.js
+#: src/js/controllers/copayers.js
 #: src/js/controllers/preferencesDelete.js
 #: src/js/controllers/walletHome.js
 msgid "Accept"
@@ -182,7 +182,7 @@ msgstr "Importo in"
 msgid "Are you sure you want to delete the recovery phrase?"
 msgstr "Sei sicuro di voler cancellare la frase di recupero?"
 
-#: src/js/controllers/GroestlPayers.js
+#: src/js/controllers/copayers.js
 #: src/js/controllers/preferencesDelete.js
 msgid "Are you sure you want to delete this wallet?"
 msgstr "Sei sicuro di voler eliminare questo portafoglio?"
@@ -286,13 +286,13 @@ msgstr "Calcolo commissione"
 #: public/views/modals/confirmation.html
 #: public/views/walletHome.html
 #: src/js/services/confirmDialog.js
-#: src/js/controllers/GroestlPayers.js
+#: src/js/controllers/copayers.js
 #: src/js/controllers/preferencesDelete.js
 #: src/js/controllers/walletHome.js
 msgid "Cancel"
 msgstr "Annulla"
 
-#: public/views/GroestlPayers.html
+#: public/views/copayers.html
 msgid "Cancel and delete the wallet"
 msgstr "Cancella e rimuovi il portafoglio"
 
@@ -353,7 +353,7 @@ msgstr "Commit hash"
 
 #: public/views/includes/confirm-tx.html
 #: src/js/services/confirmDialog.js
-#: src/js/controllers/GroestlPayers.js
+#: src/js/controllers/copayers.js
 #: src/js/controllers/preferencesDelete.js
 #: src/js/controllers/walletHome.js
 msgid "Confirm"
@@ -388,22 +388,22 @@ msgid "Continue"
 msgstr "Continua"
 
 #: src/js/services/bwcError.js
-msgid "GroestlPayer already in this wallet"
+msgid "copayer already in this wallet"
 msgstr "Groestlcoin Mobile Walleter già in questo portafoglio"
 
 #: src/js/services/bwcError.js
-msgid "GroestlPayer already voted on this spend proposal"
+msgid "copayer already voted on this spend proposal"
 msgstr "Groestlcoin Mobile Walleter già votato su questa proposta"
 
 #: src/js/services/bwcError.js
-msgid "GroestlPayer data mismatch"
-msgstr "Mancata corrispondenza dei dati del GroestlPayer"
+msgid "copayer data mismatch"
+msgstr "Mancata corrispondenza dei dati del copayer"
 
 #: public/views/preferencesInformation.html
-msgid "GroestlPayers"
+msgid "copayers"
 msgstr "Groestlcoin Mobile Walleters"
 
-#: src/js/controllers/GroestlPayers.js
+#: src/js/controllers/copayers.js
 #: src/js/controllers/export.js
 #: src/js/controllers/preferencesInformation.js
 #: src/js/controllers/walletHome.js
@@ -507,8 +507,8 @@ msgid "Create"
 msgstr "Crea"
 
 #: public/views/create.html
-msgid "Create {{requiredGroestlPayers}}-of-{{totalGroestlPayers}} wallet"
-msgstr "Crea portafoglio {{requiredGroestlPayers}}-di-{{totalGroestlPayers}}"
+msgid "Create {{requiredcopayers}}-of-{{totalcopayers}} wallet"
+msgstr "Crea portafoglio {{requiredcopayers}}-di-{{totalcopayers}}"
 
 #: public/views/add.html
 #: public/views/create.html
@@ -547,7 +547,7 @@ msgstr "Data"
 msgid "Decrypting a paper wallet could take around 5 minutes on this device. please be patient and keep the app open."
 msgstr "Decodificare un portafoglio potrebbe impiegare circa 5 minuti su questo dispositivo. Attendere e tenere l'applicazione aperta."
 
-#: public/views/GroestlPayers.html
+#: public/views/copayers.html
 msgid "Delete it and create a new one"
 msgstr "Eliminalo e creane uno nuovo"
 
@@ -892,7 +892,7 @@ msgstr "Indirizzo non valido"
 msgid "Invalid derivation path"
 msgstr "Percorso di derivazione non valido"
 
-#: src/js/controllers/GroestlPayers.js
+#: src/js/controllers/copayers.js
 msgid "Invitation to share a GroestlPay Wallet"
 msgstr "Invito a condividere un portafoglio Groestlcoin Mobile Wallet"
 
@@ -913,7 +913,7 @@ msgstr "John"
 msgid "Join"
 msgstr "Unisciti"
 
-#: src/js/controllers/GroestlPayers.js
+#: src/js/controllers/copayers.js
 msgid "Join my GroestlPay wallet. Here is the invitation code: {{secret}} You can download GroestlPay for your phone or desktop at https://GroestlPay.io"
 msgstr "Unisciti al mio portafoglio Groestlcoin Mobile Wallet. Ecco il codice di invito: {{secret}} Puoi scaricare Groestlcoin Mobile Wallet dal tuo telefono o computer da https://GroestlPay.io"
 
@@ -973,7 +973,7 @@ msgstr "Corrispondenze:"
 msgid "me"
 msgstr "io"
 
-#: public/views/includes/GroestlPayers.html
+#: public/views/includes/copayers.html
 #: public/views/modals/tx-details.html
 #: public/views/modals/txp-details.html
 #: public/views/preferencesInformation.html
@@ -1192,11 +1192,11 @@ msgid "Payment Proposal Rejected"
 msgstr "Proposta di Pagamento Rifiutata"
 
 #: src/js/services/notificationsService.js
-msgid "Payment Proposal Rejected by GroestlPayer"
+msgid "Payment Proposal Rejected by copayer"
 msgstr "Proposta di Pagamento Rifiutata dai Groestlcoin Mobile Walleters"
 
 #: src/js/services/notificationsService.js
-msgid "Payment Proposal Signed by GroestlPayer"
+msgid "Payment Proposal Signed by copayer"
 msgstr "Proposta di Pagamento Firmata dai Groestlcoin Mobile Walleters"
 
 #: public/views/walletHome.html
@@ -1531,13 +1531,13 @@ msgstr "Impostazioni"
 msgid "Share address"
 msgstr "Condividi l'indirizzo"
 
-#: public/views/GroestlPayers.html
+#: public/views/copayers.html
 msgid "Share invitation"
 msgstr "Condividi l'invito"
 
-#: public/views/GroestlPayers.html
-msgid "Share this invitation with your GroestlPayers"
-msgstr "Condividi questo invito con i tuoi GroestlPayers"
+#: public/views/copayers.html
+msgid "Share this invitation with your copayers"
+msgstr "Condividi questo invito con i tuoi copayers"
 
 #: public/views/walletHome.html
 msgid "Share this wallet address to receive payments"
@@ -1596,7 +1596,7 @@ msgstr "Necessaria password di spesa"
 msgid "Spending Passwords do not match"
 msgstr "Le password di spesa non combaciano"
 
-#: src/js/controllers/GroestlPayers.js
+#: src/js/controllers/copayers.js
 #: src/js/controllers/export.js
 #: src/js/controllers/import.js
 #: src/js/controllers/preferencesDelete.js
@@ -1677,7 +1677,7 @@ msgstr "Il software che si sta per utilizzare è un portafoglio libero, open sou
 msgid "The spend proposal is not pending"
 msgstr "La proposta di pagamento non è in sospeso"
 
-#: src/js/controllers/GroestlPayers.js
+#: src/js/controllers/copayers.js
 #: src/js/controllers/preferencesDelete.js
 msgid "The wallet \"{{walletName}}\" was deleted"
 msgstr "Il portafoglio {{walletName}} è stato eliminato"
@@ -1742,8 +1742,8 @@ msgid "Total Locked Balance"
 msgstr "Totale Importo Bloccato"
 
 #: public/views/create.html
-msgid "Total number of GroestlPayers"
-msgstr "Numero totale di GroestlPayer"
+msgid "Total number of copayers"
+msgstr "Numero totale di copayer"
 
 #: src/js/services/fingerprintService.js
 msgid "Touch ID Failed"
@@ -1819,9 +1819,9 @@ msgstr "Versione"
 msgid "View"
 msgstr "Visualizza"
 
-#: public/views/GroestlPayers.html
-msgid "Waiting for GroestlPayers"
-msgstr "In attesa di GroestlPayers"
+#: public/views/copayers.html
+msgid "Waiting for copayers"
+msgstr "In attesa di copayers"
 
 #: src/js/services/onGoingProcess.js
 msgid "Waiting for Ledger..."
@@ -1831,7 +1831,7 @@ msgstr "In attesa del Ledger..."
 msgid "Waiting for Trezor..."
 msgstr "In attesa del Trezor..."
 
-#: public/views/GroestlPayers.html
+#: public/views/copayers.html
 msgid "Waiting..."
 msgstr "In attesa..."
 
@@ -1855,7 +1855,7 @@ msgstr "Esportazione portafoglio"
 msgid "Wallet Id"
 msgstr "Id portafoglio"
 
-#: public/views/GroestlPayers.html
+#: public/views/copayers.html
 msgid "Wallet incomplete and broken"
 msgstr "Portafoglio incompleto e danneggiato"
 

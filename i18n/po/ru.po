@@ -35,7 +35,7 @@ msgstr "{{fee}} будет использовано для оплаты коми
 msgid "{{feeRateStr}} of the transaction"
 msgstr "{{feeRateStr}} транзакции"
 
-#: public/views/GroestlPayers.html
+#: public/views/copayers.html
 #: public/views/includes/walletInfo.html
 msgid "{{index.m}}-of-{{index.n}}"
 msgstr "{{index.m}}-из-{{index.n}}"
@@ -53,7 +53,7 @@ msgid "{{item.m}}-of-{{item.n}}"
 msgstr "{{item.m}}-из-{{item.n}}"
 
 #: public/views/modals/txp-details.html
-msgid "* A payment proposal can be deleted if 1) you are the creator, and no other GroestlPayer has signed, or 2) 24 hours have passed since the proposal was created."
+msgid "* A payment proposal can be deleted if 1) you are the creator, and no other copayer has signed, or 2) 24 hours have passed since the proposal was created."
 msgstr "* Предложенный платёж может быть удалён если 1) вы создали этот платёж и никто его еще не подписал, или если 2) прошло более 24 часов с момента его создания."
 
 #: public/views/includes/terms.html
@@ -61,15 +61,15 @@ msgid "<b>IF YOU LOSE ACCESS TO YOUR Groestlcoin Mobile Wallet WALLET OR YOUR EN
 msgstr "<b>ЕСЛИ ВЫ ПОТЕРЯЕТЕ ДОСТУП К ВАШЕМУ КОШЕЛЬКУ Groestlcoin Mobile Wallet ИЛИ ВАШИМ ЗАШИФРОВАННЫМ ЗАКРЫТЫМ КЛЮЧАМ, ПРИ ТОМ ЧТО У ВАС НЕТ ОТДЕЛЬНОЙ РЕЗЕРВНОЙ КОПИИ ВАШЕГО КОШЕЛЬКА И СООТВЕТСТВУЮЩЕМУ ЕМУ ПАРОЛЯ, ВЫ ПРИЗНАЁТЕ И СОГЛАШАЕТЕСЬ С ТЕМ ЧТО ВСЕ БИТКОЙНЫ АССОЦИИРОВАННЫЕ С ЭТИМ КОШЕЛЬКОМ СТАНУТ НЕДОСТУПНЫ.</b>"
 
 #: public/views/backup.html
-msgid "<b>OR</b> 1 wallet export file and the remaining quorum of wallet recovery phrases (e.g. in a 3-5 wallet: 1 wallet export file + 2 wallet recovery phrases of any of the other GroestlPayers)."
+msgid "<b>OR</b> 1 wallet export file and the remaining quorum of wallet recovery phrases (e.g. in a 3-5 wallet: 1 wallet export file + 2 wallet recovery phrases of any of the other copayers)."
 msgstr "<b>ИЛИ</b> один экспортный файл и кворум остальных ключевых словосочетаний (например в кошельке 3-5: экспортный файл и два ключевых словосочетания двух любых совладельцев)."
 
 #: public/views/backup.html
-msgid "<b>OR</b> the wallet recovery phrase of <b>all</b> GroestlPayers in the wallet"
+msgid "<b>OR</b> the wallet recovery phrase of <b>all</b> copayers in the wallet"
 msgstr "<b>ИЛИ</b> ключевое словосочетание <b>всех</b> совладельцев кошелька"
 
 #: public/views/backup.html
-msgid "<b>OR</b> the wallet recovery phrases of <b>all</b> GroestlPayers in the wallet"
+msgid "<b>OR</b> the wallet recovery phrases of <b>all</b> copayers in the wallet"
 msgstr "<b>ИЛИ</b> ключевые словосочетания <b>всех</b> совладельцев кошелька"
 
 #: public/views/disclaimer.html
@@ -82,7 +82,7 @@ msgstr "О GroestlPay"
 
 #: public/views/modals/txp-details.html
 #: src/js/services/confirmDialog.js
-#: src/js/controllers/GroestlPayers.js
+#: src/js/controllers/copayers.js
 #: src/js/controllers/preferencesDelete.js
 #: src/js/controllers/walletHome.js
 msgid "Accept"
@@ -182,7 +182,7 @@ msgstr "Сумма в"
 msgid "Are you sure you want to delete the recovery phrase?"
 msgstr "Вы уверены, что хотите удалить ключевое словосочетание?"
 
-#: src/js/controllers/GroestlPayers.js
+#: src/js/controllers/copayers.js
 #: src/js/controllers/preferencesDelete.js
 msgid "Are you sure you want to delete this wallet?"
 msgstr "Вы точно хотите удалить этот кошелек?"
@@ -286,13 +286,13 @@ msgstr "Вычисление комиссии"
 #: public/views/modals/confirmation.html
 #: public/views/walletHome.html
 #: src/js/services/confirmDialog.js
-#: src/js/controllers/GroestlPayers.js
+#: src/js/controllers/copayers.js
 #: src/js/controllers/preferencesDelete.js
 #: src/js/controllers/walletHome.js
 msgid "Cancel"
 msgstr "Отмена"
 
-#: public/views/GroestlPayers.html
+#: public/views/copayers.html
 msgid "Cancel and delete the wallet"
 msgstr "Отменить и удалить кошелёк"
 
@@ -353,7 +353,7 @@ msgstr "Хэш версии"
 
 #: public/views/includes/confirm-tx.html
 #: src/js/services/confirmDialog.js
-#: src/js/controllers/GroestlPayers.js
+#: src/js/controllers/copayers.js
 #: src/js/controllers/preferencesDelete.js
 #: src/js/controllers/walletHome.js
 msgid "Confirm"
@@ -388,22 +388,22 @@ msgid "Continue"
 msgstr "Продолжить"
 
 #: src/js/services/bwcError.js
-msgid "GroestlPayer already in this wallet"
+msgid "copayer already in this wallet"
 msgstr "Совладелец кошелька уже присоединился"
 
 #: src/js/services/bwcError.js
-msgid "GroestlPayer already voted on this spend proposal"
+msgid "copayer already voted on this spend proposal"
 msgstr "Совладелец кошелька уже проголосовал по этому предложению платежа"
 
 #: src/js/services/bwcError.js
-msgid "GroestlPayer data mismatch"
+msgid "copayer data mismatch"
 msgstr "Несоответствие данных совладельца кошелька"
 
 #: public/views/preferencesInformation.html
-msgid "GroestlPayers"
+msgid "copayers"
 msgstr "Совладельцы кошелька"
 
-#: src/js/controllers/GroestlPayers.js
+#: src/js/controllers/copayers.js
 #: src/js/controllers/export.js
 #: src/js/controllers/preferencesInformation.js
 #: src/js/controllers/walletHome.js
@@ -507,8 +507,8 @@ msgid "Create"
 msgstr "Создать"
 
 #: public/views/create.html
-msgid "Create {{requiredGroestlPayers}}-of-{{totalGroestlPayers}} wallet"
-msgstr "Создать кошелёк {{requiredGroestlPayers}}-из-{{totalGroestlPayers}}"
+msgid "Create {{requiredcopayers}}-of-{{totalcopayers}} wallet"
+msgstr "Создать кошелёк {{requiredcopayers}}-из-{{totalcopayers}}"
 
 #: public/views/add.html
 #: public/views/create.html
@@ -547,7 +547,7 @@ msgstr "Дата"
 msgid "Decrypting a paper wallet could take around 5 minutes on this device. please be patient and keep the app open."
 msgstr "Расшифровка бумажного кошелька может занять до пяти минут на этом устройстве. Пожалуйста, будьте терпеливы и держите приложение открытым."
 
-#: public/views/GroestlPayers.html
+#: public/views/copayers.html
 msgid "Delete it and create a new one"
 msgstr "Удалите и создайте заново"
 
@@ -892,7 +892,7 @@ msgstr "Неверный адрес"
 msgid "Invalid derivation path"
 msgstr "Недействительный путь деривации"
 
-#: src/js/controllers/GroestlPayers.js
+#: src/js/controllers/copayers.js
 msgid "Invitation to share a GroestlPay Wallet"
 msgstr "Приглашение присоединиться к кошельку GroestlPay"
 
@@ -913,7 +913,7 @@ msgstr "John"
 msgid "Join"
 msgstr "Присоединиться"
 
-#: src/js/controllers/GroestlPayers.js
+#: src/js/controllers/copayers.js
 msgid "Join my GroestlPay wallet. Here is the invitation code: {{secret}} You can download GroestlPay for your phone or desktop at https://GroestlPay.io"
 msgstr "Присоединяйся к моему кошельку GroestlPay. Код приглашения: {{secret}} Ты можешь загрузить GroestlPay для своего телефона или настольного компьютера на сайте https://GroestlPay.io"
 
@@ -973,7 +973,7 @@ msgstr "Совпадения:"
 msgid "me"
 msgstr "мне"
 
-#: public/views/includes/GroestlPayers.html
+#: public/views/includes/copayers.html
 #: public/views/modals/tx-details.html
 #: public/views/modals/txp-details.html
 #: public/views/preferencesInformation.html
@@ -1192,11 +1192,11 @@ msgid "Payment Proposal Rejected"
 msgstr "Предложение платежа отклонено"
 
 #: src/js/services/notificationsService.js
-msgid "Payment Proposal Rejected by GroestlPayer"
+msgid "Payment Proposal Rejected by copayer"
 msgstr "Предложение платежа отклонено совладельцем кошелька"
 
 #: src/js/services/notificationsService.js
-msgid "Payment Proposal Signed by GroestlPayer"
+msgid "Payment Proposal Signed by copayer"
 msgstr "Предложение платежа подписано совладельцем кошелька"
 
 #: public/views/walletHome.html
@@ -1531,12 +1531,12 @@ msgstr "Параметры"
 msgid "Share address"
 msgstr "Отправить адрес"
 
-#: public/views/GroestlPayers.html
+#: public/views/copayers.html
 msgid "Share invitation"
 msgstr "Отправить приглашение"
 
-#: public/views/GroestlPayers.html
-msgid "Share this invitation with your GroestlPayers"
+#: public/views/copayers.html
+msgid "Share this invitation with your copayers"
 msgstr "Отправьте приглашение совладельцам кошелька"
 
 #: public/views/walletHome.html
@@ -1596,7 +1596,7 @@ msgstr "Необходим платёжный пароль"
 msgid "Spending Passwords do not match"
 msgstr "Платёжные пароли не совпадают"
 
-#: src/js/controllers/GroestlPayers.js
+#: src/js/controllers/copayers.js
 #: src/js/controllers/export.js
 #: src/js/controllers/import.js
 #: src/js/controllers/preferencesDelete.js
@@ -1677,7 +1677,7 @@ msgstr "Программное обеспечение, которое вы на�
 msgid "The spend proposal is not pending"
 msgstr "Предложение платежа не в ожидании"
 
-#: src/js/controllers/GroestlPayers.js
+#: src/js/controllers/copayers.js
 #: src/js/controllers/preferencesDelete.js
 msgid "The wallet \"{{walletName}}\" was deleted"
 msgstr "Кошелёк «{{walletName}}» был удален"
@@ -1742,7 +1742,7 @@ msgid "Total Locked Balance"
 msgstr "Всего заблокировано средств"
 
 #: public/views/create.html
-msgid "Total number of GroestlPayers"
+msgid "Total number of copayers"
 msgstr "Количество совладельцев"
 
 #: src/js/services/fingerprintService.js
@@ -1819,8 +1819,8 @@ msgstr "Версия"
 msgid "View"
 msgstr "Просмотреть"
 
-#: public/views/GroestlPayers.html
-msgid "Waiting for GroestlPayers"
+#: public/views/copayers.html
+msgid "Waiting for copayers"
 msgstr "Ожидание совладельцев кошелька"
 
 #: src/js/services/onGoingProcess.js
@@ -1831,7 +1831,7 @@ msgstr "Ожидание Ledger..."
 msgid "Waiting for Trezor..."
 msgstr "Ожидание Trezor..."
 
-#: public/views/GroestlPayers.html
+#: public/views/copayers.html
 msgid "Waiting..."
 msgstr "Ожидание..."
 
@@ -1855,7 +1855,7 @@ msgstr "Экспорт кошелька"
 msgid "Wallet Id"
 msgstr "Идентификатор кошелька"
 
-#: public/views/GroestlPayers.html
+#: public/views/copayers.html
 msgid "Wallet incomplete and broken"
 msgstr "Сбой: кошелёк не работает"
 

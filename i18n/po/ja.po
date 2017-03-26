@@ -35,7 +35,7 @@ msgstr "{{fee}} のビットコインネットワーク手数料が差し引か�
 msgid "{{feeRateStr}} of the transaction"
 msgstr "{{feeRateStr}} のレート"
 
-#: public/views/GroestlPayers.html
+#: public/views/copayers.html
 #: public/views/includes/walletInfo.html
 msgid "{{index.m}}-of-{{index.n}}"
 msgstr "{{index.m}}-of-{{index.n}}"
@@ -53,7 +53,7 @@ msgid "{{item.m}}-of-{{item.n}}"
 msgstr "{{item.m}}-of-{{item.n}}"
 
 #: public/views/modals/txp-details.html
-msgid "* A payment proposal can be deleted if 1) you are the creator, and no other GroestlPayer has signed, or 2) 24 hours have passed since the proposal was created."
+msgid "* A payment proposal can be deleted if 1) you are the creator, and no other copayer has signed, or 2) 24 hours have passed since the proposal was created."
 msgstr "* 送金の提案の取下げは①他のウォレット参加者に署名されていなかった場合、提案者に提案を取り下げることができます。②提案の起案から24時間が経っても解決しなかった場合、全員に取り下げることができます。"
 
 #: public/views/includes/terms.html
@@ -61,15 +61,15 @@ msgid "<b>IF YOU LOSE ACCESS TO YOUR Groestlcoin Mobile Wallet WALLET OR YOUR EN
 msgstr "<b>GroestlPayウォレットとその中にある秘密鍵の情報を紛失してしまい、尚且つバックアップが無い、若しくはそのバックアップを暗号化した際のパスワードが分からないなどの状況に陥ってしまえば、そのウォレットに含まれた全てのビットコインが永久送金不可能となってしまうことを認識し、同意するものとします。</b>"
 
 #: public/views/backup.html
-msgid "<b>OR</b> 1 wallet export file and the remaining quorum of wallet recovery phrases (e.g. in a 3-5 wallet: 1 wallet export file + 2 wallet recovery phrases of any of the other GroestlPayers)."
+msgid "<b>OR</b> 1 wallet export file and the remaining quorum of wallet recovery phrases (e.g. in a 3-5 wallet: 1 wallet export file + 2 wallet recovery phrases of any of the other copayers)."
 msgstr "<b>または</b> 従来ウォレットエクスポートファイル１つに加えて残りの必須人数の復元フレーズ (例： 3-of-5 ウォレットでは従来ウォレットバックアップ１つに加え、他の参加者２人分の復元フレーズさえあればウォレットは復元できます)"
 
 #: public/views/backup.html
-msgid "<b>OR</b> the wallet recovery phrase of <b>all</b> GroestlPayers in the wallet"
+msgid "<b>OR</b> the wallet recovery phrase of <b>all</b> copayers in the wallet"
 msgstr "<b>または</b> 参加者 <b>全員</b> のウォレット復元フレーズ"
 
 #: public/views/backup.html
-msgid "<b>OR</b> the wallet recovery phrases of <b>all</b> GroestlPayers in the wallet"
+msgid "<b>OR</b> the wallet recovery phrases of <b>all</b> copayers in the wallet"
 msgstr "<b>または</b> 参加者 <b>全員</b> のウォレット復元フレーズ"
 
 #: public/views/disclaimer.html
@@ -82,7 +82,7 @@ msgstr "GroestlPayについて"
 
 #: public/views/modals/txp-details.html
 #: src/js/services/confirmDialog.js
-#: src/js/controllers/GroestlPayers.js
+#: src/js/controllers/copayers.js
 #: src/js/controllers/preferencesDelete.js
 #: src/js/controllers/walletHome.js
 msgid "Accept"
@@ -182,7 +182,7 @@ msgstr "換算済金額"
 msgid "Are you sure you want to delete the recovery phrase?"
 msgstr "復元フレーズを削除してもよろしいですか？"
 
-#: src/js/controllers/GroestlPayers.js
+#: src/js/controllers/copayers.js
 #: src/js/controllers/preferencesDelete.js
 msgid "Are you sure you want to delete this wallet?"
 msgstr "本当にこのウォレットを削除しても\n"
@@ -287,13 +287,13 @@ msgstr "手数料計算中..."
 #: public/views/modals/confirmation.html
 #: public/views/walletHome.html
 #: src/js/services/confirmDialog.js
-#: src/js/controllers/GroestlPayers.js
+#: src/js/controllers/copayers.js
 #: src/js/controllers/preferencesDelete.js
 #: src/js/controllers/walletHome.js
 msgid "Cancel"
 msgstr "キャンセル"
 
-#: public/views/GroestlPayers.html
+#: public/views/copayers.html
 msgid "Cancel and delete the wallet"
 msgstr "キャンセルし、ウォレットを削除"
 
@@ -354,7 +354,7 @@ msgstr "コミットのハッシュ値"
 
 #: public/views/includes/confirm-tx.html
 #: src/js/services/confirmDialog.js
-#: src/js/controllers/GroestlPayers.js
+#: src/js/controllers/copayers.js
 #: src/js/controllers/preferencesDelete.js
 #: src/js/controllers/walletHome.js
 msgid "Confirm"
@@ -389,22 +389,22 @@ msgid "Continue"
 msgstr "続ける"
 
 #: src/js/services/bwcError.js
-msgid "GroestlPayer already in this wallet"
+msgid "copayer already in this wallet"
 msgstr "ウォレット参加者が既に存在しています。"
 
 #: src/js/services/bwcError.js
-msgid "GroestlPayer already voted on this spend proposal"
+msgid "copayer already voted on this spend proposal"
 msgstr "ウォレット参加者が既に送金の提案の意思表明をしています。"
 
 #: src/js/services/bwcError.js
-msgid "GroestlPayer data mismatch"
+msgid "copayer data mismatch"
 msgstr "ウォレット参加者のデータ不整合"
 
 #: public/views/preferencesInformation.html
-msgid "GroestlPayers"
+msgid "copayers"
 msgstr "ウォレット参加者"
 
-#: src/js/controllers/GroestlPayers.js
+#: src/js/controllers/copayers.js
 #: src/js/controllers/export.js
 #: src/js/controllers/preferencesInformation.js
 #: src/js/controllers/walletHome.js
@@ -508,8 +508,8 @@ msgid "Create"
 msgstr "作成"
 
 #: public/views/create.html
-msgid "Create {{requiredGroestlPayers}}-of-{{totalGroestlPayers}} wallet"
-msgstr "{{requiredGroestlPayers}}-of-{{totalGroestlPayers}} ウォレットを作成"
+msgid "Create {{requiredcopayers}}-of-{{totalcopayers}} wallet"
+msgstr "{{requiredcopayers}}-of-{{totalcopayers}} ウォレットを作成"
 
 #: public/views/add.html
 #: public/views/create.html
@@ -548,7 +548,7 @@ msgstr "日付"
 msgid "Decrypting a paper wallet could take around 5 minutes on this device. please be patient and keep the app open."
 msgstr "暗号化されたペーパーウォレットはこの端末だと解読に5分以上掛かる場合がございます。アプリを閉じたり他のアプリに切り替えたりせずに、終了するまでそのままお待ち下さい。"
 
-#: public/views/GroestlPayers.html
+#: public/views/copayers.html
 msgid "Delete it and create a new one"
 msgstr "削除して新規作成"
 
@@ -893,7 +893,7 @@ msgstr "不正アドレス"
 msgid "Invalid derivation path"
 msgstr "無効な派生パス"
 
-#: src/js/controllers/GroestlPayers.js
+#: src/js/controllers/copayers.js
 msgid "Invitation to share a GroestlPay Wallet"
 msgstr "GroestlPay共有ウォレットへの招待"
 
@@ -914,7 +914,7 @@ msgstr "山田太郎"
 msgid "Join"
 msgstr "参加"
 
-#: src/js/controllers/GroestlPayers.js
+#: src/js/controllers/copayers.js
 msgid "Join my GroestlPay wallet. Here is the invitation code: {{secret}} You can download GroestlPay for your phone or desktop at https://GroestlPay.io"
 msgstr "GroestlPayの共有ウォレット作りました： {{secret}} この招待コードを入力して、ウォレットに参加して下さい。アプリのダウンロードは https://GroestlPay.io にてどうぞ！"
 
@@ -974,7 +974,7 @@ msgstr "結果:"
 msgid "me"
 msgstr "自分"
 
-#: public/views/includes/GroestlPayers.html
+#: public/views/includes/copayers.html
 #: public/views/modals/tx-details.html
 #: public/views/modals/txp-details.html
 #: public/views/preferencesInformation.html
@@ -1193,11 +1193,11 @@ msgid "Payment Proposal Rejected"
 msgstr "送金の提案が却下されました"
 
 #: src/js/services/notificationsService.js
-msgid "Payment Proposal Rejected by GroestlPayer"
+msgid "Payment Proposal Rejected by copayer"
 msgstr "送金の提案が他の参加者によって却下されました。"
 
 #: src/js/services/notificationsService.js
-msgid "Payment Proposal Signed by GroestlPayer"
+msgid "Payment Proposal Signed by copayer"
 msgstr "送金の提案が他の参加者によって署名されました。"
 
 #: public/views/walletHome.html
@@ -1533,12 +1533,12 @@ msgstr "設定"
 msgid "Share address"
 msgstr "アドレスを共有"
 
-#: public/views/GroestlPayers.html
+#: public/views/copayers.html
 msgid "Share invitation"
 msgstr "招待コードを共有"
 
-#: public/views/GroestlPayers.html
-msgid "Share this invitation with your GroestlPayers"
+#: public/views/copayers.html
+msgid "Share this invitation with your copayers"
 msgstr "ウォレット参加者に\n"
 "この招待コードを\n"
 "送って下さい。"
@@ -1600,7 +1600,7 @@ msgstr "パスワードが必要"
 msgid "Spending Passwords do not match"
 msgstr "パスワードが一致しません"
 
-#: src/js/controllers/GroestlPayers.js
+#: src/js/controllers/copayers.js
 #: src/js/controllers/export.js
 #: src/js/controllers/import.js
 #: src/js/controllers/preferencesDelete.js
@@ -1681,7 +1681,7 @@ msgstr "当ソフトウェアは無料のオープンソースプロジェクト
 msgid "The spend proposal is not pending"
 msgstr "送金の提案が協議中ではありません。"
 
-#: src/js/controllers/GroestlPayers.js
+#: src/js/controllers/copayers.js
 #: src/js/controllers/preferencesDelete.js
 msgid "The wallet \"{{walletName}}\" was deleted"
 msgstr "ウォレット \"{{walletName}}\" が削除されました"
@@ -1746,7 +1746,7 @@ msgid "Total Locked Balance"
 msgstr "ロック中の残高"
 
 #: public/views/create.html
-msgid "Total number of GroestlPayers"
+msgid "Total number of copayers"
 msgstr "参加人数を選択して下さい。"
 
 #: src/js/services/fingerprintService.js
@@ -1823,8 +1823,8 @@ msgstr "バージョン"
 msgid "View"
 msgstr "表示"
 
-#: public/views/GroestlPayers.html
-msgid "Waiting for GroestlPayers"
+#: public/views/copayers.html
+msgid "Waiting for copayers"
 msgstr "ウォレット参加者を待っています"
 
 #: src/js/services/onGoingProcess.js
@@ -1835,7 +1835,7 @@ msgstr "Ledger を待っています..."
 msgid "Waiting for Trezor..."
 msgstr "Trezor を待っています..."
 
-#: public/views/GroestlPayers.html
+#: public/views/copayers.html
 msgid "Waiting..."
 msgstr "少々お待ち下さい…"
 
@@ -1859,7 +1859,7 @@ msgstr "ウォレットのエクスポート"
 msgid "Wallet Id"
 msgstr "ウォレットID"
 
-#: public/views/GroestlPayers.html
+#: public/views/copayers.html
 msgid "Wallet incomplete and broken"
 msgstr "ウォレットが未完成で破損しています"
 

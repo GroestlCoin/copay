@@ -35,7 +35,7 @@ msgstr "{{fee}} bude odečteno jako poplatek Groestlcoinové síti"
 msgid "{{feeRateStr}} of the transaction"
 msgstr "{{feeRateStr}} z transakce"
 
-#: public/views/GroestlPayers.html
+#: public/views/copayers.html
 #: public/views/includes/walletInfo.html
 msgid "{{index.m}}-of-{{index.n}}"
 msgstr "{{index.m}} z {{index.n}}"
@@ -53,7 +53,7 @@ msgid "{{item.m}}-of-{{item.n}}"
 msgstr "{{item.m}} z {{item.n}}"
 
 #: public/views/modals/txp-details.html
-msgid "* A payment proposal can be deleted if 1) you are the creator, and no other GroestlPayer has signed, or 2) 24 hours have passed since the proposal was created."
+msgid "* A payment proposal can be deleted if 1) you are the creator, and no other copayer has signed, or 2) 24 hours have passed since the proposal was created."
 msgstr "* Návrh k platbě může být odstraněn pokud 1) jste jej vytvořil(a) a žádný spoluplátce jej nepodepsal 2) Uběhlo 24 hodin od vytvoření návrhu."
 
 #: public/views/includes/terms.html
@@ -61,15 +61,15 @@ msgid "<b>IF YOU LOSE ACCESS TO YOUR Groestlcoin Mobile Wallet WALLET OR YOUR EN
 msgstr "<b>POKUD ZTRATÍTE PŘÍSTUP K VAŠI SPOLUPLÁTCOVSKÉ PENĚŽENCE NEBO VAŠÍM ŠIFROVANÝM KLÍČŮM A NEMÁTE ULOŽENOU ZÁLOHU VAŠI PENĚŽENKY A HESLEM ZVLÁŠTĚ, BERETE NA VĚDOMÍ ŽE VŠECHNY CAPRICOINY ULOŽENÉ V TÉTO SPOLUPLÁTCOVSKÉ PENĚŽENCE NEBUDOU DOSTUPNÉ. </b>"
 
 #: public/views/backup.html
-msgid "<b>OR</b> 1 wallet export file and the remaining quorum of wallet recovery phrases (e.g. in a 3-5 wallet: 1 wallet export file + 2 wallet recovery phrases of any of the other GroestlPayers)."
+msgid "<b>OR</b> 1 wallet export file and the remaining quorum of wallet recovery phrases (e.g. in a 3-5 wallet: 1 wallet export file + 2 wallet recovery phrases of any of the other copayers)."
 msgstr ""
 
 #: public/views/backup.html
-msgid "<b>OR</b> the wallet recovery phrase of <b>all</b> GroestlPayers in the wallet"
+msgid "<b>OR</b> the wallet recovery phrase of <b>all</b> copayers in the wallet"
 msgstr ""
 
 #: public/views/backup.html
-msgid "<b>OR</b> the wallet recovery phrases of <b>all</b> GroestlPayers in the wallet"
+msgid "<b>OR</b> the wallet recovery phrases of <b>all</b> copayers in the wallet"
 msgstr ""
 
 #: public/views/disclaimer.html
@@ -82,7 +82,7 @@ msgstr "O Groestlcoin Mobile Wallet"
 
 #: public/views/modals/txp-details.html
 #: src/js/services/confirmDialog.js
-#: src/js/controllers/GroestlPayers.js
+#: src/js/controllers/copayers.js
 #: src/js/controllers/preferencesDelete.js
 #: src/js/controllers/walletHome.js
 msgid "Accept"
@@ -182,7 +182,7 @@ msgstr "Částka v"
 msgid "Are you sure you want to delete the recovery phrase?"
 msgstr ""
 
-#: src/js/controllers/GroestlPayers.js
+#: src/js/controllers/copayers.js
 #: src/js/controllers/preferencesDelete.js
 msgid "Are you sure you want to delete this wallet?"
 msgstr "Opravdu si přejete odstranit tuto peněženku?"
@@ -286,13 +286,13 @@ msgstr "Vypočítávám poplatek"
 #: public/views/modals/confirmation.html
 #: public/views/walletHome.html
 #: src/js/services/confirmDialog.js
-#: src/js/controllers/GroestlPayers.js
+#: src/js/controllers/copayers.js
 #: src/js/controllers/preferencesDelete.js
 #: src/js/controllers/walletHome.js
 msgid "Cancel"
 msgstr "Zrušit"
 
-#: public/views/GroestlPayers.html
+#: public/views/copayers.html
 msgid "Cancel and delete the wallet"
 msgstr "Zrušit a odstranit peněženku"
 
@@ -353,7 +353,7 @@ msgstr "Hash softwaru"
 
 #: public/views/includes/confirm-tx.html
 #: src/js/services/confirmDialog.js
-#: src/js/controllers/GroestlPayers.js
+#: src/js/controllers/copayers.js
 #: src/js/controllers/preferencesDelete.js
 #: src/js/controllers/walletHome.js
 msgid "Confirm"
@@ -388,22 +388,22 @@ msgid "Continue"
 msgstr "Pokračovat"
 
 #: src/js/services/bwcError.js
-msgid "GroestlPayer already in this wallet"
+msgid "copayer already in this wallet"
 msgstr "Spoluplátce je již v peněžence"
 
 #: src/js/services/bwcError.js
-msgid "GroestlPayer already voted on this spend proposal"
+msgid "copayer already voted on this spend proposal"
 msgstr "Spoluplátce pro tento návrh již hlasoval"
 
 #: src/js/services/bwcError.js
-msgid "GroestlPayer data mismatch"
+msgid "copayer data mismatch"
 msgstr "Data spoluplátce nesouhlasí"
 
 #: public/views/preferencesInformation.html
-msgid "GroestlPayers"
+msgid "copayers"
 msgstr "Spoluplátci"
 
-#: src/js/controllers/GroestlPayers.js
+#: src/js/controllers/copayers.js
 #: src/js/controllers/export.js
 #: src/js/controllers/preferencesInformation.js
 #: src/js/controllers/walletHome.js
@@ -507,8 +507,8 @@ msgid "Create"
 msgstr "Vytvořit"
 
 #: public/views/create.html
-msgid "Create {{requiredGroestlPayers}}-of-{{totalGroestlPayers}} wallet"
-msgstr "Vytvořit peněženku {{requiredGroestlPayers}}-z-{{totalGroestlPayers}}"
+msgid "Create {{requiredcopayers}}-of-{{totalcopayers}} wallet"
+msgstr "Vytvořit peněženku {{requiredcopayers}}-z-{{totalcopayers}}"
 
 #: public/views/add.html
 #: public/views/create.html
@@ -547,7 +547,7 @@ msgstr "Datum"
 msgid "Decrypting a paper wallet could take around 5 minutes on this device. please be patient and keep the app open."
 msgstr "Dešifrování papírové peněženky může na tomto zařízení trvat okolo 5 minut, buďte prosím trpělivý a nechejte aplikaci otevřenou."
 
-#: public/views/GroestlPayers.html
+#: public/views/copayers.html
 msgid "Delete it and create a new one"
 msgstr "Smazat a vytvořit novou"
 
@@ -892,7 +892,7 @@ msgstr "Neplatná adresa"
 msgid "Invalid derivation path"
 msgstr "Neplatná cesta derivace"
 
-#: src/js/controllers/GroestlPayers.js
+#: src/js/controllers/copayers.js
 msgid "Invitation to share a GroestlPay Wallet"
 msgstr "Pozvánka ke sdílené Groestlcoin Mobile Wallet Peněžence"
 
@@ -913,7 +913,7 @@ msgstr "John"
 msgid "Join"
 msgstr "Spojit"
 
-#: src/js/controllers/GroestlPayers.js
+#: src/js/controllers/copayers.js
 msgid "Join my GroestlPay wallet. Here is the invitation code: {{secret}} You can download GroestlPay for your phone or desktop at https://GroestlPay.io"
 msgstr "Propojení mé Groestlcoin Mobile Wallet peněženky. Toto je kód pozvánky: {{secret}} Groestlcoin Mobile Wallet je možné stáhnout do telefonu nebo počítače na https://GroestlPay.io"
 
@@ -973,7 +973,7 @@ msgstr "Shody:"
 msgid "me"
 msgstr "já"
 
-#: public/views/includes/GroestlPayers.html
+#: public/views/includes/copayers.html
 #: public/views/modals/tx-details.html
 #: public/views/modals/txp-details.html
 #: public/views/preferencesInformation.html
@@ -1192,11 +1192,11 @@ msgid "Payment Proposal Rejected"
 msgstr "Návrh platby byl odmítnut"
 
 #: src/js/services/notificationsService.js
-msgid "Payment Proposal Rejected by GroestlPayer"
+msgid "Payment Proposal Rejected by copayer"
 msgstr "Návrh platby odmítnut spoluplátcem"
 
 #: src/js/services/notificationsService.js
-msgid "Payment Proposal Signed by GroestlPayer"
+msgid "Payment Proposal Signed by copayer"
 msgstr "Návrh platby byl podepsán spoluplátcem"
 
 #: public/views/walletHome.html
@@ -1531,12 +1531,12 @@ msgstr "Nastavení"
 msgid "Share address"
 msgstr "Sdílet adresu"
 
-#: public/views/GroestlPayers.html
+#: public/views/copayers.html
 msgid "Share invitation"
 msgstr "Sdílet pozvánku"
 
-#: public/views/GroestlPayers.html
-msgid "Share this invitation with your GroestlPayers"
+#: public/views/copayers.html
+msgid "Share this invitation with your copayers"
 msgstr "Sdílet tuto pozvánku se spoluplátci"
 
 #: public/views/walletHome.html
@@ -1596,7 +1596,7 @@ msgstr ""
 msgid "Spending Passwords do not match"
 msgstr ""
 
-#: src/js/controllers/GroestlPayers.js
+#: src/js/controllers/copayers.js
 #: src/js/controllers/export.js
 #: src/js/controllers/import.js
 #: src/js/controllers/preferencesDelete.js
@@ -1677,7 +1677,7 @@ msgstr "Software který hodláte začít používat je zdarma, open-source, víc
 msgid "The spend proposal is not pending"
 msgstr "Platební návrh neočekává další schválení"
 
-#: src/js/controllers/GroestlPayers.js
+#: src/js/controllers/copayers.js
 #: src/js/controllers/preferencesDelete.js
 msgid "The wallet \"{{walletName}}\" was deleted"
 msgstr "Peněženka \"{{walletName}}\" byla odstraněna"
@@ -1742,7 +1742,7 @@ msgid "Total Locked Balance"
 msgstr "Blokovaný zůstatek"
 
 #: public/views/create.html
-msgid "Total number of GroestlPayers"
+msgid "Total number of copayers"
 msgstr "Počet spoluplátců"
 
 #: src/js/services/fingerprintService.js
@@ -1819,8 +1819,8 @@ msgstr "Verze"
 msgid "View"
 msgstr "Pohled"
 
-#: public/views/GroestlPayers.html
-msgid "Waiting for GroestlPayers"
+#: public/views/copayers.html
+msgid "Waiting for copayers"
 msgstr "Vyčkávání na spoluplátce"
 
 #: src/js/services/onGoingProcess.js
@@ -1831,7 +1831,7 @@ msgstr ""
 msgid "Waiting for Trezor..."
 msgstr ""
 
-#: public/views/GroestlPayers.html
+#: public/views/copayers.html
 msgid "Waiting..."
 msgstr "Vyčkávání..."
 
@@ -1855,7 +1855,7 @@ msgstr "Export peněženky"
 msgid "Wallet Id"
 msgstr "Id peněženky"
 
-#: public/views/GroestlPayers.html
+#: public/views/copayers.html
 msgid "Wallet incomplete and broken"
 msgstr "Peněženka je neúplná a chybná"
 
