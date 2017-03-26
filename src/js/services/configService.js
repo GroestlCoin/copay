@@ -12,7 +12,7 @@ angular.module('copayApp.services').factory('configService', function(storageSer
 
     // Bitcore wallet service URL
     bws: {
-      url: 'https://bws.groestlcoin.org/bws/api',
+      url: 'https://cws.Groestlcoin.org/bws/api',
     },
 
     // wallet default config
@@ -27,32 +27,32 @@ angular.module('copayApp.services').factory('configService', function(storageSer
         unitToSatoshi: 100000000,
         unitDecimals: 8,
         unitCode: 'btc',
-        alternativeName: 'Groestlcoin',
-		alternativeIsoCode: 'GRS',
+        alternativeName: 'US Dollars',
+		alternativeIsoCode: 'USD',
       }
     },
 
     // External services
     glidera: {
-      enabled: true,
+      enabled: false,
       testnet: false
     },
 
     coinbase: {
-      enabled: true,
+      enabled: false,
       testnet: false
     },
 
-    /*rates: {
-      url: 'https://insight.bitpay.com:443/api/rates',
+    rates: {
+      url: 'https://rates.mmitech.info/index.php?api=grs_rates',
     },
 
-    release: {
+    /*release: {
       url: 'https://api.github.com/repos/bitpay/copay/releases/latest'
     },*/
 
     pushNotifications: {
-      enabled: true,
+      enabled: false,
       config: {
         android: {
           senderID: '1036948132229',

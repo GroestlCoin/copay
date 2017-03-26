@@ -34,7 +34,7 @@ angular.module('copayApp.directives')
             }
 
             // Bip21 uri
-            if (/^groestlcoin:/.test(value)) {
+            if (/^Groestlcoin:/.test(value)) {
               var uri, isAddressValid;
               var isUriValid = URI.isValid(value);
               if (isUriValid) {
@@ -316,7 +316,7 @@ angular.module('copayApp.directives')
         $scope.logo_url = $scope.negative ? 'img/logo.png' : 'img/logo.png';
       },
       replace: true,
-      template: '<img ng-src="{{ logo_url }}" alt="groestlcoin">'
+      template: '<img ng-src="{{ logo_url }}" alt="Groestlcoin">'
     }
   })
   .directive('availableBalance', function() {

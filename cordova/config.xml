@@ -1,14 +1,14 @@
 <?xml version='1.0' encoding='utf-8'?>
-<widget id="com.bitpay.copay"
-  version="2.5.0"
-  android-versionCode="115"
-  ios-CFBundleVersion="2.5.0">
-    <name>Copay</name>
+<widget id="org.Groestlcoin.wallet"
+  version="1.0.0"
+  android-versionCode="117"
+  ios-CFBundleVersion="1.0.0">
+    <name>Groestlcoin Mobile Wallet</name>
     <description>
-      A secure bitcoin wallet for friends and companies.
+      A secure Groestlcoin wallet for friends and companies.
     </description>
-    <author email="support@bitpay.com" href="https://copay.io">
-        BitPay Inc.
+    <author email="Groestlcoinofficial@gmail.com" href="https://wallet.Groestlcoin.org">
+        Groestlcoin Official.
     </author>
     <content src="index.html" />
     <access origin="*" />

@@ -29,7 +29,7 @@ msgstr "[Balans Ukryty]"
 
 #: src/js/controllers/walletHome.js
 msgid "{{fee}} will be deducted for bitcoin networking fees"
-msgstr "{{fee}} zostanie potrącone jako prowizja sieci groestlcoin"
+msgstr "{{fee}} zostanie potrącone jako prowizja sieci Groestlcoin"
 
 #: public/views/includes/confirm-tx.html
 msgid "{{feeRateStr}} of the transaction"
@@ -57,8 +57,8 @@ msgid "* A payment proposal can be deleted if 1) you are the creator, and no oth
 msgstr "* Wniosek wypłaty może być usunięty jeśli: 1) Po utworzeniu nie zatwierdził go żaden inny współwłaściciel portfela lub 2) minęły 24 godziny od kiedy wniosek został utworzony."
 
 #: public/views/includes/terms.html
-msgid "<b>IF YOU LOSE ACCESS TO YOUR GroestlPay WALLET OR YOUR ENCRYPTED PRIVATE KEYS AND YOU HAVE NOT SEPARATELY STORED A BACKUP OF YOUR WALLET AND CORRESPONDING PASSWORD, YOU ACKNOWLEDGE AND AGREE THAT ANY GROESTLCOINS YOU HAVE ASSOCIATED WITH THAT GroestlPay WALLET WILL BECOME INACCESSIBLE.</b>"
-msgstr "<b>JEŚLI UŻYTKOWNIK STRACI DOSTĘP DO PORTFELA GroestlPay LUB ZASZYFROWANYCH KLUCZY PRYWATNYCH, A NIE MA ZAPISANEJ KOPII ZAPASOWEJ PORTFELA I HASŁA, PRZYJMUJE DO WIADOMOŚCI, ŻE JAKIEKOLWIEK POSIADANE GROESTLCOINY ZWIĄZANE Z TYM PORTFELEM GroestlPay BĘDĄ NIEDOSTĘPNE.</b>"
+msgid "<b>IF YOU LOSE ACCESS TO YOUR Groestlcoin Mobile Wallet WALLET OR YOUR ENCRYPTED PRIVATE KEYS AND YOU HAVE NOT SEPARATELY STORED A BACKUP OF YOUR WALLET AND CORRESPONDING PASSWORD, YOU ACKNOWLEDGE AND AGREE THAT ANY CAPRICOINS YOU HAVE ASSOCIATED WITH THAT Groestlcoin Mobile Wallet WALLET WILL BECOME INACCESSIBLE.</b>"
+msgstr "<b>JEŚLI UŻYTKOWNIK STRACI DOSTĘP DO PORTFELA Groestlcoin Mobile Wallet LUB ZASZYFROWANYCH KLUCZY PRYWATNYCH, A NIE MA ZAPISANEJ KOPII ZAPASOWEJ PORTFELA I HASŁA, PRZYJMUJE DO WIADOMOŚCI, ŻE JAKIEKOLWIEK POSIADANE CAPRICOINY ZWIĄZANE Z TYM PORTFELEM Groestlcoin Mobile Wallet BĘDĄ NIEDOSTĘPNE.</b>"
 
 #: public/views/backup.html
 msgid "<b>OR</b> 1 wallet export file and the remaining quorum of wallet recovery phrases (e.g. in a 3-5 wallet: 1 wallet export file + 2 wallet recovery phrases of any of the other copayers)."
@@ -74,11 +74,11 @@ msgstr "<b>LUB</b> fraz odzyskiwania <b>wszystkich</b> współwłaścicieli port
 
 #: public/views/disclaimer.html
 msgid "A multisignature bitcoin wallet"
-msgstr "Portfel groestlcoin z multipodpisami"
+msgstr "Portfel Groestlcoin z multipodpisami"
 
 #: public/views/preferencesGlobal.html
 msgid "About Copay"
-msgstr "Informacje o GroestlPay"
+msgstr "Informacje o Groestlcoin Mobile Wallet"
 
 #: public/views/modals/txp-details.html
 #: src/js/services/confirmDialog.js
@@ -152,7 +152,7 @@ msgstr "Nazwa dla <i>{{index.walletName}}</i>"
 #: public/views/preferencesLanguage.html
 #: public/views/translators.html
 msgid "All contributions to Copay's translation are welcome. Sign up at crowdin.com and join the Copay project at"
-msgstr "Wkład do tłumaczenia GroestlPay mile widziany. Zapisz się na crowdin.com i dołącz do projektu GroestlPay na"
+msgstr "Wkład do tłumaczenia Groestlcoin Mobile Wallet mile widziany. Zapisz się na crowdin.com i dołącz do projektu Groestlcoin Mobile Wallet na"
 
 #: public/views/includes/terms.html
 msgid "All transaction requests are irreversible."
@@ -245,15 +245,15 @@ msgstr "BIP32 ścieżka dla adresu derywacji"
 
 #: public/views/walletHome.html
 msgid "Groestlcoin address"
-msgstr "Adres groestlcoin"
+msgstr "Adres Groestlcoin"
 
 #: public/views/preferencesGlobal.html
 msgid "Groestlcoin Network Fee Policy"
-msgstr "Polityka prowizji sieci groestlcoin"
+msgstr "Polityka prowizji sieci Groestlcoin"
 
 #: public/views/preferencesFee.html
 msgid "Groestlcoin transactions may include a fee collected by miners on the network. The higher the fee, the greater the incentive a miner has to include that transaction in a block. Current fees are determined based on network load and the selected policy."
-msgstr "Transakcje groestlcoinowe mogą zawierać prowizję pobieraną przez górników. Im wyższa prowizja, tym większa zachęta dla górnika, aby zawarł tę transakcję w bloku. Rzeczywiste opłaty ustala się w oparciu o obciążenie sieci i wybraną politykę."
+msgstr "Transakcje Groestlcoinowe mogą zawierać prowizję pobieraną przez górników. Im wyższa prowizja, tym większa zachęta dla górnika, aby zawarł tę transakcję w bloku. Rzeczywiste opłaty ustala się w oparciu o obciążenie sieci i wybraną politykę."
 
 #: public/views/paymentUri.html
 msgid "Groestlcoin URI is NOT valid!"
@@ -894,7 +894,7 @@ msgstr "Nieprawidłowa ścieżka derywacji"
 
 #: src/js/controllers/copayers.js
 msgid "Invitation to share a Copay Wallet"
-msgstr "Zaproszenie do współdzielenia portfela GroestlPay"
+msgstr "Zaproszenie do współdzielenia portfela Groestlcoin Mobile Wallet"
 
 #: public/views/translators.html
 msgid "Italian"
@@ -915,7 +915,7 @@ msgstr "Dołącz"
 
 #: src/js/controllers/copayers.js
 msgid "Join my Copay wallet. Here is the invitation code: {{secret}} You can download Copay for your phone or desktop at https://copay.io"
-msgstr "Dołącz do mojego portfela GroestlPay. Kod zaproszenia: {{secret}} Wersję desktopową lub aplikację na telefon można pobrać z https://copay.io"
+msgstr "Dołącz do mojego portfela Groestlcoin Mobile Wallet. Kod zaproszenia: {{secret}} Wersję desktopową lub aplikację na telefon można pobrać z https://copay.io"
 
 #: public/views/add.html
 msgid "Join shared wallet"
@@ -943,7 +943,7 @@ msgstr "Ostatnie adresy portfela"
 
 #: public/views/backup.html
 msgid "Learn more about Copay backups"
-msgstr "Dowiedz się więcej o kopiach zapasowych GroestlPay"
+msgstr "Dowiedz się więcej o kopiach zapasowych Groestlcoin Mobile Wallet"
 
 #: public/views/preferencesFee.html
 msgid "Loading..."
@@ -1088,7 +1088,7 @@ msgstr "Uwaga: łącznie kwota {{amountBelowFeeStr}} została wyłączona. Fundu
 
 #: public/views/import.html
 msgid "NOTE: To import a wallet from a 3rd party software, please go to Add Wallet &gt; Create Wallet, and specify the Recovery Phrase there."
-msgstr "Uwaga: Aby zaimportować portfel z oprogramowania innego niż GroestlPay, przejdź do Dodaj Portfel &gt; Utwórz Portfel, i podaj tam frazę odzyskiwania."
+msgstr "Uwaga: Aby zaimportować portfel z oprogramowania innego niż Groestlcoin Mobile Wallet, przejdź do Dodaj Portfel &gt; Utwórz Portfel, i podaj tam frazę odzyskiwania."
 
 #: public/views/disclaimer.html
 #: public/views/termOfUse.html
@@ -1262,7 +1262,7 @@ msgstr "Proszę wybrać słowa w celu potwierdzenia poprawności frazy odzyskiwa
 
 #: src/js/services/bwcError.js
 msgid "Please upgrade Copay to perform this action"
-msgstr "Proszę uaktualnić GroestlPay, by móc wykonać tę operację"
+msgstr "Proszę uaktualnić Groestlcoin Mobile Wallet, by móc wykonać tę operację"
 
 #: public/views/uri.html
 msgid "Please wait to be redirected..."
@@ -1302,7 +1302,7 @@ msgstr "Klucz prywatny jest zaszyfrowany, nie można podpisać"
 
 #: public/views/preferencesGlobal.html
 msgid "Push notifications for Copay are currently disabled. Enable them in the Settings app."
-msgstr "Powiadomienia GroestlPay są obecnie wyłączone. Włącz je w ustawieniach aplikacji."
+msgstr "Powiadomienia Groestlcoin Mobile Wallet są obecnie wyłączone. Włącz je w ustawieniach aplikacji."
 
 #: public/views/export.html
 #: public/views/modals/customized-amount.html
@@ -1468,7 +1468,7 @@ msgstr "Wyślij adresy przez e-mail"
 
 #: public/views/includes/confirm-tx.html
 msgid "Send bitcoin"
-msgstr "Wyślij groestlcoiny"
+msgstr "Wyślij Groestlcoiny"
 
 #: public/views/export.html
 #: public/views/preferencesLogs.html
@@ -1667,7 +1667,7 @@ msgstr "Wniosek nie został zrozumiany przez serwer"
 
 #: public/views/includes/terms.html
 msgid "The software does not constitute an account where other third parties serve as financial intermediaries or custodians of your bitcoin."
-msgstr "Oprogramowanie nie jest kontem, gdzie inne osoby trzecie mogą służyć jako pośrednicy finansowi lub opiekunowie twoich groestlcoinów."
+msgstr "Oprogramowanie nie jest kontem, gdzie inne osoby trzecie mogą służyć jako pośrednicy finansowi lub opiekunowie twoich Groestlcoinów."
 
 #: public/views/includes/terms.html
 msgid "The software you are about to use functions as a free, open source, and multi-signature digital wallet."
@@ -1696,7 +1696,7 @@ msgstr "Brak portfela, aby dokonać tej wypłaty"
 
 #: src/js/controllers/index.js
 msgid "There is a new version of Copay. Please update"
-msgstr "Jest dostępna nowa wersja GroestlPay. Proszę zaktualizować"
+msgstr "Jest dostępna nowa wersja Groestlcoin Mobile Wallet. Proszę zaktualizować"
 
 #: src/js/controllers/import.js
 msgid "There is an error in the form"
@@ -1841,7 +1841,7 @@ msgstr "Portfel już istnieje"
 
 #: src/js/services/profileService.js
 msgid "Wallet already in Copay"
-msgstr "Portfel jest już w GroestlPay"
+msgstr "Portfel jest już w Groestlcoin Mobile Wallet"
 
 #: public/views/preferencesInformation.html
 msgid "Wallet Configuration (m-n)"

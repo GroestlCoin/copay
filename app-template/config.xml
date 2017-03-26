@@ -1,5 +1,5 @@
 <?xml version='1.0' encoding='utf-8'?>
-<widget id="com.bitpay.*NAMENOSPACE*"
+<widget id="org.Groestlcoin.*NAMENOSPACE*"
   version="*VERSION*"
   android-versionCode="*ANDROIDVERSION*"
   ios-CFBundleVersion="*VERSION*">
@@ -7,8 +7,8 @@
     <description>
       *APPDESCRIPTION*
     </description>
-    <author email="support@bitpay.com" href="*URL*">
-        BitPay Inc.
+    <author email="Groestlcoinofficial@gmail.com" href="*URL*">
+        Groestlcoin Official.
     </author>
     <content src="index.html" />
     <access origin="*" />

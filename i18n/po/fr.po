@@ -57,8 +57,8 @@ msgid "* A payment proposal can be deleted if 1) you are the creator, and no oth
 msgstr "* Une proposition de paiement peut être supprimée si vous en êtes le créateur et qu'aucun des autres copayers n'a signé, ou si 24 heures sont passées depuis la création de la proposition."
 
 #: public/views/includes/terms.html
-msgid "<b>IF YOU LOSE ACCESS TO YOUR GroestlPay WALLET OR YOUR ENCRYPTED PRIVATE KEYS AND YOU HAVE NOT SEPARATELY STORED A BACKUP OF YOUR WALLET AND CORRESPONDING PASSWORD, YOU ACKNOWLEDGE AND AGREE THAT ANY GROESTLCOINS YOU HAVE ASSOCIATED WITH THAT GroestlPay WALLET WILL BECOME INACCESSIBLE.</b>"
-msgstr "<b>SI VOUS PERDEZ L'ACCÈS À VOTRE PORTEFEUILLE GroestlPay OU À VOS CLÉS PRIVÉES CHIFFRÉES ET QUE VOUS N'AVEZ PAS ENTREPOSÉ SÉPARÉMENT UNE SAUVEGARDE DE VOTRE PORTEFEUILLE ET LES MOTS DE PASSE CORRESPONDANT, VOUS RECONNAISSEZ ET ACCEPTEZ QUE LES GROESTLCOINS QUE VOUS AVEZ ASSOCIÉ À CE PORTEFEUILLE GroestlPay DEVIENNENT INACCESSIBLES.</b>"
+msgid "<b>IF YOU LOSE ACCESS TO YOUR Groestlcoin Mobile Wallet WALLET OR YOUR ENCRYPTED PRIVATE KEYS AND YOU HAVE NOT SEPARATELY STORED A BACKUP OF YOUR WALLET AND CORRESPONDING PASSWORD, YOU ACKNOWLEDGE AND AGREE THAT ANY CAPRICOINS YOU HAVE ASSOCIATED WITH THAT Groestlcoin Mobile Wallet WALLET WILL BECOME INACCESSIBLE.</b>"
+msgstr "<b>SI VOUS PERDEZ L'ACCÈS À VOTRE PORTEFEUILLE Groestlcoin Mobile Wallet OU À VOS CLÉS PRIVÉES CHIFFRÉES ET QUE VOUS N'AVEZ PAS ENTREPOSÉ SÉPARÉMENT UNE SAUVEGARDE DE VOTRE PORTEFEUILLE ET LES MOTS DE PASSE CORRESPONDANT, VOUS RECONNAISSEZ ET ACCEPTEZ QUE LES CAPRICOINS QUE VOUS AVEZ ASSOCIÉ À CE PORTEFEUILLE Groestlcoin Mobile Wallet DEVIENNENT INACCESSIBLES.</b>"
 
 #: public/views/backup.html
 msgid "<b>OR</b> 1 wallet export file and the remaining quorum of wallet recovery phrases (e.g. in a 3-5 wallet: 1 wallet export file + 2 wallet recovery phrases of any of the other copayers)."
@@ -74,11 +74,11 @@ msgstr "<b>OU</b> les phrases de récupération de portefeuille de <b>tous</b> l
 
 #: public/views/disclaimer.html
 msgid "A multisignature bitcoin wallet"
-msgstr "Un portefeuille groestlcoin multi-signatures"
+msgstr "Un portefeuille Groestlcoin multi-signatures"
 
 #: public/views/preferencesGlobal.html
 msgid "About Copay"
-msgstr "À propos de GroestlPay"
+msgstr "À propos de Groestlcoin Mobile Wallet"
 
 #: public/views/modals/txp-details.html
 #: src/js/services/confirmDialog.js
@@ -152,7 +152,7 @@ msgstr "Alias pour <i>{{index.walletName}}</i>"
 #: public/views/preferencesLanguage.html
 #: public/views/translators.html
 msgid "All contributions to Copay's translation are welcome. Sign up at crowdin.com and join the Copay project at"
-msgstr "Toutes les contributions à la traduction de GroestlPay sont les bienvenues. Inscrivez-vous sur crowdin.com et rejoignez le projet GroestlPay sur"
+msgstr "Toutes les contributions à la traduction de Groestlcoin Mobile Wallet sont les bienvenues. Inscrivez-vous sur crowdin.com et rejoignez le projet Groestlcoin Mobile Wallet sur"
 
 #: public/views/includes/terms.html
 msgid "All transaction requests are irreversible."
@@ -389,19 +389,19 @@ msgstr "Continuer"
 
 #: src/js/services/bwcError.js
 msgid "Copayer already in this wallet"
-msgstr "GroestlPayer déjà dans ce portefeuille"
+msgstr "Groestlcoin Mobile Walleter déjà dans ce portefeuille"
 
 #: src/js/services/bwcError.js
 msgid "Copayer already voted on this spend proposal"
-msgstr "Le GroestlPayer a déjà voté pour cette proposition de dépense"
+msgstr "Le Groestlcoin Mobile Walleter a déjà voté pour cette proposition de dépense"
 
 #: src/js/services/bwcError.js
 msgid "Copayer data mismatch"
-msgstr "Les données GroestlPayer ne correspondent pas"
+msgstr "Les données Groestlcoin Mobile Walleter ne correspondent pas"
 
 #: public/views/preferencesInformation.html
 msgid "Copayers"
-msgstr "GroestlPayers"
+msgstr "Groestlcoin Mobile Walleters"
 
 #: src/js/controllers/copayers.js
 #: src/js/controllers/export.js
@@ -894,7 +894,7 @@ msgstr "Chemin de dérivation invalide"
 
 #: src/js/controllers/copayers.js
 msgid "Invitation to share a Copay Wallet"
-msgstr "Invitation pour partager un portefeuille GroestlPay"
+msgstr "Invitation pour partager un portefeuille Groestlcoin Mobile Wallet"
 
 #: public/views/translators.html
 msgid "Italian"
@@ -915,7 +915,7 @@ msgstr "Rejoindre"
 
 #: src/js/controllers/copayers.js
 msgid "Join my Copay wallet. Here is the invitation code: {{secret}} You can download Copay for your phone or desktop at https://copay.io"
-msgstr "Rejoignez mon portefeuille GroestlPay. Voici le code d'invitation : {{secret}} Vous pouvez télécharger GroestlPay pour votre téléphone ou pour votre ordinateur sur https://copay.io"
+msgstr "Rejoignez mon portefeuille Groestlcoin Mobile Wallet. Voici le code d'invitation : {{secret}} Vous pouvez télécharger Groestlcoin Mobile Wallet pour votre téléphone ou pour votre ordinateur sur https://copay.io"
 
 #: public/views/add.html
 msgid "Join shared wallet"
@@ -943,7 +943,7 @@ msgstr "Dernières adresses du portefeuille"
 
 #: public/views/backup.html
 msgid "Learn more about Copay backups"
-msgstr "En savoir plus sur les sauvegardes de GroestlPay"
+msgstr "En savoir plus sur les sauvegardes de Groestlcoin Mobile Wallet"
 
 #: public/views/preferencesFee.html
 msgid "Loading..."
@@ -1088,7 +1088,7 @@ msgstr "Note : un total de {{amountBelowFeeStr}} a été exclu. Ces fonds provie
 
 #: public/views/import.html
 msgid "NOTE: To import a wallet from a 3rd party software, please go to Add Wallet &gt; Create Wallet, and specify the Recovery Phrase there."
-msgstr "Remarque : Pour importer un portefeuille d’un autre logiciel que GroestlPay, veuillez aller dans « Ajouter portefeuille » &gt; « Créer » et spécifier la phrase de récupération."
+msgstr "Remarque : Pour importer un portefeuille d’un autre logiciel que Groestlcoin Mobile Wallet, veuillez aller dans « Ajouter portefeuille » &gt; « Créer » et spécifier la phrase de récupération."
 
 #: public/views/disclaimer.html
 #: public/views/termOfUse.html
@@ -1193,11 +1193,11 @@ msgstr "Proposition de paiement rejetée"
 
 #: src/js/services/notificationsService.js
 msgid "Payment Proposal Rejected by Copayer"
-msgstr "Proposition de paiement rejetée par les GroestlPayer"
+msgstr "Proposition de paiement rejetée par les Groestlcoin Mobile Walleter"
 
 #: src/js/services/notificationsService.js
 msgid "Payment Proposal Signed by Copayer"
-msgstr "Proposition de paiement signée par les GroestlPayers"
+msgstr "Proposition de paiement signée par les Groestlcoin Mobile Walleters"
 
 #: public/views/walletHome.html
 msgid "Payment Proposals"
@@ -1262,7 +1262,7 @@ msgstr "Veuillez sélectionner les mots afin de confirmer que votre phrase de sa
 
 #: src/js/services/bwcError.js
 msgid "Please upgrade Copay to perform this action"
-msgstr "Veuillez mettre à jour GroestlPay pour effectuer cette action"
+msgstr "Veuillez mettre à jour Groestlcoin Mobile Wallet pour effectuer cette action"
 
 #: public/views/uri.html
 msgid "Please wait to be redirected..."
@@ -1302,7 +1302,7 @@ msgstr "La clé privée est chiffrée, impossible de signer"
 
 #: public/views/preferencesGlobal.html
 msgid "Push notifications for Copay are currently disabled. Enable them in the Settings app."
-msgstr "Les notifications push de GroestlPay sont actuellement désactivées. Activez-les dans les paramètres de l'appli."
+msgstr "Les notifications push de Groestlcoin Mobile Wallet sont actuellement désactivées. Activez-les dans les paramètres de l'appli."
 
 #: public/views/export.html
 #: public/views/modals/customized-amount.html
@@ -1468,7 +1468,7 @@ msgstr "Envoyer les adresses par e-mail"
 
 #: public/views/includes/confirm-tx.html
 msgid "Send bitcoin"
-msgstr "Envoyer les groestlcoins"
+msgstr "Envoyer les Groestlcoins"
 
 #: public/views/export.html
 #: public/views/preferencesLogs.html
@@ -1667,7 +1667,7 @@ msgstr "La demande n'a pas été comprise par le serveur"
 
 #: public/views/includes/terms.html
 msgid "The software does not constitute an account where other third parties serve as financial intermediaries or custodians of your bitcoin."
-msgstr "Le logiciel ne constitue pas un compte ou des tiers, agissent comme des intermédiaires financiers ou dépositaires de vos groestlcoins."
+msgstr "Le logiciel ne constitue pas un compte ou des tiers, agissent comme des intermédiaires financiers ou dépositaires de vos Groestlcoins."
 
 #: public/views/includes/terms.html
 msgid "The software you are about to use functions as a free, open source, and multi-signature digital wallet."
@@ -1696,7 +1696,7 @@ msgstr "Il n'y a pas de portefeuilles pour faire ce paiement"
 
 #: src/js/controllers/index.js
 msgid "There is a new version of Copay. Please update"
-msgstr "Il y a une nouvelle version de GroestlPay. Veuillez mettre à jour"
+msgstr "Il y a une nouvelle version de Groestlcoin Mobile Wallet. Veuillez mettre à jour"
 
 #: src/js/controllers/import.js
 msgid "There is an error in the form"
@@ -1841,7 +1841,7 @@ msgstr "Le portefeuille existe déjà"
 
 #: src/js/services/profileService.js
 msgid "Wallet already in Copay"
-msgstr "Le portefeuille existe déjà dans GroestlPay"
+msgstr "Le portefeuille existe déjà dans Groestlcoin Mobile Wallet"
 
 #: public/views/preferencesInformation.html
 msgid "Wallet Configuration (m-n)"

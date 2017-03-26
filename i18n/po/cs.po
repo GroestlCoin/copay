@@ -29,7 +29,7 @@ msgstr "[skrytý zůstatek]"
 
 #: src/js/controllers/walletHome.js
 msgid "{{fee}} will be deducted for bitcoin networking fees"
-msgstr "{{fee}} bude odečteno jako poplatek groestlcoinové síti"
+msgstr "{{fee}} bude odečteno jako poplatek Groestlcoinové síti"
 
 #: public/views/includes/confirm-tx.html
 msgid "{{feeRateStr}} of the transaction"
@@ -57,8 +57,8 @@ msgid "* A payment proposal can be deleted if 1) you are the creator, and no oth
 msgstr "* Návrh k platbě může být odstraněn pokud 1) jste jej vytvořil(a) a žádný spoluplátce jej nepodepsal 2) Uběhlo 24 hodin od vytvoření návrhu."
 
 #: public/views/includes/terms.html
-msgid "<b>IF YOU LOSE ACCESS TO YOUR GroestlPay WALLET OR YOUR ENCRYPTED PRIVATE KEYS AND YOU HAVE NOT SEPARATELY STORED A BACKUP OF YOUR WALLET AND CORRESPONDING PASSWORD, YOU ACKNOWLEDGE AND AGREE THAT ANY GROESTLCOINS YOU HAVE ASSOCIATED WITH THAT GroestlPay WALLET WILL BECOME INACCESSIBLE.</b>"
-msgstr "<b>POKUD ZTRATÍTE PŘÍSTUP K VAŠI SPOLUPLÁTCOVSKÉ PENĚŽENCE NEBO VAŠÍM ŠIFROVANÝM KLÍČŮM A NEMÁTE ULOŽENOU ZÁLOHU VAŠI PENĚŽENKY A HESLEM ZVLÁŠTĚ, BERETE NA VĚDOMÍ ŽE VŠECHNY GROESTLCOINY ULOŽENÉ V TÉTO SPOLUPLÁTCOVSKÉ PENĚŽENCE NEBUDOU DOSTUPNÉ. </b>"
+msgid "<b>IF YOU LOSE ACCESS TO YOUR Groestlcoin Mobile Wallet WALLET OR YOUR ENCRYPTED PRIVATE KEYS AND YOU HAVE NOT SEPARATELY STORED A BACKUP OF YOUR WALLET AND CORRESPONDING PASSWORD, YOU ACKNOWLEDGE AND AGREE THAT ANY CAPRICOINS YOU HAVE ASSOCIATED WITH THAT Groestlcoin Mobile Wallet WALLET WILL BECOME INACCESSIBLE.</b>"
+msgstr "<b>POKUD ZTRATÍTE PŘÍSTUP K VAŠI SPOLUPLÁTCOVSKÉ PENĚŽENCE NEBO VAŠÍM ŠIFROVANÝM KLÍČŮM A NEMÁTE ULOŽENOU ZÁLOHU VAŠI PENĚŽENKY A HESLEM ZVLÁŠTĚ, BERETE NA VĚDOMÍ ŽE VŠECHNY CAPRICOINY ULOŽENÉ V TÉTO SPOLUPLÁTCOVSKÉ PENĚŽENCE NEBUDOU DOSTUPNÉ. </b>"
 
 #: public/views/backup.html
 msgid "<b>OR</b> 1 wallet export file and the remaining quorum of wallet recovery phrases (e.g. in a 3-5 wallet: 1 wallet export file + 2 wallet recovery phrases of any of the other copayers)."
@@ -74,11 +74,11 @@ msgstr ""
 
 #: public/views/disclaimer.html
 msgid "A multisignature bitcoin wallet"
-msgstr "A vícepodpisová groestlcoin peněženka"
+msgstr "A vícepodpisová Groestlcoin peněženka"
 
 #: public/views/preferencesGlobal.html
 msgid "About Copay"
-msgstr "O GroestlPay"
+msgstr "O Groestlcoin Mobile Wallet"
 
 #: public/views/modals/txp-details.html
 #: src/js/services/confirmDialog.js
@@ -152,7 +152,7 @@ msgstr "Název pro <i>{{index.walletName}}</i>"
 #: public/views/preferencesLanguage.html
 #: public/views/translators.html
 msgid "All contributions to Copay's translation are welcome. Sign up at crowdin.com and join the Copay project at"
-msgstr "Všichni spoluúčastníci překladů GroestlPay jsou vítání. Přihlaště se na crowdin.com a přidejte se k projektu GroestlPay na"
+msgstr "Všichni spoluúčastníci překladů Groestlcoin Mobile Wallet jsou vítání. Přihlaště se na crowdin.com a přidejte se k projektu Groestlcoin Mobile Wallet na"
 
 #: public/views/includes/terms.html
 msgid "All transaction requests are irreversible."
@@ -249,7 +249,7 @@ msgstr "Groestlcoin adresa"
 
 #: public/views/preferencesGlobal.html
 msgid "Groestlcoin Network Fee Policy"
-msgstr "Zásady poplatků groestlcoinové sítě"
+msgstr "Zásady poplatků Groestlcoinové sítě"
 
 #: public/views/preferencesFee.html
 msgid "Groestlcoin transactions may include a fee collected by miners on the network. The higher the fee, the greater the incentive a miner has to include that transaction in a block. Current fees are determined based on network load and the selected policy."
@@ -894,7 +894,7 @@ msgstr "Neplatná cesta derivace"
 
 #: src/js/controllers/copayers.js
 msgid "Invitation to share a Copay Wallet"
-msgstr "Pozvánka ke sdílené GroestlPay Peněžence"
+msgstr "Pozvánka ke sdílené Groestlcoin Mobile Wallet Peněžence"
 
 #: public/views/translators.html
 msgid "Italian"
@@ -915,7 +915,7 @@ msgstr "Spojit"
 
 #: src/js/controllers/copayers.js
 msgid "Join my Copay wallet. Here is the invitation code: {{secret}} You can download Copay for your phone or desktop at https://copay.io"
-msgstr "Propojení mé GroestlPay peněženky. Toto je kód pozvánky: {{secret}} GroestlPay je možné stáhnout do telefonu nebo počítače na https://copay.io"
+msgstr "Propojení mé Groestlcoin Mobile Wallet peněženky. Toto je kód pozvánky: {{secret}} Groestlcoin Mobile Wallet je možné stáhnout do telefonu nebo počítače na https://copay.io"
 
 #: public/views/add.html
 msgid "Join shared wallet"
@@ -943,7 +943,7 @@ msgstr "Poslední adresa peněženky"
 
 #: public/views/backup.html
 msgid "Learn more about Copay backups"
-msgstr "Dozvědět se více o zálohování GroestlPay"
+msgstr "Dozvědět se více o zálohování Groestlcoin Mobile Wallet"
 
 #: public/views/preferencesFee.html
 msgid "Loading..."
@@ -1013,7 +1013,7 @@ msgstr "Více příjemců"
 
 #: public/views/walletHome.html
 msgid "My Groestlcoin address"
-msgstr "Moje groestlcoin adresa"
+msgstr "Moje Groestlcoin adresa"
 
 #: public/views/modals/addressbook.html
 msgid "My contacts"
@@ -1262,7 +1262,7 @@ msgstr "Potvrďte pořadí slov pro potvrzení správnosti zálohy."
 
 #: src/js/services/bwcError.js
 msgid "Please upgrade Copay to perform this action"
-msgstr "Pro tuto funkci je potřeba aktualizovat GroestlPay"
+msgstr "Pro tuto funkci je potřeba aktualizovat Groestlcoin Mobile Wallet"
 
 #: public/views/uri.html
 msgid "Please wait to be redirected..."
@@ -1302,7 +1302,7 @@ msgstr "Soukromý klíč je šifrovaný, nelze podepsat"
 
 #: public/views/preferencesGlobal.html
 msgid "Push notifications for Copay are currently disabled. Enable them in the Settings app."
-msgstr "Oznámení pro GroestlPay jsou v současné době zakázána. Povolte v nastavení aplikace."
+msgstr "Oznámení pro Groestlcoin Mobile Wallet jsou v současné době zakázána. Povolte v nastavení aplikace."
 
 #: public/views/export.html
 #: public/views/modals/customized-amount.html
@@ -1667,7 +1667,7 @@ msgstr "Požadavek nebyl serverem pochopen"
 
 #: public/views/includes/terms.html
 msgid "The software does not constitute an account where other third parties serve as financial intermediaries or custodians of your bitcoin."
-msgstr "Tento software nepředstavuje účet kde jiné třetí strany slouží jako finanční zprostředkovatelé nebo správci vašeho groestlcoin."
+msgstr "Tento software nepředstavuje účet kde jiné třetí strany slouží jako finanční zprostředkovatelé nebo správci vašeho Groestlcoin."
 
 #: public/views/includes/terms.html
 msgid "The software you are about to use functions as a free, open source, and multi-signature digital wallet."
@@ -1696,7 +1696,7 @@ msgstr "Pro platbu je potřeba založit peněženku"
 
 #: src/js/controllers/index.js
 msgid "There is a new version of Copay. Please update"
-msgstr "Existuje nová verze GroestlPay. Proveďte aktualizaci"
+msgstr "Existuje nová verze Groestlcoin Mobile Wallet. Proveďte aktualizaci"
 
 #: src/js/controllers/import.js
 msgid "There is an error in the form"
@@ -1971,7 +1971,7 @@ msgstr "Rezervujeme si právu upravit podmínky užívání."
 
 #: public/views/disclaimer.html
 msgid "WELCOME TO COPAY"
-msgstr "VÍTEJTE V GroestlPay"
+msgstr "VÍTEJTE V Groestlcoin Mobile Wallet"
 
 #: public/views/includes/terms.html
 msgid "While the software has undergone beta testing and continues to be improved by feedback from the open-source user and developer community, we cannot guarantee that there will be no bugs in the software."

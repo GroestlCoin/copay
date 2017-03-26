@@ -57,8 +57,8 @@ msgid "* A payment proposal can be deleted if 1) you are the creator, and no oth
 msgstr "* Предложенный платёж может быть удалён если 1) вы создали этот платёж и никто его еще не подписал, или если 2) прошло более 24 часов с момента его создания."
 
 #: public/views/includes/terms.html
-msgid "<b>IF YOU LOSE ACCESS TO YOUR GroestlPay WALLET OR YOUR ENCRYPTED PRIVATE KEYS AND YOU HAVE NOT SEPARATELY STORED A BACKUP OF YOUR WALLET AND CORRESPONDING PASSWORD, YOU ACKNOWLEDGE AND AGREE THAT ANY GROESTLCOIN YOU HAVE ASSOCIATED WITH THAT GroestlPay WALLET WILL BECOME INACCESSIBLE.</b>"
-msgstr "<b>ЕСЛИ ВЫ ПОТЕРЯЕТЕ ДОСТУП К ВАШЕМУ КОШЕЛЬКУ GroestlPay ИЛИ ВАШИМ ЗАШИФРОВАННЫМ ЗАКРЫТЫМ КЛЮЧАМ, ПРИ ТОМ ЧТО У ВАС НЕТ ОТДЕЛЬНОЙ РЕЗЕРВНОЙ КОПИИ ВАШЕГО КОШЕЛЬКА И СООТВЕТСТВУЮЩЕМУ ЕМУ ПАРОЛЯ, ВЫ ПРИЗНАЁТЕ И СОГЛАШАЕТЕСЬ С ТЕМ ЧТО ВСЕ БИТКОЙНЫ АССОЦИИРОВАННЫЕ С ЭТИМ КОШЕЛЬКОМ СТАНУТ НЕДОСТУПНЫ.</b>"
+msgid "<b>IF YOU LOSE ACCESS TO YOUR Groestlcoin Mobile Wallet WALLET OR YOUR ENCRYPTED PRIVATE KEYS AND YOU HAVE NOT SEPARATELY STORED A BACKUP OF YOUR WALLET AND CORRESPONDING PASSWORD, YOU ACKNOWLEDGE AND AGREE THAT ANY CAPRICOIN YOU HAVE ASSOCIATED WITH THAT Groestlcoin Mobile Wallet WALLET WILL BECOME INACCESSIBLE.</b>"
+msgstr "<b>ЕСЛИ ВЫ ПОТЕРЯЕТЕ ДОСТУП К ВАШЕМУ КОШЕЛЬКУ Groestlcoin Mobile Wallet ИЛИ ВАШИМ ЗАШИФРОВАННЫМ ЗАКРЫТЫМ КЛЮЧАМ, ПРИ ТОМ ЧТО У ВАС НЕТ ОТДЕЛЬНОЙ РЕЗЕРВНОЙ КОПИИ ВАШЕГО КОШЕЛЬКА И СООТВЕТСТВУЮЩЕМУ ЕМУ ПАРОЛЯ, ВЫ ПРИЗНАЁТЕ И СОГЛАШАЕТЕСЬ С ТЕМ ЧТО ВСЕ БИТКОЙНЫ АССОЦИИРОВАННЫЕ С ЭТИМ КОШЕЛЬКОМ СТАНУТ НЕДОСТУПНЫ.</b>"
 
 #: public/views/backup.html
 msgid "<b>OR</b> 1 wallet export file and the remaining quorum of wallet recovery phrases (e.g. in a 3-5 wallet: 1 wallet export file + 2 wallet recovery phrases of any of the other copayers)."
