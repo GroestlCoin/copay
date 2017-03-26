@@ -57,8 +57,8 @@ msgid "* A payment proposal can be deleted if 1) you are the creator, and no oth
 msgstr "* 如果 1) 你是创造者，及没有其他 copayer 签名，或 2) 24 小时已经过去，支付提议将被删除。"
 
 #: public/views/includes/terms.html
-msgid "<b>IF YOU LOSE ACCESS TO YOUR Groestlcoin Mobile Wallet WALLET OR YOUR ENCRYPTED PRIVATE KEYS AND YOU HAVE NOT SEPARATELY STORED A BACKUP OF YOUR WALLET AND CORRESPONDING PASSWORD, YOU ACKNOWLEDGE AND AGREE THAT ANY CAPRICOINS YOU HAVE ASSOCIATED WITH THAT Groestlcoin Mobile Wallet WALLET WILL BECOME INACCESSIBLE.</b>"
-msgstr "<b>如果你无法访问你的 Groestlcoin Mobile Wallet 钱包或加密私钥，及你没有分开储存钱包备份和相应密码，你承认并同意有关 Groestlcoin Mobile Wallet 钱包里的任何黑币将不可被存取。</b>"
+msgid "<b>IF YOU LOSE ACCESS TO YOUR GroestlPay WALLET OR YOUR ENCRYPTED PRIVATE KEYS AND YOU HAVE NOT SEPARATELY STORED A BACKUP OF YOUR WALLET AND CORRESPONDING PASSWORD, YOU ACKNOWLEDGE AND AGREE THAT ANY CAPRICOINS YOU HAVE ASSOCIATED WITH THAT GroestlPay WALLET WILL BECOME INACCESSIBLE.</b>"
+msgstr "<b>如果你无法访问你的 GroestlPay 钱包或加密私钥，及你没有分开储存钱包备份和相应密码，你承认并同意有关 GroestlPay 钱包里的任何黑币将不可被存取。</b>"
 
 #: public/views/backup.html
 msgid "<b>OR</b> 1 wallet export file and the remaining quorum of wallet recovery phrases (e.g. in a 3-5 wallet: 1 wallet export file + 2 wallet recovery phrases of any of the other copayers)."
@@ -1302,7 +1302,7 @@ msgstr "私钥已加密，无法签名"
 
 #: public/views/preferencesGlobal.html
 msgid "Push notifications for GroestlPay are currently disabled. Enable them in the Settings app."
-msgstr "Groestlcoin Mobile Wallet 的推送通知目前未启用，请在设置应用里启用它。"
+msgstr "GroestlPay 的推送通知目前未启用，请在设置应用里启用它。"
 
 #: public/views/export.html
 #: public/views/modals/customized-amount.html

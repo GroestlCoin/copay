@@ -57,8 +57,8 @@ msgid "* A payment proposal can be deleted if 1) you are the creator, and no oth
 msgstr "* Una proposta di pagamento può essere eliminata se 1) Tu sei il creatore e nessun altro copayer ha firmato, oppure 2) Sono passate 24 ore da quando la proposta e' stata creata."
 
 #: public/views/includes/terms.html
-msgid "<b>IF YOU LOSE ACCESS TO YOUR Groestlcoin Mobile Wallet WALLET OR YOUR ENCRYPTED PRIVATE KEYS AND YOU HAVE NOT SEPARATELY STORED A BACKUP OF YOUR WALLET AND CORRESPONDING PASSWORD, YOU ACKNOWLEDGE AND AGREE THAT ANY CAPRICOINS YOU HAVE ASSOCIATED WITH THAT Groestlcoin Mobile Wallet WALLET WILL BECOME INACCESSIBLE.</b>"
-msgstr "<b>Se perdi l'accesso al tuo portafoglio Groestlcoin Mobile Wallet o tuo crittografato chiavi PRIVATE e non hai archiviato separatamente una copia di BACKUP del vostro portafoglio e la corrispondente PASSWORD, tu riconosci e accetti che qualsiasi CAPRICOIN associato con quel portafoglio Groestlcoin Mobile Wallet diventerà inaccessibile.</b>"
+msgid "<b>IF YOU LOSE ACCESS TO YOUR GroestlPay WALLET OR YOUR ENCRYPTED PRIVATE KEYS AND YOU HAVE NOT SEPARATELY STORED A BACKUP OF YOUR WALLET AND CORRESPONDING PASSWORD, YOU ACKNOWLEDGE AND AGREE THAT ANY CAPRICOINS YOU HAVE ASSOCIATED WITH THAT GroestlPay WALLET WILL BECOME INACCESSIBLE.</b>"
+msgstr "<b>Se perdi l'accesso al tuo portafoglio GroestlPay o tuo crittografato chiavi PRIVATE e non hai archiviato separatamente una copia di BACKUP del vostro portafoglio e la corrispondente PASSWORD, tu riconosci e accetti che qualsiasi CAPRICOIN associato con quel portafoglio GroestlPay diventerà inaccessibile.</b>"
 
 #: public/views/backup.html
 msgid "<b>OR</b> 1 wallet export file and the remaining quorum of wallet recovery phrases (e.g. in a 3-5 wallet: 1 wallet export file + 2 wallet recovery phrases of any of the other copayers)."
@@ -78,7 +78,7 @@ msgstr "Un portafoglio Groestlcoin multifirma"
 
 #: public/views/preferencesGlobal.html
 msgid "About GroestlPay"
-msgstr "Circa Groestlcoin Mobile Wallet"
+msgstr "Circa GroestlPay"
 
 #: public/views/modals/txp-details.html
 #: src/js/services/confirmDialog.js
@@ -152,7 +152,7 @@ msgstr "Alias per <i>{{index.walletName}}</i>"
 #: public/views/preferencesLanguage.html
 #: public/views/translators.html
 msgid "All contributions to GroestlPay's translation are welcome. Sign up at crowdin.com and join the GroestlPay project at"
-msgstr "Tutti i contributori alla traduzione di Groestlcoin Mobile Wallet sono i benvenuti. Iscriviti a crowdin e unisciti al progetto Groestlcoin Mobile Wallet presso"
+msgstr "Tutti i contributori alla traduzione di GroestlPay sono i benvenuti. Iscriviti a crowdin e unisciti al progetto GroestlPay presso"
 
 #: public/views/includes/terms.html
 msgid "All transaction requests are irreversible."
@@ -389,11 +389,11 @@ msgstr "Continua"
 
 #: src/js/services/bwcError.js
 msgid "copayer already in this wallet"
-msgstr "Groestlcoin Mobile Walleter già in questo portafoglio"
+msgstr "GroestlPayer già in questo portafoglio"
 
 #: src/js/services/bwcError.js
 msgid "copayer already voted on this spend proposal"
-msgstr "Groestlcoin Mobile Walleter già votato su questa proposta"
+msgstr "GroestlPayer già votato su questa proposta"
 
 #: src/js/services/bwcError.js
 msgid "copayer data mismatch"
@@ -401,7 +401,7 @@ msgstr "Mancata corrispondenza dei dati del copayer"
 
 #: public/views/preferencesInformation.html
 msgid "copayers"
-msgstr "Groestlcoin Mobile Walleters"
+msgstr "GroestlPayers"
 
 #: src/js/controllers/copayers.js
 #: src/js/controllers/export.js
@@ -894,7 +894,7 @@ msgstr "Percorso di derivazione non valido"
 
 #: src/js/controllers/copayers.js
 msgid "Invitation to share a GroestlPay Wallet"
-msgstr "Invito a condividere un portafoglio Groestlcoin Mobile Wallet"
+msgstr "Invito a condividere un portafoglio GroestlPay"
 
 #: public/views/translators.html
 msgid "Italian"
@@ -915,7 +915,7 @@ msgstr "Unisciti"
 
 #: src/js/controllers/copayers.js
 msgid "Join my GroestlPay wallet. Here is the invitation code: {{secret}} You can download GroestlPay for your phone or desktop at https://GroestlPay.io"
-msgstr "Unisciti al mio portafoglio Groestlcoin Mobile Wallet. Ecco il codice di invito: {{secret}} Puoi scaricare Groestlcoin Mobile Wallet dal tuo telefono o computer da https://GroestlPay.io"
+msgstr "Unisciti al mio portafoglio GroestlPay. Ecco il codice di invito: {{secret}} Puoi scaricare GroestlPay dal tuo telefono o computer da https://GroestlPay.io"
 
 #: public/views/add.html
 msgid "Join shared wallet"
@@ -943,7 +943,7 @@ msgstr "Indirizzi dell'ultimo portafoglio"
 
 #: public/views/backup.html
 msgid "Learn more about GroestlPay backups"
-msgstr "Ulteriori informazioni sui backup Groestlcoin Mobile Wallet"
+msgstr "Ulteriori informazioni sui backup GroestlPay"
 
 #: public/views/preferencesFee.html
 msgid "Loading..."
@@ -1193,11 +1193,11 @@ msgstr "Proposta di Pagamento Rifiutata"
 
 #: src/js/services/notificationsService.js
 msgid "Payment Proposal Rejected by copayer"
-msgstr "Proposta di Pagamento Rifiutata dai Groestlcoin Mobile Walleters"
+msgstr "Proposta di Pagamento Rifiutata dai GroestlPayers"
 
 #: src/js/services/notificationsService.js
 msgid "Payment Proposal Signed by copayer"
-msgstr "Proposta di Pagamento Firmata dai Groestlcoin Mobile Walleters"
+msgstr "Proposta di Pagamento Firmata dai GroestlPayers"
 
 #: public/views/walletHome.html
 msgid "Payment Proposals"
@@ -1262,7 +1262,7 @@ msgstr "Si prega di toccare le parole al fine di confermare la che vostra frase 
 
 #: src/js/services/bwcError.js
 msgid "Please upgrade GroestlPay to perform this action"
-msgstr "Si prega di aggiornare Groestlcoin Mobile Wallet per eseguire questa azione"
+msgstr "Si prega di aggiornare GroestlPay per eseguire questa azione"
 
 #: public/views/uri.html
 msgid "Please wait to be redirected..."
@@ -1302,7 +1302,7 @@ msgstr "La chiave privata è crittografata, non è possibile accedere"
 
 #: public/views/preferencesGlobal.html
 msgid "Push notifications for GroestlPay are currently disabled. Enable them in the Settings app."
-msgstr "Le notifiche push per Groestlcoin Mobile Wallet sono attualmente disabilitate. Abilitarle nel menu Impostazioni."
+msgstr "Le notifiche push per GroestlPay sono attualmente disabilitate. Abilitarle nel menu Impostazioni."
 
 #: public/views/export.html
 #: public/views/modals/customized-amount.html
@@ -1696,7 +1696,7 @@ msgstr "Non ci sono portafogli per effettuare questo pagamento"
 
 #: src/js/controllers/index.js
 msgid "There is a new version of GroestlPay. Please update"
-msgstr "C'è una nuova versione di Groestlcoin Mobile Wallet. Si prega di aggiornare"
+msgstr "C'è una nuova versione di GroestlPay. Si prega di aggiornare"
 
 #: src/js/controllers/import.js
 msgid "There is an error in the form"
@@ -1841,7 +1841,7 @@ msgstr "Il portafoglio esiste già"
 
 #: src/js/services/profileService.js
 msgid "Wallet already in GroestlPay"
-msgstr "Portafoglio già in Groestlcoin Mobile Wallet"
+msgstr "Portafoglio già in GroestlPay"
 
 #: public/views/preferencesInformation.html
 msgid "Wallet Configuration (m-n)"

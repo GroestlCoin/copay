@@ -57,7 +57,7 @@ msgid "* A payment proposal can be deleted if 1) you are the creator, and no oth
 msgstr "* Návrh k platbě může být odstraněn pokud 1) jste jej vytvořil(a) a žádný spoluplátce jej nepodepsal 2) Uběhlo 24 hodin od vytvoření návrhu."
 
 #: public/views/includes/terms.html
-msgid "<b>IF YOU LOSE ACCESS TO YOUR Groestlcoin Mobile Wallet WALLET OR YOUR ENCRYPTED PRIVATE KEYS AND YOU HAVE NOT SEPARATELY STORED A BACKUP OF YOUR WALLET AND CORRESPONDING PASSWORD, YOU ACKNOWLEDGE AND AGREE THAT ANY CAPRICOINS YOU HAVE ASSOCIATED WITH THAT Groestlcoin Mobile Wallet WALLET WILL BECOME INACCESSIBLE.</b>"
+msgid "<b>IF YOU LOSE ACCESS TO YOUR GroestlPay WALLET OR YOUR ENCRYPTED PRIVATE KEYS AND YOU HAVE NOT SEPARATELY STORED A BACKUP OF YOUR WALLET AND CORRESPONDING PASSWORD, YOU ACKNOWLEDGE AND AGREE THAT ANY CAPRICOINS YOU HAVE ASSOCIATED WITH THAT GroestlPay WALLET WILL BECOME INACCESSIBLE.</b>"
 msgstr "<b>POKUD ZTRATÍTE PŘÍSTUP K VAŠI SPOLUPLÁTCOVSKÉ PENĚŽENCE NEBO VAŠÍM ŠIFROVANÝM KLÍČŮM A NEMÁTE ULOŽENOU ZÁLOHU VAŠI PENĚŽENKY A HESLEM ZVLÁŠTĚ, BERETE NA VĚDOMÍ ŽE VŠECHNY CAPRICOINY ULOŽENÉ V TÉTO SPOLUPLÁTCOVSKÉ PENĚŽENCE NEBUDOU DOSTUPNÉ. </b>"
 
 #: public/views/backup.html
@@ -78,7 +78,7 @@ msgstr "A vícepodpisová Groestlcoin peněženka"
 
 #: public/views/preferencesGlobal.html
 msgid "About GroestlPay"
-msgstr "O Groestlcoin Mobile Wallet"
+msgstr "O GroestlPay"
 
 #: public/views/modals/txp-details.html
 #: src/js/services/confirmDialog.js
@@ -152,7 +152,7 @@ msgstr "Název pro <i>{{index.walletName}}</i>"
 #: public/views/preferencesLanguage.html
 #: public/views/translators.html
 msgid "All contributions to GroestlPay's translation are welcome. Sign up at crowdin.com and join the GroestlPay project at"
-msgstr "Všichni spoluúčastníci překladů Groestlcoin Mobile Wallet jsou vítání. Přihlaště se na crowdin.com a přidejte se k projektu Groestlcoin Mobile Wallet na"
+msgstr "Všichni spoluúčastníci překladů GroestlPay jsou vítání. Přihlaště se na crowdin.com a přidejte se k projektu GroestlPay na"
 
 #: public/views/includes/terms.html
 msgid "All transaction requests are irreversible."
@@ -894,7 +894,7 @@ msgstr "Neplatná cesta derivace"
 
 #: src/js/controllers/copayers.js
 msgid "Invitation to share a GroestlPay Wallet"
-msgstr "Pozvánka ke sdílené Groestlcoin Mobile Wallet Peněžence"
+msgstr "Pozvánka ke sdílené GroestlPay Peněžence"
 
 #: public/views/translators.html
 msgid "Italian"
@@ -915,7 +915,7 @@ msgstr "Spojit"
 
 #: src/js/controllers/copayers.js
 msgid "Join my GroestlPay wallet. Here is the invitation code: {{secret}} You can download GroestlPay for your phone or desktop at https://GroestlPay.io"
-msgstr "Propojení mé Groestlcoin Mobile Wallet peněženky. Toto je kód pozvánky: {{secret}} Groestlcoin Mobile Wallet je možné stáhnout do telefonu nebo počítače na https://GroestlPay.io"
+msgstr "Propojení mé GroestlPay peněženky. Toto je kód pozvánky: {{secret}} GroestlPay je možné stáhnout do telefonu nebo počítače na https://GroestlPay.io"
 
 #: public/views/add.html
 msgid "Join shared wallet"
@@ -943,7 +943,7 @@ msgstr "Poslední adresa peněženky"
 
 #: public/views/backup.html
 msgid "Learn more about GroestlPay backups"
-msgstr "Dozvědět se více o zálohování Groestlcoin Mobile Wallet"
+msgstr "Dozvědět se více o zálohování GroestlPay"
 
 #: public/views/preferencesFee.html
 msgid "Loading..."
@@ -1262,7 +1262,7 @@ msgstr "Potvrďte pořadí slov pro potvrzení správnosti zálohy."
 
 #: src/js/services/bwcError.js
 msgid "Please upgrade GroestlPay to perform this action"
-msgstr "Pro tuto funkci je potřeba aktualizovat Groestlcoin Mobile Wallet"
+msgstr "Pro tuto funkci je potřeba aktualizovat GroestlPay"
 
 #: public/views/uri.html
 msgid "Please wait to be redirected..."
@@ -1302,7 +1302,7 @@ msgstr "Soukromý klíč je šifrovaný, nelze podepsat"
 
 #: public/views/preferencesGlobal.html
 msgid "Push notifications for GroestlPay are currently disabled. Enable them in the Settings app."
-msgstr "Oznámení pro Groestlcoin Mobile Wallet jsou v současné době zakázána. Povolte v nastavení aplikace."
+msgstr "Oznámení pro GroestlPay jsou v současné době zakázána. Povolte v nastavení aplikace."
 
 #: public/views/export.html
 #: public/views/modals/customized-amount.html
@@ -1696,7 +1696,7 @@ msgstr "Pro platbu je potřeba založit peněženku"
 
 #: src/js/controllers/index.js
 msgid "There is a new version of GroestlPay. Please update"
-msgstr "Existuje nová verze Groestlcoin Mobile Wallet. Proveďte aktualizaci"
+msgstr "Existuje nová verze GroestlPay. Proveďte aktualizaci"
 
 #: src/js/controllers/import.js
 msgid "There is an error in the form"
@@ -1971,7 +1971,7 @@ msgstr "Rezervujeme si právu upravit podmínky užívání."
 
 #: public/views/disclaimer.html
 msgid "WELCOME TO COPAY"
-msgstr "VÍTEJTE V Groestlcoin Mobile Wallet"
+msgstr "VÍTEJTE V GroestlPay"
 
 #: public/views/includes/terms.html
 msgid "While the software has undergone beta testing and continues to be improved by feedback from the open-source user and developer community, we cannot guarantee that there will be no bugs in the software."

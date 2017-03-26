@@ -44,8 +44,8 @@ msgid "* A payment proposal can be deleted if 1) you are the creator, and no oth
 msgstr "* A payment proposal can be deleted if 1) you are the creator, and no other copayer has signed, or 2) 24 hours have passed since the proposal was created."
 
 #: public/views/disclaimer.html
-msgid "<b>IF YOU LOSE ACCESS TO YOUR Groestlcoin Mobile Wallet WALLET OR YOUR ENCRYPTED PRIVATE KEYS AND YOU HAVE NOT SEPARATELY STORED A BACKUP OF YOUR WALLET AND CORRESPONDING PASSWORD, YOU ACKNOWLEDGE AND AGREE THAT ANY CAPRICOIN YOU HAVE ASSOCIATED WITH THAT Groestlcoin Mobile Wallet WALLET WILL BECOME INACCESSIBLE.</b>"
-msgstr "<b>IF YOU LOSE ACCESS TO YOUR Groestlcoin Mobile Wallet WALLET OR YOUR ENCRYPTED PRIVATE KEYS AND YOU HAVE NOT SEPARATELY STORED A BACKUP OF YOUR WALLET AND CORRESPONDING PASSWORD, YOU ACKNOWLEDGE AND AGREE THAT ANY CAPRICOIN YOU HAVE ASSOCIATED WITH THAT Groestlcoin Mobile Wallet WALLET WILL BECOME INACCESSIBLE.</b>"
+msgid "<b>IF YOU LOSE ACCESS TO YOUR GroestlPay WALLET OR YOUR ENCRYPTED PRIVATE KEYS AND YOU HAVE NOT SEPARATELY STORED A BACKUP OF YOUR WALLET AND CORRESPONDING PASSWORD, YOU ACKNOWLEDGE AND AGREE THAT ANY CAPRICOIN YOU HAVE ASSOCIATED WITH THAT GroestlPay WALLET WILL BECOME INACCESSIBLE.</b>"
+msgstr "<b>IF YOU LOSE ACCESS TO YOUR GroestlPay WALLET OR YOUR ENCRYPTED PRIVATE KEYS AND YOU HAVE NOT SEPARATELY STORED A BACKUP OF YOUR WALLET AND CORRESPONDING PASSWORD, YOU ACKNOWLEDGE AND AGREE THAT ANY CAPRICOIN YOU HAVE ASSOCIATED WITH THAT GroestlPay WALLET WILL BECOME INACCESSIBLE.</b>"
 
 #: public/views/backup.html
 msgid "<b>OR</b> 1 wallet export file and the remaining quorum of wallet seeds (e.g. in a 3-5 wallet: 1 wallet export file + 2 wallet seeds of any of the other copayers)."
@@ -65,7 +65,7 @@ msgstr "Uma carteira de Groestlcoin multi-assinada"
 
 #: public/views/preferences.html
 msgid "About GroestlPay"
-msgstr "Sobre a Groestlcoin Mobile Wallet"
+msgstr "Sobre a GroestlPay"
 
 #: public/views/modals/txp-details.html
 #: src/js/services/confirmDialog.js
@@ -117,7 +117,7 @@ msgstr "Alias for <i>{{index.walletName}}</i>"
 
 #: public/views/translators.html
 msgid "All contributions to GroestlPay's translation are welcome. Sign up at crowdin.com and join the GroestlPay project at"
-msgstr "All contributions to Groestlcoin Mobile Wallet's translation are welcome. Sign up at crowdin.com and join the Groestlcoin Mobile Wallet project at"
+msgstr "All contributions to GroestlPay's translation are welcome. Sign up at crowdin.com and join the GroestlPay project at"
 
 #: public/views/disclaimer.html
 msgid "All transaction requests are irreversible."
@@ -309,19 +309,19 @@ msgstr "Connecting to {{join.hwWallet}} Wallet..."
 
 #: src/js/services/bwsError.js
 msgid "copayer already in this wallet"
-msgstr "Groestlcoin Mobile Walleter already in this wallet"
+msgstr "GroestlPayer already in this wallet"
 
 #: src/js/services/bwsError.js
 msgid "copayer already voted on this spend proposal"
-msgstr "Groestlcoin Mobile Walleter already voted on this spend proposal"
+msgstr "GroestlPayer already voted on this spend proposal"
 
 #: src/js/services/bwsError.js
 msgid "copayer data mismatch"
-msgstr "Groestlcoin Mobile Walleter data mismatch"
+msgstr "GroestlPayer data mismatch"
 
 #: public/views/modals/copayers.html
 msgid "copayers"
-msgstr "Groestlcoin Mobile Walleters"
+msgstr "GroestlPayers"
 
 #: src/js/controllers/copayers.js
 #: src/js/controllers/export.js
@@ -680,7 +680,7 @@ msgstr "Hardware Wallet"
 
 #: public/views/import.html
 msgid "Have a Backup from GroestlPay v0.9?"
-msgstr "Tem um Backup do Groestlcoin Mobile Wallet v 0.9?"
+msgstr "Tem um Backup do GroestlPay v 0.9?"
 
 #: public/views/create.html
 #: public/views/import.html
@@ -769,7 +769,7 @@ msgstr "Invalid address"
 
 #: src/js/controllers/copayers.js
 msgid "Invitation to share a GroestlPay Wallet"
-msgstr "Invitation to share a Groestlcoin Mobile Wallet Wallet"
+msgstr "Invitation to share a GroestlPay Wallet"
 
 #: public/views/translators.html
 msgid "Italian"
@@ -790,7 +790,7 @@ msgstr "Participar"
 
 #: src/js/controllers/copayers.js
 msgid "Join my GroestlPay wallet. Here is the invitation code: {{secret}} You can download GroestlPay for your phone or desktop at https://GroestlPay.io"
-msgstr "Join my Groestlcoin Mobile Wallet wallet. Here is the invitation code: {{secret}} You can download Groestlcoin Mobile Wallet for your phone or desktop at https://GroestlPay.io"
+msgstr "Join my GroestlPay wallet. Here is the invitation code: {{secret}} You can download GroestlPay for your phone or desktop at https://GroestlPay.io"
 
 #: public/views/add.html
 msgid "Join shared wallet"
@@ -814,7 +814,7 @@ msgstr "Last Wallet Addresses"
 
 #: public/views/backup.html
 msgid "Learn more about GroestlPay backups"
-msgstr "Learn more about Groestlcoin Mobile Wallet backups"
+msgstr "Learn more about GroestlPay backups"
 
 #: public/views/importLegacy.html
 msgid "Learn more about Wallet Migration"
@@ -1012,11 +1012,11 @@ msgstr "Proposta de Pagamento Rejeitada"
 
 #: src/js/services/notificationsService.js
 msgid "Payment Proposal Rejected by copayer"
-msgstr "Proposta de Pagamento Rejeitada pelo Groestlcoin Mobile Walleter"
+msgstr "Proposta de Pagamento Rejeitada pelo GroestlPayer"
 
 #: src/js/services/notificationsService.js
 msgid "Payment Proposal Signed by copayer"
-msgstr "Proposta de Pagamento Assinada pelo Groestlcoin Mobile Walleter"
+msgstr "Proposta de Pagamento Assinada pelo GroestlPayer"
 
 #: public/views/walletHome.html
 msgid "Payment Proposals"
@@ -1084,7 +1084,7 @@ msgstr "Please enter the wallet seed"
 
 #: src/js/services/bwsError.js
 msgid "Please upgrade GroestlPay to perform this action"
-msgstr "Please upgrade Groestlcoin Mobile Wallet to perform this action"
+msgstr "Please upgrade GroestlPay to perform this action"
 
 #: src/js/controllers/import.js
 msgid "Please, select your backup file"
@@ -1594,7 +1594,7 @@ msgstr "Carteira já importada:"
 
 #: src/js/services/profileService.js
 msgid "Wallet already in GroestlPay:"
-msgstr "Wallet already in Groestlcoin Mobile Wallet:"
+msgstr "Wallet already in GroestlPay:"
 
 #: public/views/preferencesInformation.html
 msgid "Wallet Configuration (m-n)"

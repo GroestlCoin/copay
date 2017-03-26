@@ -242,7 +242,7 @@ angular.module('copayApp.controllers').controller('walletHomeController', functi
 
   this.shareAddress = function(addr) {
     if (isCordova) {
-      window.plugins.socialsharing.share('Groestlcoin:' + addr, null, null, null);
+      window.plugins.socialsharing.share('groestlcoin:' + addr, null, null, null);
     }
   };
 
@@ -780,8 +780,8 @@ angular.module('copayApp.controllers').controller('walletHomeController', functi
     var satToUnit = 1 / this.unitToSatoshi;
 
     // URI extensions for Payment Protocol with non-backwards-compatible request
-    if ((/^Groestlcoin:\?r=[\w+]/).exec(uri)) {
-      uri = decodeURIComponent(uri.replace('Groestlcoin:?r=', ''));
+    if ((/^groestlcoin:\?r=[\w+]/).exec(uri)) {
+      uri = decodeURIComponent(uri.replace('groestlcoin:?r=', ''));
       this.setFromPayPro(uri, function(err) {
         if (err) {
           return err;
@@ -824,7 +824,7 @@ angular.module('copayApp.controllers').controller('walletHomeController', functi
     if (this._paypro)
       return value;
 
-    if (value.indexOf('Groestlcoin:') === 0) {
+    if (value.indexOf('groestlcoin:') === 0) {
       return this.setFromUri(value);
     } else if (/^https?:\/\//.test(value)) {
       return this.setFromPayPro(value);

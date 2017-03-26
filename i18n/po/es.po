@@ -57,8 +57,8 @@ msgid "* A payment proposal can be deleted if 1) you are the creator, and no oth
 msgstr "* Una propuesta de pago puede ser eliminada si 1) Ud. es el creador, y ningún otro copayer la haya firmado, o 2) hayan transcurrido 24 horas desde la creación de la propuesta."
 
 #: public/views/includes/terms.html
-msgid "<b>IF YOU LOSE ACCESS TO YOUR Groestlcoin Mobile Wallet WALLET OR YOUR ENCRYPTED PRIVATE KEYS AND YOU HAVE NOT SEPARATELY STORED A BACKUP OF YOUR WALLET AND CORRESPONDING PASSWORD, YOU ACKNOWLEDGE AND AGREE THAT ANY CAPRICOINS YOU HAVE ASSOCIATED WITH THAT Groestlcoin Mobile Wallet WALLET WILL BECOME INACCESSIBLE.</b>"
-msgstr "<b>SI UD. PIERDE ACCESO A SU MONEDERO Groestlcoin Mobile Wallet O A SUS CLAVES PRIVADAS ENCRIPTADAS Y NO HA GUARDADO POR SEPARADO UNA COPIA DE SEGURIDAD DE SU MONEDERO Y CONTRASEÑA CORRESPONDIENTES, USTED RECONOCE Y ACEPTA QUE CUALQUIER CAPRICOIN QUE HA ASOCIADO CON ESE MONEDERO Groestlcoin Mobile Wallet SERÁ INACCESIBLE.</b>"
+msgid "<b>IF YOU LOSE ACCESS TO YOUR GroestlPay WALLET OR YOUR ENCRYPTED PRIVATE KEYS AND YOU HAVE NOT SEPARATELY STORED A BACKUP OF YOUR WALLET AND CORRESPONDING PASSWORD, YOU ACKNOWLEDGE AND AGREE THAT ANY CAPRICOINS YOU HAVE ASSOCIATED WITH THAT GroestlPay WALLET WILL BECOME INACCESSIBLE.</b>"
+msgstr "<b>SI UD. PIERDE ACCESO A SU MONEDERO GroestlPay O A SUS CLAVES PRIVADAS ENCRIPTADAS Y NO HA GUARDADO POR SEPARADO UNA COPIA DE SEGURIDAD DE SU MONEDERO Y CONTRASEÑA CORRESPONDIENTES, USTED RECONOCE Y ACEPTA QUE CUALQUIER CAPRICOIN QUE HA ASOCIADO CON ESE MONEDERO GroestlPay SERÁ INACCESIBLE.</b>"
 
 #: public/views/backup.html
 msgid "<b>OR</b> 1 wallet export file and the remaining quorum of wallet recovery phrases (e.g. in a 3-5 wallet: 1 wallet export file + 2 wallet recovery phrases of any of the other copayers)."
@@ -78,7 +78,7 @@ msgstr "Monedero multifirma de Groestlcoin"
 
 #: public/views/preferencesGlobal.html
 msgid "About GroestlPay"
-msgstr "Acerca de Groestlcoin Mobile Wallet"
+msgstr "Acerca de GroestlPay"
 
 #: public/views/modals/txp-details.html
 #: src/js/services/confirmDialog.js
@@ -152,7 +152,7 @@ msgstr "Alias de <i>{{index.walletName}}</i>"
 #: public/views/preferencesLanguage.html
 #: public/views/translators.html
 msgid "All contributions to GroestlPay's translation are welcome. Sign up at crowdin.com and join the GroestlPay project at"
-msgstr "Todas las contribuciones a la traducción de Groestlcoin Mobile Wallet son bienvenidas. Regístrese en crowdin.com y únase al proyecto Groestlcoin Mobile Wallet en"
+msgstr "Todas las contribuciones a la traducción de GroestlPay son bienvenidas. Regístrese en crowdin.com y únase al proyecto GroestlPay en"
 
 #: public/views/includes/terms.html
 msgid "All transaction requests are irreversible."
@@ -397,11 +397,11 @@ msgstr "Ya ha votado en esta propuesta de gasto"
 
 #: src/js/services/bwcError.js
 msgid "copayer data mismatch"
-msgstr "Discrepancia en los datos del Groestlcoin Mobile Walleter"
+msgstr "Discrepancia en los datos del GroestlPayer"
 
 #: public/views/preferencesInformation.html
 msgid "copayers"
-msgstr "Groestlcoin Mobile Walleters"
+msgstr "GroestlPayers"
 
 #: src/js/controllers/copayers.js
 #: src/js/controllers/export.js
@@ -894,7 +894,7 @@ msgstr "Camino de derivación no válido"
 
 #: src/js/controllers/copayers.js
 msgid "Invitation to share a GroestlPay Wallet"
-msgstr "Invitación para compartir un monedero de Groestlcoin Mobile Wallet"
+msgstr "Invitación para compartir un monedero de GroestlPay"
 
 #: public/views/translators.html
 msgid "Italian"
@@ -915,7 +915,7 @@ msgstr "Unirse"
 
 #: src/js/controllers/copayers.js
 msgid "Join my GroestlPay wallet. Here is the invitation code: {{secret}} You can download GroestlPay for your phone or desktop at https://GroestlPay.io"
-msgstr "Únase a mi monedero Groestlcoin Mobile Wallet. Aquí esta el código de invitación: {{secret}}. Puedes descargar Groestlcoin Mobile Wallet a su teléfono o computadora desde https://GroestlPay.io"
+msgstr "Únase a mi monedero GroestlPay. Aquí esta el código de invitación: {{secret}}. Puedes descargar GroestlPay a su teléfono o computadora desde https://GroestlPay.io"
 
 #: public/views/add.html
 msgid "Join shared wallet"
@@ -943,7 +943,7 @@ msgstr "Últimas Direcciones del Monedero"
 
 #: public/views/backup.html
 msgid "Learn more about GroestlPay backups"
-msgstr "Más información sobre copias de seguridad en Groestlcoin Mobile Wallet"
+msgstr "Más información sobre copias de seguridad en GroestlPay"
 
 #: public/views/preferencesFee.html
 msgid "Loading..."
@@ -1193,11 +1193,11 @@ msgstr "Propuesta de Pago Rechazada"
 
 #: src/js/services/notificationsService.js
 msgid "Payment Proposal Rejected by copayer"
-msgstr "Propuesta de Pago Rechazada por Groestlcoin Mobile Walleter"
+msgstr "Propuesta de Pago Rechazada por GroestlPayer"
 
 #: src/js/services/notificationsService.js
 msgid "Payment Proposal Signed by copayer"
-msgstr "Propuesta de Pago Firmada por Groestlcoin Mobile Walleter"
+msgstr "Propuesta de Pago Firmada por GroestlPayer"
 
 #: public/views/walletHome.html
 msgid "Payment Proposals"
@@ -1262,7 +1262,7 @@ msgstr "Por favor presione las palabras para confirmar que su copia de seguridad
 
 #: src/js/services/bwcError.js
 msgid "Please upgrade GroestlPay to perform this action"
-msgstr "Por favor actualice Groestlcoin Mobile Wallet para realizar esta acción"
+msgstr "Por favor actualice GroestlPay para realizar esta acción"
 
 #: public/views/uri.html
 msgid "Please wait to be redirected..."
@@ -1302,7 +1302,7 @@ msgstr "La clave privada esta encriptada, no puede firmar"
 
 #: public/views/preferencesGlobal.html
 msgid "Push notifications for GroestlPay are currently disabled. Enable them in the Settings app."
-msgstr "Notificaciones push para Groestlcoin Mobile Wallet están deshabilitadas. Habilitarla en la configuración de la aplicación."
+msgstr "Notificaciones push para GroestlPay están deshabilitadas. Habilitarla en la configuración de la aplicación."
 
 #: public/views/export.html
 #: public/views/modals/customized-amount.html
@@ -1696,7 +1696,7 @@ msgstr "No dispone de monederos para realizar este pago"
 
 #: src/js/controllers/index.js
 msgid "There is a new version of GroestlPay. Please update"
-msgstr "Hay una nueva versión de Groestlcoin Mobile Wallet. Por favor actualizar"
+msgstr "Hay una nueva versión de GroestlPay. Por favor actualizar"
 
 #: src/js/controllers/import.js
 msgid "There is an error in the form"
@@ -1841,7 +1841,7 @@ msgstr "El monedero ya existe"
 
 #: src/js/services/profileService.js
 msgid "Wallet already in GroestlPay"
-msgstr "El monedero ya existe en Groestlcoin Mobile Wallet"
+msgstr "El monedero ya existe en GroestlPay"
 
 #: public/views/preferencesInformation.html
 msgid "Wallet Configuration (m-n)"

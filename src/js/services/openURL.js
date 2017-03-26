@@ -5,7 +5,7 @@ angular.module('copayApp.services').factory('openURLService', function($rootScop
 
   root.registeredUriHandlers = [{
     name: 'Groestlcoin BIP21 URL',
-    startsWith: 'Groestlcoin:',
+    startsWith: 'groestlcoin:',
     transitionTo: 'uripayment',
   }];
 
@@ -87,10 +87,10 @@ angular.module('copayApp.services').factory('openURLService', function($rootScop
 
       // This event is sent to an existent instance of Copay (only for standalone apps)
       gui.App.on('open', function(pathData) {
-        if (pathData.indexOf('Groestlcoin:') != -1) {
+        if (pathData.indexOf('groestlcoin:') != -1) {
           $log.debug('Groestlcoin URL found');
           handleOpenURL({
-            url: pathData.substring(pathData.indexOf('Groestlcoin:'))
+            url: pathData.substring(pathData.indexOf('groestlcoin:'))
           });
         } else if (pathData.indexOf('copay:') != -1) {
           $log.debug('Copay URL found');
