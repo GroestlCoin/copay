@@ -12,7 +12,7 @@ angular.module('copayApp.services').factory('configService', function(storageSer
 
     // Bitcore wallet service URL
     bws: {
-      url: 'https://grsbws.mmitech.info/bws/api',
+      url: 'https://gws.groestlcoin.org/bws/api',
     },
 
     // wallet default config
