@@ -1,19 +1,20 @@
 {
-  "name": "copay",
-  "description": "A multisignature bitcoin wallet",
-  "author": "BitPay",
+  "name": "GroestlPay",
+  "description": "A multisignature Groestlcoin wallet",
+  "author": "Groestlcoin",
   "version": "2.7.0",
   "androidVersionCode": "117",
   "keywords": [
     "wallet",
-    "copay",
+    "GroestlPay",
     "multisignature",
     "bitcoin",
+	"Groestlcoin",
     "bitcore"
   ],
   "main": "public/index.html",
   "window": {
-    "title": "Copay - A multisignature bitcoin wallet",
+    "title": "GroestlPay - A multisignature bitcoin wallet",
     "icon": "./public/img/icons/icon-256.png",
     "show": true,
     "visible": true,
@@ -33,14 +34,14 @@
   },
   "dom_storage_quota": 200,
   "id": "jid1-x7bV5evAaI1P9Q",
-  "homepage": "https://github.com/bitpay/copay",
+  "homepage": "https://github.com/Groestlcoin/GroestlPay",
   "license": "MIT",
   "repository": {
-    "url": "git://github.com/bitpay/copay.git",
+    "url": "git://github.com/Groestlcoin/GroestlPay.git",
     "type": "git"
   },
   "bugs": {
-    "url": "https://github.com/bitpay/copay/issues"
+    "url": "https://github.com/Groestlcoin/GroestlPay/issues"
   },
   "dependencies": {
     "bitcore-wallet-client": "https://github.com/Groestlcoin/bitcore-wallet-client.git#grs",
