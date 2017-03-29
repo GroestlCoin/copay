@@ -61,12 +61,12 @@ angular.module('copayApp.controllers').controller('createController',
           label: 'Ledger Hardware Wallet',
         });
 
-      if (isChromeApp || isDevel) {
-        self.seedOptions.push({
-          id: 'trezor',
-          label: 'Trezor Hardware Wallet',
-        });
-      }
+      // if (isChromeApp || isDevel) {
+        // self.seedOptions.push({
+          // id: 'trezor',
+          // label: 'Trezor Hardware Wallet',
+        // });
+      // }
     };
 
     this.TCValues = lodash.range(2, defaults.limits.totalCopayers + 1);

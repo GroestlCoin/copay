@@ -29,7 +29,7 @@ msgstr "[残高非表示中]"
 
 #: src/js/controllers/walletHome.js
 msgid "{{fee}} will be deducted for groestlcoin networking fees"
-msgstr "{{fee}} のビットコインネットワーク手数料が差し引かれます。"
+msgstr "{{fee}} のグルシュルコインネットワーク手数料が差し引かれます。"
 
 #: public/views/includes/confirm-tx.html
 msgid "{{feeRateStr}} of the transaction"
@@ -58,7 +58,7 @@ msgstr "* 送金の提案の取下げは①他のウォレット参加者に署�
 
 #: public/views/includes/terms.html
 msgid "<b>IF YOU LOSE ACCESS TO YOUR GroestlPay WALLET OR YOUR ENCRYPTED PRIVATE KEYS AND YOU HAVE NOT SEPARATELY STORED A BACKUP OF YOUR WALLET AND CORRESPONDING PASSWORD, YOU ACKNOWLEDGE AND AGREE THAT ANY CAPRICOINS YOU HAVE ASSOCIATED WITH THAT GroestlPay WALLET WILL BECOME INACCESSIBLE.</b>"
-msgstr "<b>GroestlPayウォレットとその中にある秘密鍵の情報を紛失してしまい、尚且つバックアップが無い、若しくはそのバックアップを暗号化した際のパスワードが分からないなどの状況に陥ってしまえば、そのウォレットに含まれた全てのビットコインが永久送金不可能となってしまうことを認識し、同意するものとします。</b>"
+msgstr "<b>GroestlPayウォレットとその中にある秘密鍵の情報を紛失してしまい、尚且つバックアップが無い、若しくはそのバックアップを暗号化した際のパスワードが分からないなどの状況に陥ってしまえば、そのウォレットに含まれた全てのグルシュルコインが永久送金不可能となってしまうことを認識し、同意するものとします。</b>"
 
 #: public/views/backup.html
 msgid "<b>OR</b> 1 wallet export file and the remaining quorum of wallet recovery phrases (e.g. in a 3-5 wallet: 1 wallet export file + 2 wallet recovery phrases of any of the other copayers)."
@@ -74,7 +74,7 @@ msgstr "<b>または</b> 参加者 <b>全員</b> のウォレット復元フレ�
 
 #: public/views/disclaimer.html
 msgid "A multisignature groestlcoin wallet"
-msgstr "マルチシグネチャビットコインウォレット"
+msgstr "マルチシグネチャグルシュルコインウォレット"
 
 #: public/views/preferencesGlobal.html
 msgid "About GroestlPay"
@@ -246,15 +246,15 @@ msgstr "階級アドレス派生のパス"
 
 #: public/views/walletHome.html
 msgid "Groestlcoin address"
-msgstr "ビットコインアドレス"
+msgstr "グルシュルコインアドレス"
 
 #: public/views/preferencesGlobal.html
 msgid "Groestlcoin Network Fee Policy"
-msgstr "ビットコインネットワークの手数料設定"
+msgstr "グルシュルコインネットワークの手数料設定"
 
 #: public/views/preferencesFee.html
 msgid "Groestlcoin transactions may include a fee collected by miners on the network. The higher the fee, the greater the incentive a miner has to include that transaction in a block. Current fees are determined based on network load and the selected policy."
-msgstr "円滑な送金をしていただくために、ビットコインの送金には少量の手数料を付けることが義務付けられております。この手数料はビットコインのネットワークを運用する人たちに寄付され、より高い手数料であればより優先的にブロックに含まれ、承認されます。選択された手数料基準やネットワークの混雑状況により、その時点で払われるべき手数料が変動することがあります。"
+msgstr "円滑な送金をしていただくために、グルシュルコインの送金には少量の手数料を付けることが義務付けられております。この手数料はグルシュルコインのネットワークを運用する人たちに寄付され、より高い手数料であればより優先的にブロックに含まれ、承認されます。選択された手数料基準やネットワークの混雑状況により、その時点で払われるべき手数料が変動することがあります。"
 
 #: public/views/paymentUri.html
 msgid "Groestlcoin URI is NOT valid!"
@@ -489,7 +489,7 @@ msgstr "ウォレットに参加できませんでした。"
 
 #: src/js/controllers/walletHome.js
 msgid "Could not recognize a valid Groestlcoin QR Code"
-msgstr "有効なビットコインQRコードが認識できませんでした。"
+msgstr "有効なグルシュルコインQRコードが認識できませんでした。"
 
 #: src/js/controllers/modals/txpDetails.js
 msgid "Could not reject payment"
@@ -1014,7 +1014,7 @@ msgstr "複数送金先"
 
 #: public/views/walletHome.html
 msgid "My Groestlcoin address"
-msgstr "私のビットコインアドレス："
+msgstr "私のグルシュルコインアドレス："
 
 #: public/views/modals/addressbook.html
 msgid "My contacts"
@@ -1085,7 +1085,7 @@ msgstr "注意：合計{{amountAboveMaxSizeStr}} を除外しました。取引�
 
 #: src/js/controllers/walletHome.js
 msgid "Note: a total of {{amountBelowFeeStr}} were excluded. These funds come from UTXOs smaller than the network fee provided."
-msgstr "注意：合計 {{amountBelowFeeStr}} を除外しました。これらのビットコインは手数料よりも低い額となるため除外しました。"
+msgstr "注意：合計 {{amountBelowFeeStr}} を除外しました。これらのグルシュルコインは手数料よりも低い額となるため除外しました。"
 
 #: public/views/import.html
 msgid "NOTE: To import a wallet from a 3rd party software, please go to Add Wallet &gt; Create Wallet, and specify the Recovery Phrase there."
@@ -1466,11 +1466,11 @@ msgstr "送信"
 
 #: public/views/preferencesInformation.html
 msgid "Send addresses by email"
-msgstr "ビットコインアドレスをメールにて共有"
+msgstr "グルシュルコインアドレスをメールにて共有"
 
 #: public/views/includes/confirm-tx.html
 msgid "Send groestlcoin"
-msgstr "ビットコインを送金"
+msgstr "グルシュルコインを送金"
 
 #: public/views/export.html
 #: public/views/preferencesLogs.html
@@ -1549,7 +1549,7 @@ msgstr "送金を受けるためにはこのウォレットアドレスを共有
 
 #: public/views/walletHome.html
 msgid "Share this wallet address to receive payments. To protect your privacy, new addresses are generated automatically once you use them."
-msgstr "これを人に共有することでビットコインを送ってもらうことができます。プライバシー向上の観点から、アドレスが1回でも使用されたら新しいアドレスが自動生成されます。"
+msgstr "これを人に共有することでグルシュルコインを送ってもらうことができます。プライバシー向上の観点から、アドレスが1回でも使用されたら新しいアドレスが自動生成されます。"
 
 #: public/views/create.html
 #: public/views/import.html
@@ -1621,7 +1621,7 @@ msgstr "ウォレットの全残高インポート"
 
 #: src/js/services/onGoingProcess.js
 msgid "Sweeping Wallet..."
-msgstr "ビットコイン回収中…"
+msgstr "グルシュルコイン回収中…"
 
 #: public/views/walletHome.html
 msgid "Tap and hold to show"
@@ -1638,7 +1638,7 @@ msgstr "利用規約"
 
 #: public/views/includes/terms.html
 msgid "The authors of the software, employees, copyright holders, cannot retrieve your private keys or passwords if you lose or forget them and cannot guarantee transaction confirmation as they do not have control over the Groestlcoin network."
-msgstr "このソフトの開発者、の従業員とその関係者、著作権所有者. 自体もパスワード・秘密鍵・パスワードなどへのアクセスが不可能なため、教えることがだきません、なお、ビットコインのネットワークへの影響が無いので、取引の取り消しや優先的な承認などはできません。"
+msgstr "このソフトの開発者、の従業員とその関係者、著作権所有者. 自体もパスワード・秘密鍵・パスワードなどへのアクセスが不可能なため、教えることがだきません、なお、グルシュルコインのネットワークへの影響が無いので、取引の取り消しや優先的な承認などはできません。"
 
 #: public/views/import.html
 msgid "The derivation path"
@@ -1805,7 +1805,7 @@ msgstr "ウォレット更新中…"
 
 #: public/views/preferencesGlobal.html
 msgid "Use Unconfirmed Funds"
-msgstr "未承認ビットコインを使用"
+msgstr "未承認グルシュルコインを使用"
 
 #: src/js/services/onGoingProcess.js
 msgid "Validating recovery phrase..."

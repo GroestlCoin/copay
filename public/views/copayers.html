@@ -6,7 +6,7 @@
 
 <div class="copayers content p20v" ng-controller="copayersController as copayers" ng-init="copayers.init()">
   <div ng-show="!index.notAuthorized">
-    <h1 class="text-center" translate>Share this invitation with your copayers</h1>
+    <h1 class="text-center" translate>Share this invitation with your Groestlpayer</h1>
 
     <div ng-click="copayers.copySecret(index.walletSecret)" ng-class="{'enable_text_select': !index.isCordova}">
       <div class="text-center">
@@ -33,7 +33,7 @@
 
       <div class="m30v line-t">
         <h4 class="size-14 p10h m10t">
-          <span translate>Waiting for copayers</span>
+          <span translate>Waiting for Groestlpayers</span>
           <span class="text-gray right">
             [ <span translate>{{index.m}}-of-{{index.n}}</span> ]
           </span>

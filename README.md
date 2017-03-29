@@ -1,6 +1,6 @@
-Groestlcoin Mobile Wallet is an easy-to-use, open-source, multiplatform, multisignature, secure bitcoin wallet platform for both individuals and companies.  Groestlcoin Mobile Wallet uses [Bitcore Wallet Service](https://github.com/bitpay/bitcore-wallet-service) (BWS) for peer synchronization and network interfacing.
+GroestlPay is an easy-to-use, open-source, multiplatform, multisignature, secure bitcoin wallet platform for both individuals and companies.  GroestlPay uses [Bitcore Wallet Service](https://github.com/bitpay/bitcore-wallet-service) (BWS) for peer synchronization and network interfacing.
 
-For a list of frequently asked questions please visit the [Groestlcoin Mobile Wallet FAQ](https://github.com/bitpay/copay/wiki/COPAY---FAQ).
+For a list of frequently asked questions please visit the [GroestlPay FAQ](https://github.com/bitpay/copay/wiki/COPAY---FAQ).
 
 ## Main Features
 
@@ -26,11 +26,11 @@ For a list of frequently asked questions please visit the [Groestlcoin Mobile Wa
 Clone the repo and open the directory:
 
 ```sh
-git clone https://github.com/Groestlcoinofficial/Groestlcoin-mobile-wallet
-cd Groestlcoin-mobile-wallet
+git clone https://github.com/Groestlcoinofficial/GroestlPay
+cd GroestlPay
 ```
 
-Ensure you have [Node](https://nodejs.org/) installed, then install and start Groestlcoin Mobile Wallet:
+Ensure you have [Node](https://nodejs.org/) installed, then install and start GroestlPay:
 
 ```sh
 npm install
@@ -39,9 +39,9 @@ npm start
 
 Visit [`localhost:3000`](http://localhost:3000/) to view the app.
 
-> **Note:** This method should only be used for development purposes. When running Groestlcoin Mobile Wallet in a normal browser environment, browser extensions and other malicious code might have access to internal data and private keys.
+> **Note:** This method should only be used for development purposes. When running GroestlPay in a normal browser environment, browser extensions and other malicious code might have access to internal data and private keys.
 
-## Build Groestlcoin Mobile Wallet App Bundles
+## Build GroestlPay App Bundles
 
 ### Android
 
@@ -57,7 +57,7 @@ Visit [`localhost:3000`](http://localhost:3000/) to view the app.
 
 ###### ATS support
 
-Before starting Groestlcoin Mobile Wallet from Xcode, add these lines to "Custom iOS Target Properties":
+Before starting GroestlPay from Xcode, add these lines to "Custom iOS Target Properties":
 
 ```
 <key>NSAppTransportSecurity</key>
@@ -97,7 +97,7 @@ Add this line to your Build Settings -> Header Search Paths -> Release
 
 ### Desktop versions (Windows, OS X, Linux)
 
-Groestlcoin Mobile Wallet uses NW.js (also know as node-webkit) for its desktop version. NW.js is an app runtime based on `Chromium` and `node.js`.
+GroestlPay uses NW.js (also know as node-webkit) for its desktop version. NW.js is an app runtime based on `Chromium` and `node.js`.
 
 - Install NW.js on your system from [nwjs.io](http://nwjs.io/)
 - Run `grunt desktop`
@@ -106,44 +106,44 @@ Groestlcoin Mobile Wallet uses NW.js (also know as node-webkit) for its desktop 
 
 - Run `npm run-script chrome`
 
-On success, the Chrome extension will be located at: `browser-extensions/chrome/Groestlcoin Mobile Wallet-chrome-extension`.  To install it go to `chrome://extensions/` in your browser and ensure you have the 'developer mode' option enabled in the settings.  Then click on "Load unpacked chrome extension" and choose the directory mentioned above.
+On success, the Chrome extension will be located at: `browser-extensions/chrome/GroestlPay-chrome-extension`.  To install it go to `chrome://extensions/` in your browser and ensure you have the 'developer mode' option enabled in the settings.  Then click on "Load unpacked chrome extension" and choose the directory mentioned above.
 
 ### Firefox Add-on
 
-The Groestlcoin Mobile Wallet Firefox Extension has been deprecated and is no longer supported.
+The GroestlPay Firefox Extension has been deprecated and is no longer supported.
 
-## About Groestlcoin Mobile Wallet
+## About GroestlPay
 
 ### General
 
-Groestlcoin Mobile Wallet implements a multisig wallet using [p2sh](https://en.bitcoin.it/wiki/Pay_to_script_hash) addresses.  It supports multiple wallets, each with its own configuration, such as 3-of-5 (3 required signatures from 5 participant peers) or 2-of-3.  To create a multisig wallet shared between multiple participants, Groestlcoin Mobile Wallet requires the extended public keys of all the wallet participants.  Those public keys are then incorporated into the wallet configuration and combined to generate a payment address where funds can be sent into the wallet.  Conversely, each participant manages their own private key and that private key is never transmitted anywhere.
+GroestlPay implements a multisig wallet using [p2sh](https://en.bitcoin.it/wiki/Pay_to_script_hash) addresses.  It supports multiple wallets, each with its own configuration, such as 3-of-5 (3 required signatures from 5 participant peers) or 2-of-3.  To create a multisig wallet shared between multiple participants, GroestlPay requires the extended public keys of all the wallet participants.  Those public keys are then incorporated into the wallet configuration and combined to generate a payment address where funds can be sent into the wallet.  Conversely, each participant manages their own private key and that private key is never transmitted anywhere.
 
 To unlock a payment and spend the wallet's funds, a quorum of participant signatures must be collected and assembled in the transaction.  The funds cannot be spent without at least the minimum number of signatures required by the wallet configuration (2-of-3, 3-of-5, 6-of-6, etc.).  Once a transaction proposal is created, the proposal is distributed among the wallet participants for each to sign the transaction locally.  Finally, when the transaction is signed, the last signing participant will broadcast the transaction to the Groestlcoin network.
 
-Groestlcoin Mobile Wallet also implements [BIP32](https://github.com/bitcoin/bips/blob/master/bip-0032.mediawiki) to generate new addresses for peers.  The public key that each participant contributes to the wallet is a BIP32 extended public key.  As additional public keys are needed for wallet operations (to produce new addresses to receive payments into the wallet, for example) new public keys can be derived from the participants' original extended public keys.  Once again, it's important to stress that each participant keeps their own private keys locally - private keys are not shared - and are used to sign transaction proposals to make payments from the shared wallet.
+GroestlPay also implements [BIP32](https://github.com/bitcoin/bips/blob/master/bip-0032.mediawiki) to generate new addresses for peers.  The public key that each participant contributes to the wallet is a BIP32 extended public key.  As additional public keys are needed for wallet operations (to produce new addresses to receive payments into the wallet, for example) new public keys can be derived from the participants' original extended public keys.  Once again, it's important to stress that each participant keeps their own private keys locally - private keys are not shared - and are used to sign transaction proposals to make payments from the shared wallet.
 
 For more information regarding how addresses are generated using this procedure, see: [Structure for Deterministic P2SH Multisignature Wallets](https://github.com/bitcoin/bips/blob/master/bip-0045.mediawiki).
 
-## Groestlcoin Mobile Wallet Backups and Recovery
+## GroestlPay Backups and Recovery
 
-Since v1.2 Groestlcoin Mobile Wallet uses BIP39 mnemonics for backing up wallets.  The BIP44 standard is used for wallet address derivation. Multisig wallets use P2SH addresses, while non-multisig wallets use P2PKH.
+Since v1.2 GroestlPay uses BIP39 mnemonics for backing up wallets.  The BIP44 standard is used for wallet address derivation. Multisig wallets use P2SH addresses, while non-multisig wallets use P2PKH.
 
-Information about backup and recovery procedures is available at: https://github.com/Groestlcoinofficial/Groestlcoin-mobile-wallet/blob/master/backupRecovery.md
+Information about backup and recovery procedures is available at: https://github.com/Groestlcoinofficial/GroestlPay/blob/master/backupRecovery.md
 
-Previous versions of Groestlcoin Mobile Wallet used files as backups. See the following section.
+Previous versions of GroestlPay used files as backups. See the following section.
 
-It is possible to recover funds from a Groestlcoin Mobile Wallet Wallet without using Groestlcoin Mobile Wallet or the Wallet Service.
+It is possible to recover funds from a GroestlPay Wallet without using GroestlPay or the Wallet Service.
 
 
 ## Wallet Export Format
 
-Groestlcoin Mobile Wallet encrypts the backup with the [Stanford JS Crypto Library](http://bitwiseshiftleft.github.io/sjcl/).  To extract the private key of your wallet you can use https://bitwiseshiftleft.github.io/sjcl/demo/, copy the backup to 'ciphertext' and enter your password.  The resulting JSON will have a key named: `xPrivKey`, that is the extended private key of your wallet.  That information is enough to sign any transaction from your wallet, so be careful when handling it!
+GroestlPay encrypts the backup with the [Stanford JS Crypto Library](http://bitwiseshiftleft.github.io/sjcl/).  To extract the private key of your wallet you can use https://bitwiseshiftleft.github.io/sjcl/demo/, copy the backup to 'ciphertext' and enter your password.  The resulting JSON will have a key named: `xPrivKey`, that is the extended private key of your wallet.  That information is enough to sign any transaction from your wallet, so be careful when handling it!
 
 The backup also contains the key `publicKeyRing` that holds the extended public keys of the payers.
 Depending on the key `derivationStrategy`, addresses are derived using
-[BIP44](https://github.com/bitcoin/bips/blob/master/bip-0044.mediawiki) or [BIP45](https://github.com/bitcoin/bips/blob/master/bip-0045.mediawiki). Wallets created in Groestlcoin Mobile Wallet v1.2 and forward always use BIP44, all previous wallets use BIP45. Also note that since Groestlcoin Mobile Wallet version v1.2, non-multisig wallets use address types Pay-to-PublicKeyHash (P2PKH) while multisig wallets still use Pay-to-ScriptHash (P2SH) (key `addressType` at the backup):
+[BIP44](https://github.com/bitcoin/bips/blob/master/bip-0044.mediawiki) or [BIP45](https://github.com/bitcoin/bips/blob/master/bip-0045.mediawiki). Wallets created in GroestlPay v1.2 and forward always use BIP44, all previous wallets use BIP45. Also note that since GroestlPay version v1.2, non-multisig wallets use address types Pay-to-PublicKeyHash (P2PKH) while multisig wallets still use Pay-to-ScriptHash (P2SH) (key `addressType` at the backup):
 
-| Groestlcoin Mobile Wallet Version  | Wallet Type   | Derivation Strategy   | Address Type  |
+| GroestlPay Version  | Wallet Type   | Derivation Strategy   | Address Type  |
 |---|---|---|---|---|
 |  <1.2  | All  |  BIP45 | P2SH   |
 |  >=1.2 | Non-multisig  | BIP44  | P2PKH   |
@@ -152,18 +152,18 @@ Depending on the key `derivationStrategy`, addresses are derived using
 
 Using a tool like [Bitcore PlayGround](http://bitcore.io/playground) all wallet addresses can be generated. (TIP: Use the `Address` section for P2PKH address type wallets and `Multisig Address` for P2SH address type wallets). For multisig addresses, the required number of signatures (key `m` on the export) is also needed to recreate the addresses.
 
-BIP45 note: All addresses generated at BWS with BIP45 use the 'shared cosigner index' (2147483647) so Groestlcoin Mobile Wallet address indexes look like: `m/45'/2147483647/0/x` for main addresses and `m/45'/2147483647/1/y` for change addresses.
+BIP45 note: All addresses generated at BWS with BIP45 use the 'shared cosigner index' (2147483647) so GroestlPay address indexes look like: `m/45'/2147483647/0/x` for main addresses and `m/45'/2147483647/1/y` for change addresses.
 
-Since version 1.5, Groestlcoin Mobile Wallet uses the root `m/48'` for hardware multisignature wallets. This was coordinated with Ledger and Trezor teams. While the derivation path format is still similar to BIP44, the root was in order to indicate that these wallets are not discoverable by scanning addresses for funds. Address generation for multisignature wallets requires the other payers extended public keys.
+Since version 1.5, GroestlPay uses the root `m/48'` for hardware multisignature wallets. This was coordinated with Ledger and Trezor teams. While the derivation path format is still similar to BIP44, the root was in order to indicate that these wallets are not discoverable by scanning addresses for funds. Address generation for multisignature wallets requires the other payers extended public keys.
 
 
 ## Bitcore Wallet Service
 
-Groestlcoin Mobile Wallet depends on [Bitcore Wallet Service](https://github.com/bitpay/bitcore-wallet-service) (BWS) for blockchain information, networking and payer synchronization.  A BWS instance can be setup and operational within minutes or you can use a public instance like `https://bws.bitpay.com`.  Switching between BWS instances is very simple and can be done with a click from within Groestlcoin Mobile Wallet.  BWS also allows Groestlcoin Mobile Wallet to interoperate with other wallets like [Bitcore Wallet CLI] (https://github.com/bitpay/bitcore-wallet).
+GroestlPay depends on [Bitcore Wallet Service](https://github.com/bitpay/bitcore-wallet-service) (BWS) for blockchain information, networking and payer synchronization.  A BWS instance can be setup and operational within minutes or you can use a public instance like `https://bws.bitpay.com`.  Switching between BWS instances is very simple and can be done with a click from within GroestlPay.  BWS also allows GroestlPay to interoperate with other wallets like [Bitcore Wallet CLI] (https://github.com/bitpay/bitcore-wallet).
 
 ## Hardware Wallet Support
 
-Groestlcoin Mobile Wallet supports Ledger and Trezor hardware wallets. Hardware wallet support is only available through the Chrome App. Ledger support is only available on multisig wallets.
+GroestlPay supports Ledger and Trezor hardware wallets. Hardware wallet support is only available through the Chrome App. Ledger support is only available on multisig wallets.
 
 To use Ledger, you need to have the Ledger Chrome App installed, available at:
 https://chrome.google.com/webstore/detail/ledger-wallet/kkdpmhnladdopljabkgpacgpliggeeaf
@@ -182,15 +182,15 @@ It is also possible to import a wallet from a device using:
 
 Here it is also necesary to select the account number.
 
-When creating or joining a wallet, Groestlcoin Mobile Wallet will ask for two public keys for the device. One public keys is used for the wallet itself and the other is used as an entropy source to create a private / public key pair for signing requests to the Wallet Service.
+When creating or joining a wallet, GroestlPay will ask for two public keys for the device. One public keys is used for the wallet itself and the other is used as an entropy source to create a private / public key pair for signing requests to the Wallet Service.
 
 Every time you need to sign a transaction, the device will be needed to perform the signature. Follow the on screen instructions after clicking the `send` or `accept` buttons.
 
-Finally, in case you lose the device and you have the 24 word seed for the device, you can recover access to your funds using Groestlcoin Mobile Wallet, see: https://github.com/Groestlcoinofficial/Groestlcoin-mobile-wallet/blob/master/backupRecovery.md#hardware-wallets
+Finally, in case you lose the device and you have the 24 word seed for the device, you can recover access to your funds using GroestlPay, see: https://github.com/Groestlcoinofficial/GroestlPay/blob/master/backupRecovery.md#hardware-wallets
 
 
 ## Translations
-Groestlcoin Mobile Wallet uses standard gettext PO files for translations and [Crowdin](https://crowdin.com/project/copay) as the front-end tool for translators.  To join our team of translators, please create an account at [Crowdin](https://crowdin.com) and translate the Groestlcoin Mobile Wallet documentation and application text into your native language.
+GroestlPay uses standard gettext PO files for translations and [Crowdin](https://crowdin.com/project/copay) as the front-end tool for translators.  To join our team of translators, please create an account at [Crowdin](https://crowdin.com) and translate the GroestlPay documentation and application text into your native language.
 
 To download and build using the latest translations from Crowdin, please use the following commands:
 
@@ -212,7 +212,7 @@ This will download all partial and complete language translations while also cle
 *Gracias totales!*
 
 ## Release Schedules
-Groestlcoin Mobile Wallet uses the `MAJOR.MINOR.BATCH` convention for versioning.  Any release that adds features should modify the MINOR or MAJOR number.
+GroestlPay uses the `MAJOR.MINOR.BATCH` convention for versioning.  Any release that adds features should modify the MINOR or MAJOR number.
 
 ### Bug Fixing Releases
 
@@ -241,4 +241,4 @@ review the [guidelines for contributing](CONTRIBUTING.md).
 
 ## License
 
-Groestlcoin Mobile Wallet is released under the MIT License.  Please refer to the [LICENSE](https://github.com/Groestlcoinofficial/Groestlcoin-mobile-wallet/blob/master/LICENSE) file that accompanies this project for more information including complete terms and conditions.
+GroestlPay is released under the MIT License.  Please refer to the [LICENSE](https://github.com/Groestlcoinofficial/GroestlPay/blob/master/LICENSE) file that accompanies this project for more information including complete terms and conditions.

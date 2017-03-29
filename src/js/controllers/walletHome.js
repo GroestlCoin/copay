@@ -908,7 +908,7 @@ angular.module('copayApp.controllers').controller('walletHomeController', functi
             return;
           }
 
-          var msg = gettextCatalog.getString("{{fee}} will be deducted for bitcoin networking fees", {
+          var msg = gettextCatalog.getString("{{fee}} will be deducted for Groestlcoin networking fees", {
             fee: profileService.formatAmount(resp.fee) + ' ' + self.unitName
           });
 

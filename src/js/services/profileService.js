@@ -493,7 +493,7 @@ angular.module('copayApp.services')
       var walletId = client.credentials.walletId
 
       if (!root.profile.addWallet(JSON.parse(client.export())))
-        return cb(gettext('Wallet already in Copay'));
+        return cb(gettext('Wallet already in GroestlPay'));
 
 
       var skipKeyValidation = root.profile.isChecked(platformInfo.ua, walletId);
