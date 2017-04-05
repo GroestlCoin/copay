@@ -36,12 +36,12 @@ angular.module('copayApp.controllers').controller('joinController',
         });
       }
 
-      if (isChromeApp || isDevel) {
-        self.seedOptions.push({
-          id: 'trezor',
-          label: 'Trezor Hardware Wallet',
-        });
-      }
+      // if (isChromeApp || isDevel) {
+        // self.seedOptions.push({
+          // id: 'trezor',
+          // label: 'Trezor Hardware Wallet',
+        // });
+      // }
     };
 
     this.setSeedSource = function() {
