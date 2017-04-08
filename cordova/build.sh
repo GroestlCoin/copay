@@ -56,7 +56,7 @@ echo "Project directory is $PROJECT"
 if [ ! -d $PROJECT ]; then
   cd $BUILDDIR
   echo "${OpenColor}${Green}* Creating project... ${CloseColor}"
-  cordova create project org.Groestlcoin.wallet Groestlcoin
+  cordova create project org.groestlcoin.groestlpay groestlpay
   checkOK
   cd $PROJECT
   if [ $CURRENT_OS == "ANDROID" ]; then
@@ -89,12 +89,12 @@ if [ ! -d $PROJECT ]; then
   fi
 
   if [ $CURRENT_OS == "IOS" ]; then
-    cordova plugin add phonegap-plugin-push@1.5.3
+    cordova plugin add https://github.com/phonegap/phonegap-plugin-push.git#1.5.3
     checkOK
   fi
 
   if [ $CURRENT_OS == "ANDROID" ]; then
-    cordova plugin add phonegap-plugin-push@1.2.3
+    cordova plugin add https://github.com/phonegap/phonegap-plugin-push.git#1.2.3
     checkOK
   fi
 
@@ -116,13 +116,15 @@ if [ ! -d $PROJECT ]; then
   cordova plugin add https://github.com/apache/cordova-plugin-inappbrowser.git#0f5de8524f8f83c52e10d32da1d45f102086b5dd
   checkOK
 
-  cordova plugin add https://github.com/413326885/cordova-plugin-x-toast.git#f3767b43277d1e74201b9d4a52154bed6f0cc3be && cordova prepare
+  cordova plugin add https://github.com/413326885/cordova-plugin-x-toast.git#f3767b43277d1e74201b9d4a52154bed6f0cc3be 
+  cordova prepare
   checkOK
 
   cordova plugin add https://github.com/VersoSolutions/CordovaClipboard.git#03fe48b62411cbff22229ca13cc3ac8b282f7945
   checkOK
 
-  cordova plugin add https://github.com/EddyVerbruggen/SocialSharing-PhoneGap-Plugin.git#5eb6019ea2addec6f7f754913425a8c22f7f3284 && cordova prepare
+  cordova plugin add https://github.com/EddyVerbruggen/SocialSharing-PhoneGap-Plugin.git#5eb6019ea2addec6f7f754913425a8c22f7f3284 
+  cordova prepare
   checkOK
 
   cordova plugin add https://github.com/MadrinX/cordova-progress-dialog.git#702cd341ab791ad8e12b627ac575812f24e9f96c
@@ -143,7 +145,8 @@ if [ ! -d $PROJECT ]; then
   cordova plugin add https://github.com/apache/cordova-plugin-file.git#4325302f5c891471a0409c3f2239f3c6fb87b549
   checkOK
 
-  cordova plugin add https://github.com/EddyVerbruggen/cordova-plugin-touch-id.git#20d187343a6ee0612e229b26f687ea36e8d9ff09 && cordova prepare
+  cordova plugin add https://github.com/EddyVerbruggen/cordova-plugin-touch-id.git#20d187343a6ee0612e229b26f687ea36e8d9ff09 
+  cordova prepare
   checkOK
 
   cordova plugin add https://github.com/leecrossley/cordova-plugin-transport-security.git#898f2a580f78c95b41870efa0412f3457a31f99d
