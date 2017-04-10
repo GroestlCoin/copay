@@ -94,7 +94,7 @@ if [ ! -d $PROJECT ]; then
   fi
 
   if [ $CURRENT_OS == "ANDROID" ]; then
-    cordova plugin add https://github.com/phonegap/phonegap-plugin-push.git#1.2.3
+    cordova plugin add https://github.com/phonegap/phonegap-plugin-push.git#1.2.0
     checkOK
   fi
 
@@ -116,14 +116,14 @@ if [ ! -d $PROJECT ]; then
   cordova plugin add https://github.com/apache/cordova-plugin-inappbrowser.git#0f5de8524f8f83c52e10d32da1d45f102086b5dd
   checkOK
 
-  cordova plugin add https://github.com/413326885/cordova-plugin-x-toast.git#f3767b43277d1e74201b9d4a52154bed6f0cc3be 
+  cordova plugin add https://github.com/413326885/cordova-plugin-x-toast.git#f3767b43277d1e74201b9d4a52154bed6f0cc3be
   cordova prepare
   checkOK
 
   cordova plugin add https://github.com/VersoSolutions/CordovaClipboard.git#03fe48b62411cbff22229ca13cc3ac8b282f7945
   checkOK
 
-  cordova plugin add https://github.com/EddyVerbruggen/SocialSharing-PhoneGap-Plugin.git#5eb6019ea2addec6f7f754913425a8c22f7f3284 
+  cordova plugin add https://github.com/EddyVerbruggen/SocialSharing-PhoneGap-Plugin.git#5eb6019ea2addec6f7f754913425a8c22f7f3284
   cordova prepare
   checkOK
 
@@ -145,7 +145,7 @@ if [ ! -d $PROJECT ]; then
   cordova plugin add https://github.com/apache/cordova-plugin-file.git#4325302f5c891471a0409c3f2239f3c6fb87b549
   checkOK
 
-  cordova plugin add https://github.com/EddyVerbruggen/cordova-plugin-touch-id.git#20d187343a6ee0612e229b26f687ea36e8d9ff09 
+  cordova plugin add https://github.com/EddyVerbruggen/cordova-plugin-touch-id.git#20d187343a6ee0612e229b26f687ea36e8d9ff09
   cordova prepare
   checkOK
 
@@ -161,7 +161,7 @@ if [ ! -d $PROJECT ]; then
   if [ $CURRENT_OS == "ANDROID" ]; then
 	## Fix plugin android-fingerprint
 	mkdir -p $PROJECT/platforms/android/res/backup
-	cp -a $PROJECT/platforms/android/res/values-* $PROJECT/platforms/android/res/backup 
+	cp -a $PROJECT/platforms/android/res/values-* $PROJECT/platforms/android/res/backup
 	rm -rf $PROJECT/platforms/android/res/values-*
 	cordova plugin add https://github.com/mjwheatley/cordova-plugin-android-fingerprint-auth.git#v1.1.0
 	cp -a $PROJECT/platforms/android/res/backup/* $PROJECT/platforms/android/res/
@@ -170,9 +170,9 @@ if [ ! -d $PROJECT ]; then
   else
 	cordova plugin add https://github.com/mjwheatley/cordova-plugin-android-fingerprint-auth.git#v1.1.0
 	checkOK
-	
+
   fi
-  
+
 
   cordova plugin add https://github.com/gbenvenuti/cordova-plugin-screen-orientation.git#baa4c2e0ed68fe58e7aa89f6c8beb707012c6426
   checkOK
