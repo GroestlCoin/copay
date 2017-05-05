@@ -158,21 +158,10 @@ if [ ! -d $PROJECT ]; then
   cordova plugin add https://github.com/akofman/cordova-plugin-disable-bitcode.git#1cf10251e5dafbea0602f17af2b02d84f3a74c1c
   checkOK
 
-  if [ $CURRENT_OS == "ANDROID" ]; then
-	## Fix plugin android-fingerprint
-	mkdir -p $PROJECT/platforms/android/res/backup
-	cp -a $PROJECT/platforms/android/res/values-* $PROJECT/platforms/android/res/backup
-	rm -rf $PROJECT/platforms/android/res/values-*
-	cordova plugin add https://github.com/mjwheatley/cordova-plugin-android-fingerprint-auth.git#v1.1.0
-	cp -a $PROJECT/platforms/android/res/backup/* $PROJECT/platforms/android/res/
-	rm -rf $PROJECT/platforms/android/res/backup
-	checkOK
-  else
-	cordova plugin add https://github.com/mjwheatley/cordova-plugin-android-fingerprint-auth.git#v1.1.0
-	checkOK
-
-  fi
-
+  ## Fix plugin android-fingerprint
+  rm -rf $PROJECT/platforms/android/res/values-es
+  cordova plugin add cordova-plugin-android-fingerprint-auth@0.2.0
+  checkOK
 
   cordova plugin add https://github.com/gbenvenuti/cordova-plugin-screen-orientation.git#baa4c2e0ed68fe58e7aa89f6c8beb707012c6426
   checkOK
