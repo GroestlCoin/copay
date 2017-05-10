@@ -195,7 +195,7 @@ module.exports = function(grunt) {
     nggettext_compile: {
       all: {
         options: {
-          module: 'copayApp'
+          module: 'groestlpayApp'
         },
         files: {
           'src/js/translations.js': ['i18n/po/*.po']
@@ -220,7 +220,7 @@ module.exports = function(grunt) {
           expand: true,
           cwd: 'webkitbuilds/',
           src: ['.desktop', '../public/img/icons/favicon.ico', '../public/img/icons/icon-256.png'],
-          dest: 'webkitbuilds/Copay/linux64/',
+          dest: 'webkitbuilds/Groestlpay/linux64/',
           flatten: true,
           filter: 'isFile'
         }],
@@ -237,7 +237,7 @@ module.exports = function(grunt) {
     },
     nwjs: {
       options: {
-        appName: 'Copay',
+        appName: 'Groestlpay',
         platforms: ['win64', 'osx64', 'linux64'],
         buildDir: './webkitbuilds',
         version: '0.16.0',
@@ -249,12 +249,12 @@ module.exports = function(grunt) {
     compress: {
       linux: {
         options: {
-          archive: './webkitbuilds/Copay-linux.zip'
+          archive: './webkitbuilds/Groestlpay-linux.zip'
         },
         expand: true,
-        cwd: './webkitbuilds/Copay/linux64/',
+        cwd: './webkitbuilds/Groestlpay/linux64/',
         src: ['**/*'],
-        dest: 'copay-linux/'
+        dest: 'groestlpay-linux/'
       }
     },
     browserify: {
