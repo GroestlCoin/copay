@@ -1,6 +1,6 @@
 'use strict';
 
-angular.module('copayApp.controllers').controller('indexController', function($rootScope, $scope, $log, $filter, $timeout, $ionicScrollDelegate, $ionicPopup, $ionicSideMenuDelegate, $httpBackend, latestReleaseService, feeService, bwcService, pushNotificationsService, lodash, go, profileService, configService, rateService, storageService, addressService, gettext, gettextCatalog, amMoment, addonManager, bwcError, txFormatService, uxLanguage, glideraService, coinbaseService, platformInfo, addressbookService, openURLService, ongoingProcess) {
+angular.module('copayApp.controllers').controller('indexController', function($rootScope, $scope, $log, $filter, $timeout, $ionicScrollDelegate, $ionicPopup, $ionicSideMenuDelegate, $httpBackend, feeService, bwcService, pushNotificationsService, lodash, go, profileService, configService, rateService, storageService, addressService, gettext, gettextCatalog, amMoment, addonManager, bwcError, txFormatService, uxLanguage, glideraService, coinbaseService, platformInfo, addressbookService, openURLService, ongoingProcess) {
 
   var self = this;
   var SOFT_CONFIRMATION_LIMIT = 12;
@@ -53,17 +53,17 @@ angular.module('copayApp.controllers').controller('indexController', function($r
   ret.tab = 'walletHome';
   var vanillaScope = ret;
 
-  if (isNW) {
-    latestReleaseService.checkLatestRelease(function(err, newRelease) {
-      if (err) {
-        $log.warn(err);
-        return;
-      }
-
-      if (newRelease)
-        $scope.newRelease = gettext('There is a new version of Copay. Please update');
-    });
-  }
+ // if (isNW) {
+ //   latestReleaseService.checkLatestRelease(function(err, newRelease) {
+ //     if (err) {
+ //       $log.warn(err);
+ //       return;
+ //     }
+ //
+ //     if (newRelease)
+ //       $scope.newRelease = gettext('There is a new version of Copay. Please update');
+ //   });
+ // }
 
   function strip(number) {
     return (parseFloat(number.toPrecision(12)));
