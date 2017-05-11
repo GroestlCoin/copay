@@ -3,11 +3,11 @@
 
 plugins:
 	@echo "Intalling cordova plugins"
-	cordova plugin add https://github.com/Initsogar/cordova-webintent.git
+	cordova plugin add https://github.com/GroupAhead/cordova-plugin-webintent.git
 	cordova plugin add https://github.com/wildabeast/BarcodeScanner.git
 	cordova plugin add org.apache.cordova.splashscreen
 	cordova plugin add org.apache.cordova.statusbar
-	cordova plugin add https://github.com/EddyVerbruggen/LaunchMyApp-PhoneGap-Plugin.git --variable URL_SCHEME=bitcoin
+	cordova plugin add https://github.com/EddyVerbruggen/Custom-URL-scheme.git --variable URL_SCHEME=groestlcoin
 	cordova plugin add org.apache.cordova.inappbrowser
 
 android:

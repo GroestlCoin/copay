@@ -2,8 +2,8 @@
   "name": "GroestlPay",
   "description": "A multisignature Groestlcoin wallet",
   "author": "Groestlcoin",
-  "version": "2.7.0",
-  "androidVersionCode": "117",
+  "version": "2.7.1",
+  "androidVersionCode": "118",
   "keywords": [
     "wallet",
     "GroestlPay",

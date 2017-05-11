@@ -16,10 +16,10 @@ if [ -d "$dir" ]; then
 fi
 
 # set up your app name, architecture, and background image file name
-APP_NAME="Copay"
+APP_NAME="Groestlpay"
 DMG_BACKGROUND_IMG="Background.png"
 
-PATH_NAME="Copay/osx64/"
+PATH_NAME="Groestlpay/osx64/"
 # you should not need to change these
 APP_EXE="${PATH_NAME}${APP_NAME}.app/Contents/MacOS/nwjs"
 
@@ -66,7 +66,7 @@ if [ $? -ne 0 ]; then
 # Sign Code (MATIAS)
 if [ $SHOULD_SIGN ]
 then
-  echo "Signing Copay DMG"
+  echo "Signing Groestlpay DMG"
 
   export IDENTITY="3rd Party Mac Developer Application: BitPay, Inc. (884JRH5R93)"
 
