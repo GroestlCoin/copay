@@ -195,7 +195,7 @@ module.exports = function(grunt) {
     nggettext_compile: {
       all: {
         options: {
-          module: 'groestlpayApp'
+          module: 'copayApp'
         },
         files: {
           'src/js/translations.js': ['i18n/po/*.po']
