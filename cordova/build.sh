@@ -37,8 +37,7 @@ then
 fi
 
 
-echo "${OpenColor}${Green}* Checking dependencies...${CloseColor}"
-command -v cordova >/dev/null 2>&1 || { echo >&2 "Cordova is not present, please install it: sudo npm -g cordova."; exit 1; }
+echo "${OpenColor}${Green}* Checking dependencies...${CloseColor}"command -v cordova >/dev/null 2>&1 || { echo >&2 "Cordova is not present, please install it: sudo npm -g cordova."; exit 1; }
 #command -v xcodebuild >/dev/null 2>&1 || { echo >&2 "XCode is not present, install it or use [--android]."; exit 1; }
 
 # Create project dir
@@ -48,7 +47,6 @@ then
     rm -rf $PROJECT
   fi
 fi
-
 echo "Build directory is $BUILDDIR"
 echo "Project directory is $PROJECT"
 
@@ -72,8 +70,8 @@ if [ ! -d $PROJECT ]; then
   fi
 
   if [ $CURRENT_OS == "WP8" ]; then
-    echo "${OpenColor}${Green}* Adding WP8 platform... ${CloseColor}"
-    cordova platforms add wp8
+    echo "${OpenColor}${Green}* Adding Windows platform... ${CloseColor}"
+    cordova platforms add windows
     checkOK
   fi
 
@@ -143,7 +141,7 @@ if [ ! -d $PROJECT ]; then
   checkOK
 
   cordova plugin add https://github.com/apache/cordova-plugin-file.git#4325302f5c891471a0409c3f2239f3c6fb87b549
-  checkOK
+s  checkOK
 
   cordova plugin add https://github.com/EddyVerbruggen/cordova-plugin-touch-id.git#20d187343a6ee0612e229b26f687ea36e8d9ff09
   cordova prepare
@@ -153,7 +151,7 @@ if [ ! -d $PROJECT ]; then
   checkOK
 
   cordova plugin add https://github.com/chancezeus/cordova-ios-requires-fullscreen.git#edcde97513254450221af8fed8a998c41855bf4f
-  checkOK
+w  checkOK
 
   cordova plugin add https://github.com/akofman/cordova-plugin-disable-bitcode.git#1cf10251e5dafbea0602f17af2b02d84f3a74c1c
   checkOK
@@ -163,7 +161,7 @@ if [ ! -d $PROJECT ]; then
   cordova plugin add cordova-plugin-android-fingerprint-auth@0.2.0
   checkOK
 
-  cordova plugin add https://github.com/gbenvenuti/cordova-plugin-screen-orientation.git#baa4c2e0ed68fe58e7aa89f6c8beb707012c6426
+o  cordova plugin add https://github.com/gbenvenuti/cordova-plugin-screen-orientation.git#baa4c2e0ed68fe58e7aa89f6c8beb707012c6426
   checkOK
 
   cordova plugin add https://github.com/driftyco/ionic-plugin-keyboard.git#9b7c416effe392d62b4ff99cd1b931ca3b5a710e
@@ -173,7 +171,7 @@ fi
 
 if $DBGJS
 then
-  echo "${OpenColor}${Green}* Generating copay bundle (debug js)...${CloseColor}"
+d  echo "${OpenColor}${Green}* Generating copay bundle (debug js)...${CloseColor}"
   cd $BUILDDIR/..
   grunt
   checkOK
@@ -183,7 +181,7 @@ else
   grunt prod
   checkOK
 fi
-
+n
 echo "${OpenColor}${Green}* Copying files...${CloseColor}"
 cd $BUILDDIR/..
 cp -af public/** $PROJECT/www
@@ -223,21 +221,21 @@ if [ $CURRENT_OS == "ANDROID" ]; then
 fi
 
 if [ $CURRENT_OS == "WP8" ]; then
-  echo "Wp8 project!!!"
-  cp -R $PROJECT/www/* $PROJECT/platforms/wp8/www
+  echo "Windows project!!!"
+  cp -R $PROJECT/www/* $PROJECT/platforms/windows/www
   checkOK
   if ! $CLEAR
   then
-    cp -vf wp/Properties/* $PROJECT/platforms/wp8/Properties/
+    cp -vf wp/Properties/* $PROJECT/platforms/windows/Properties/
     checkOK
-    cp -vf wp/MainPage.xaml $PROJECT/platforms/wp8/
+    cp -vf wp/MainPage.xaml $PROJECT/platforms/windows/
     checkOK
-    cp -vf wp/Package.appxmanifest $PROJECT/platforms/wp8/
+    cp -vf wp/Package.appxmanifest $PROJECT/platforms/windows/
     checkOK
-    cp -vf wp/Assets/* $PROJECT/platforms/wp8/Assets/
-    cp -vf wp/SplashScreenImage.jpg $PROJECT/platforms/wp8/
-    cp -vf wp/ApplicationIcon.png $PROJECT/platforms/wp8/
-    cp -vf wp/Background.png $PROJECT/platforms/wp8/
+    cp -vf wp/Assets/* $PROJECT/platforms/windows/Assets/
+    cp -vf wp/SplashScreenImage.jpg $PROJECT/platforms/windows/
+    cp -vf wp/ApplicationIcon.png $PROJECT/platforms/windows/
+    cp -vf wp/Background.png $PROJECT/platforms/windows/
     checkOK
   fi
 fi
