@@ -37,7 +37,8 @@ then
 fi
 
 
-echo "${OpenColor}${Green}* Checking dependencies...${CloseColor}"command -v cordova >/dev/null 2>&1 || { echo >&2 "Cordova is not present, please install it: sudo npm -g cordova."; exit 1; }
+echo "${OpenColor}${Green}* Checking dependencies...${CloseColor}"
+command -v cordova >/dev/null 2>&1 || { echo >&2 "Cordova is not present, please install it: sudo npm -g cordova."; exit 1; }
 #command -v xcodebuild >/dev/null 2>&1 || { echo >&2 "XCode is not present, install it or use [--android]."; exit 1; }
 
 # Create project dir
@@ -47,6 +48,7 @@ then
     rm -rf $PROJECT
   fi
 fi
+
 echo "Build directory is $BUILDDIR"
 echo "Project directory is $PROJECT"
 
@@ -141,7 +143,7 @@ if [ ! -d $PROJECT ]; then
   checkOK
 
   cordova plugin add https://github.com/apache/cordova-plugin-file.git#4325302f5c891471a0409c3f2239f3c6fb87b549
-s  checkOK
+  checkOK
 
   cordova plugin add https://github.com/EddyVerbruggen/cordova-plugin-touch-id.git#20d187343a6ee0612e229b26f687ea36e8d9ff09
   cordova prepare
@@ -151,7 +153,7 @@ s  checkOK
   checkOK
 
   cordova plugin add https://github.com/chancezeus/cordova-ios-requires-fullscreen.git#edcde97513254450221af8fed8a998c41855bf4f
-w  checkOK
+  checkOK
 
   cordova plugin add https://github.com/akofman/cordova-plugin-disable-bitcode.git#1cf10251e5dafbea0602f17af2b02d84f3a74c1c
   checkOK
@@ -161,7 +163,7 @@ w  checkOK
   cordova plugin add cordova-plugin-android-fingerprint-auth@0.2.0
   checkOK
 
-o  cordova plugin add https://github.com/gbenvenuti/cordova-plugin-screen-orientation.git#baa4c2e0ed68fe58e7aa89f6c8beb707012c6426
+  cordova plugin add https://github.com/gbenvenuti/cordova-plugin-screen-orientation.git#baa4c2e0ed68fe58e7aa89f6c8beb707012c6426
   checkOK
 
   cordova plugin add https://github.com/driftyco/ionic-plugin-keyboard.git#9b7c416effe392d62b4ff99cd1b931ca3b5a710e
@@ -171,7 +173,7 @@ fi
 
 if $DBGJS
 then
-d  echo "${OpenColor}${Green}* Generating copay bundle (debug js)...${CloseColor}"
+  echo "${OpenColor}${Green}* Generating copay bundle (debug js)...${CloseColor}"
   cd $BUILDDIR/..
   grunt
   checkOK
@@ -181,7 +183,7 @@ else
   grunt prod
   checkOK
 fi
-n
+
 echo "${OpenColor}${Green}* Copying files...${CloseColor}"
 cd $BUILDDIR/..
 cp -af public/** $PROJECT/www
