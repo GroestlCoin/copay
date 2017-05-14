@@ -24,8 +24,8 @@ android: project plugins
 
 wp8: project plugins
 	make -C project wp8
-	cp -R project/www/* project/platforms/wp8/www
-	cp -R wp/res/* project/platforms/wp/res
+	cp -R project/www/* project/platforms/windows/www
+	cp -R wp/res/* project/platforms/windows/res
 
 ios: project plugins
 	make -C project ios
