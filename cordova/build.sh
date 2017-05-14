@@ -163,7 +163,7 @@ if [ ! -d $PROJECT ]; then
   cordova plugin add cordova-plugin-android-fingerprint-auth@0.2.0
   checkOK
 
-  cordova plugin add https://github.com/apache/cordova-plugin-screen-orientation.git#781a2c1e4aaeff255daa24520c03268b0e44482c
+  cordova plugin add https://github.com/apache/cordova-plugin-screen-orientation.git
   checkOK
 
   cordova plugin add https://github.com/driftyco/ionic-plugin-keyboard.git#9b7c416effe392d62b4ff99cd1b931ca3b5a710e
