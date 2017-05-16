@@ -110,7 +110,7 @@ if [ ! -d $PROJECT ]; then
   cordova plugin add https://github.com/apache/cordova-plugin-statusbar.git#916cccc2c00a1b7c77e2e738c83e74a22bdd55e7
   checkOK
 
-  cordova plugin add https://github.com/cmgustavo/Custom-URL-scheme.git --variable URL_SCHEME=groestlcoin --variable SECOND_URL_SCHEME=copay
+  cordova plugin add https://github.com/cmgustavo/Custom-URL-scheme.git --variable URL_SCHEME=groestlcoin --variable SECOND_URL_SCHEME=groestlpay
   checkOK
 
   cordova plugin add https://github.com/apache/cordova-plugin-inappbrowser.git#0f5de8524f8f83c52e10d32da1d45f102086b5dd
