@@ -72,8 +72,8 @@ if [ ! -d $PROJECT ]; then
   fi
 
   if [ $CURRENT_OS == "WP8" ]; then
-    echo "${OpenColor}${Green}* Adding Windows platform... ${CloseColor}"
-    cordova platforms add windows
+    echo "${OpenColor}${Green}* Adding Wp8 platform... ${CloseColor}"
+    cordova platforms add wp8
     checkOK
   fi
 
@@ -224,20 +224,20 @@ fi
 
 if [ $CURRENT_OS == "WP8" ]; then
   echo "Windows project!!!"
-  cp -R $PROJECT/www/* $PROJECT/platforms/windows/www
+  cp -R $PROJECT/www/* $PROJECT/platforms/wp8/www
   checkOK
   if ! $CLEAR
   then
-    cp -vf wp/Properties/* $PROJECT/platforms/windows/Properties/
+    cp -vf wp/Properties/* $PROJECT/platforms/wp8/Properties/
     checkOK
-    cp -vf wp/MainPage.xaml $PROJECT/platforms/windows/
+    cp -vf wp/MainPage.xaml $PROJECT/platforms/wp8/
     checkOK
-    cp -vf wp/Package.appxmanifest $PROJECT/platforms/windows/
+    cp -vf wp/Package.appxmanifest $PROJECT/platforms/wp8/
     checkOK
-    cp -vf wp/Assets/* $PROJECT/platforms/windows/Assets/
-    cp -vf wp/SplashScreenImage.jpg $PROJECT/platforms/windows/
-    cp -vf wp/ApplicationIcon.png $PROJECT/platforms/windows/
-    cp -vf wp/Background.png $PROJECT/platforms/windows/
+    cp -vf wp/Assets/* $PROJECT/platforms/wp8/Assets/
+    cp -vf wp/SplashScreenImage.jpg $PROJECT/platforms/wp8/
+    cp -vf wp/ApplicationIcon.png $PROJECT/platforms/wp8/
+    cp -vf wp/Background.png $PROJECT/platforms/wp8/
     checkOK
   fi
 fi
