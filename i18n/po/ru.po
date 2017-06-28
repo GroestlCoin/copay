@@ -74,7 +74,7 @@ msgstr "<b>ИЛИ</b> ключевые словосочетания <b>всех<
 
 #: public/views/disclaimer.html
 msgid "A multisignature groestlcoin wallet"
-msgstr "Биткойн-кошелёк с мультиподписью"
+msgstr "Грёстлкойн-кошелёк с мультиподписью"
 
 #: public/views/preferencesGlobal.html
 msgid "About GroestlPay"
@@ -245,19 +245,19 @@ msgstr "Укажите BIP32 для генерации адресов"
 
 #: public/views/walletHome.html
 msgid "Groestlcoin address"
-msgstr "Биткойн-адрес"
+msgstr "Грёстлкойн-адрес"
 
 #: public/views/preferencesGlobal.html
 msgid "Groestlcoin Network Fee Policy"
-msgstr "Политика комиссии в сети Биткойн"
+msgstr "Политика комиссии в сети Грёстлкойн"
 
 #: public/views/preferencesFee.html
 msgid "Groestlcoin transactions may include a fee collected by miners on the network. The higher the fee, the greater the incentive a miner has to include that transaction in a block. Current fees are determined based on network load and the selected policy."
-msgstr "Биткойн-транзакции могут включать комиссию, собираемую майнерами в сети. Чем выше комиссия, тем больше стимул для майнера включить транзакцию в блок. Текущая комиссия определяется на основе сетевой нагрузки и выбранной политики."
+msgstr "Грёстлкойн-транзакции могут включать комиссию, собираемую майнерами в сети. Чем выше комиссия, тем больше стимул для майнера включить транзакцию в блок. Текущая комиссия определяется на основе сетевой нагрузки и выбранной политики."
 
 #: public/views/paymentUri.html
 msgid "Groestlcoin URI is NOT valid!"
-msgstr "Биткойн URI недействителен!"
+msgstr "Грёстлкойн URI недействителен!"
 
 #: public/views/modals/txp-details.html
 msgid "Broadcast Payment"
@@ -1634,7 +1634,7 @@ msgstr "Условия использования"
 
 #: public/views/includes/terms.html
 msgid "The authors of the software, employees, copyright holders, cannot retrieve your private keys or passwords if you lose or forget them and cannot guarantee transaction confirmation as they do not have control over the Groestlcoin network."
-msgstr "Авторы данного программного обеспечения, сотрудники и помощники, владельцы авторских прав и не могут восстановить закрытые ключи или пароли если вы потеряете или забудете их, и не могут гарантировать подтверждение транзакции, так как они не имеют контроля над сетью Биткойн."
+msgstr "Авторы данного программного обеспечения, сотрудники и помощники, владельцы авторских прав и не могут восстановить закрытые ключи или пароли если вы потеряете или забудете их, и не могут гарантировать подтверждение транзакции, так как они не имеют контроля над сетью Грёстлкойн."
 
 #: public/views/import.html
 msgid "The derivation path"
