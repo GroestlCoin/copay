@@ -92,10 +92,10 @@ angular.module('copayApp.controllers').controller('copayersController',
 
     self.shareSecret = function(secret) {
       if (isCordova) {
-        var message = gettextCatalog.getString('Join my Copay wallet. Here is the invitation code: {{secret}} You can download Copay for your phone or desktop at https://copay.io', {
+        var message = gettextCatalog.getString('Join my Groestlpay wallet. Here is the invitation code: {{secret}} You can download Groestlpay for your phone or desktop at http://www.groestlcoin.org', {
           secret: secret
         });
-        window.plugins.socialsharing.share(message, gettextCatalog.getString('Invitation to share a Copay Wallet'), null, null);
+        window.plugins.socialsharing.share(message, gettextCatalog.getString('Invitation to share a Groestlpay Wallet'), null, null);
       }
     };
 
