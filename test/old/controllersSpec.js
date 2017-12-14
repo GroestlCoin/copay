@@ -583,11 +583,11 @@ describe("Unit: Controllers", function() {
     });
 
     it('receive from uri using bits', inject(function() {
-      sendForm.address.$setViewValue('bitcoin:mxf5psDyA8EQVzb2MZ7MkDWiXuAuWWCRMB?amount=1.018085');
+      sendForm.address.$setViewValue('groestlcoin:mrjMtR4kSDsesgGizKutxmg3BYWW6igGis?amount=1.018085');
       expect(sendForm.amount.$modelValue).to.equal(1018085);
-      sendForm.address.$setViewValue('bitcoin:mxf5psDyA8EQVzb2MZ7MkDWiXuAuWWCRMB?amount=1.01808500');
+      sendForm.address.$setViewValue('groestcoin:mrjMtR4kSDsesgGizKutxmg3BYWW6igGis?amount=1.01808500');
       expect(sendForm.amount.$modelValue).to.equal(1018085);
-      sendForm.address.$setViewValue('bitcoin:mxf5psDyA8EQVzb2MZ7MkDWiXuAuWWCRMB?amount=0.29133585');
+      sendForm.address.$setViewValue('groestlcoin:mrjMtR4kSDsesgGizKutxmg3BYWW6igGis?amount=0.29133585');
       expect(sendForm.amount.$modelValue).to.equal(291335.85);
     }));
 
@@ -596,13 +596,13 @@ describe("Unit: Controllers", function() {
       var old_decimals = $rootScope.wallet.settings.unitDecimals;
       $rootScope.wallet.settings.unitToSatoshi = 100000000;
       $rootScope.wallet.settings.unitDecimals = 8;
-      sendForm.address.$setViewValue('bitcoin:mxf5psDyA8EQVzb2MZ7MkDWiXuAuWWCRMB?amount=1.018085');
+      sendForm.address.$setViewValue('groestlcoin:mrjMtR4kSDsesgGizKutxmg3BYWW6igGis?amount=1.018085');
       expect(sendForm.amount.$modelValue).to.equal(1.018085);
-      sendForm.address.$setViewValue('bitcoin:mxf5psDyA8EQVzb2MZ7MkDWiXuAuWWCRMB?amount=1.01808500');
+      sendForm.address.$setViewValue('groestlcoin:mrjMtR4kSDsesgGizKutxmg3BYWW6igGis?amount=1.01808500');
       expect(sendForm.amount.$modelValue).to.equal(1.018085);
-      sendForm.address.$setViewValue('bitcoin:mxf5psDyA8EQVzb2MZ7MkDWiXuAuWWCRMB?amount=0.29133585');
+      sendForm.address.$setViewValue('groestlcoin:mrjMtR4kSDsesgGizKutxmg3BYWW6igGis?amount=0.29133585');
       expect(sendForm.amount.$modelValue).to.equal(0.29133585);
-      sendForm.address.$setViewValue('bitcoin:mxf5psDyA8EQVzb2MZ7MkDWiXuAuWWCRMB?amount=0.1');
+      sendForm.address.$setViewValue('groestlcoin:mrjMtR4kSDsesgGizKutxmg3BYWW6igGis?amount=0.1');
       expect(sendForm.amount.$modelValue).to.equal(0.1);
       $rootScope.wallet.settings.unitToSatoshi = old;
       $rootScope.wallet.settings.unitDecimals = old_decimals;
@@ -889,11 +889,11 @@ describe("Unit: Controllers", function() {
     beforeEach(inject(function($controller, $rootScope, $location) {
       scope = $rootScope.$new();
       var routeParams = {
-        data: 'bitcoin:19mP9FKrXqL46Si58pHdhGKow88SUPy1V8'
+        data: 'groestlcoin:FbaFvoM4FbNRRD2At5txxNQum2SqhK8VL5'
       };
       var query = {
         amount: 0.1,
-        message: "a bitcoin donation"
+        message: "a groestlcoin donation"
       };
       what = $controller('paymentUriController', {
         $scope: scope,
@@ -913,7 +913,7 @@ describe("Unit: Controllers", function() {
     it('should parse url correctly', function() {
       should.exist(what);
       should.exist(scope.pendingPayment);
-      scope.pendingPayment.should.equal('bitcoin:19mP9FKrXqL46Si58pHdhGKow88SUPy1V8?amount=0.1&message=a bitcoin donation');
+      scope.pendingPayment.should.equal('groestlcoin:FbaFvoM4FbNRRD2At5txxNQum2SqhK8VL5?amount=0.1&message=a groestlcoin donation');
     });
   });
 
