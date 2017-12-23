@@ -67,7 +67,7 @@ if [ ! -d $PROJECT ]; then
 
   if [ $CURRENT_OS == "IOS" ]; then
     echo "${OpenColor}${Green}* Adding IOS platform... ${CloseColor}"
-    cordova platforms add ios
+    cordova platforms add ios@4.4.0
     checkOK
   fi
 
