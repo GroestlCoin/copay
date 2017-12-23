@@ -127,7 +127,7 @@ if [ ! -d $PROJECT ]; then
   cordova prepare
   checkOK
 
-  cordova plugin add https://github.com/MadrinX/cordova-progress-dialog.git#702cd341ab791ad8e12b627ac575812f24e9f96c
+  cordova plugin add https://github.com/Paldom/SpinnerDialog.git
   checkOK
 
   cordova plugin add https://github.com/apache/cordova-plugin-dialogs.git#3b5cc87e7c8b15cbb91c77c216c766917aa007c7
