@@ -47,7 +47,7 @@ wp8-debug:
 
 ios-prod:
 	cordova/build.sh IOS --clear
-	cd cordova/project && cordova plugin save && cordova platform rm ios && cordova platform add ios && cordova build ios
+	cd cordova/project && cordova plugin save && cordova platform rm ios && cordova platform add ios@4.4.0 && cordova build ios
 	open cordova/project/platforms/ios/Groestlcoin\ Mobile\ Wallet.xcodeproj
 
 ios-debug:
