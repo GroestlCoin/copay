@@ -81,7 +81,7 @@ if [ ! -d $PROJECT ]; then
 
   if [ $CURRENT_OS == "IOS" ]
   then
-    cordova plugin add https://github.com/tjwoon/csZBar.git#fc5dcc300b08d59aef51b15172720efefe873a96
+    cordova plugin add https://github.com/cybertim/csZBar.git#f69df61380f60674b42e4a0db039d7053a6dcf5c
     checkOK
   else
     cordova plugin add https://github.com/jrontend/phonegap-plugin-barcodescanner.git#3a4b4ea69c8bff86f9749f7af332fc5b58c88601
