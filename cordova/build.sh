@@ -120,7 +120,7 @@ if [ ! -d $PROJECT ]; then
   cordova prepare
   checkOK
 
-  cordova plugin add https://github.com/danielsogl/cordova-plugin-clipboard.git
+  cordova plugin add https://github.com/ibnclaudius/CordovaClipboard.git
   checkOK
 
   cordova plugin add https://github.com/EddyVerbruggen/SocialSharing-PhoneGap-Plugin.git#5eb6019ea2addec6f7f754913425a8c22f7f3284
