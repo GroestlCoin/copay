@@ -2,7 +2,7 @@
 ; SEE THE DOCUMENTATION FOR DETAILS ON CREATING INNO SETUP SCRIPT FILES!
 
 #define MyAppName "Groestlpay"
-#define MyAppVersion "2.7.0"
+#define MyAppVersion "2.7.2"
 #define MyAppPublisher "Groestlcoin"
 #define MyAppURL "http://groestlcoin.org"
 #define MyAppExeName "Groestlpay.exe"
