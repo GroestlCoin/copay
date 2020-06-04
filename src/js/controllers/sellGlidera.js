@@ -117,7 +117,7 @@ angular.module('copayApp.controllers').controller('sellGlideraController',
         glideraService.getSellAddress(token, function(error, sellAddress) {
           if (!sellAddress) {
             ongoingProcess.clear();
-            self.error = 'Could not get the destination bitcoin address';
+            self.error = 'Could not get the destination groestlcoin address';
             return;
           }
           var amount = parseInt((self.sellPrice.qty * 100000000).toFixed(0));

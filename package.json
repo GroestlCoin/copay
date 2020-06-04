@@ -2,19 +2,18 @@
   "name": "GroestlPay",
   "description": "A multisignature Groestlcoin wallet",
   "author": "Groestlcoin",
-  "version": "2.7.2",
-  "androidVersionCode": "119",
+  "version": "2.7.4",
+  "androidVersionCode": "121",
   "keywords": [
     "wallet",
     "GroestlPay",
     "multisignature",
-    "bitcoin",
-	"Groestlcoin",
-    "bitcore"
+	  "Groestlcoin",
+    "groestlcore"
   ],
   "main": "public/index.html",
   "window": {
-    "title": "GroestlPay - A multisignature bitcoin wallet",
+    "title": "GroestlPay - A multisignature groestlcoin wallet",
     "icon": "./public/img/icons/icon-256.png",
     "show": true,
     "visible": true,
@@ -66,7 +65,7 @@
     "bower": "^1.7.9",
     "chai": "^3.5.0",
     "cordova": "5.4.1",
-    "cordova-android": "5.1.1",
+    "cordova-android": "6.2.3",
     "grunt": "^1.0.1",
     "grunt-angular-gettext": "^2.2.3",
     "grunt-browserify": "^5.0.0",

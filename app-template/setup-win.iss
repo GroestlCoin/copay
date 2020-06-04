@@ -45,13 +45,12 @@ Name: "{commondesktop}\{#MyAppName}"; Filename: "{app}\{#MyAppExeName}"; IconFil
 Filename: "{app}\{#MyAppExeName}"; Description: "{cm:LaunchProgram,{#StringChange(MyAppName, '&', '&&')}}"; Flags: nowait postinstall skipifsilent
 
 [Registry]
-Root: HKCR; Subkey: "bitcoin"; ValueType: "string"; ValueData: "URL:Groestlcoin Custom Protocol"; Flags: uninsdeletekey
-Root: HKCR; Subkey: "bitcoin"; ValueType: "string"; ValueName: "URL Protocol"; ValueData: ""
-Root: HKCR; Subkey: "bitcoin\DefaultIcon"; ValueType: "string"; ValueData: "{app}\{#MyAppExeName},0"
-Root: HKCR; Subkey: "bitcoin\shell\open\command"; ValueType: "string"; ValueData: """{app}\{#MyAppExeName}"" ""%1"""
+Root: HKCR; Subkey: "groestlcoin"; ValueType: "string"; ValueData: "URL:Groestlcoin Custom Protocol"; Flags: uninsdeletekey
+Root: HKCR; Subkey: "groestlcoin"; ValueType: "string"; ValueName: "URL Protocol"; ValueData: ""
+Root: HKCR; Subkey: "groestlcoin\DefaultIcon"; ValueType: "string"; ValueData: "{app}\{#MyAppExeName},0"
+Root: HKCR; Subkey: "groestlcoin\shell\open\command"; ValueType: "string"; ValueData: """{app}\{#MyAppExeName}"" ""%1"""
 
 Root: HKCR; Subkey: "*NAMENOSPACE*"; ValueType: "string"; ValueData: "URL:*NAMECASENOSPACE* Custom Protocol"; Flags: uninsdeletekey
 Root: HKCR; Subkey: "*NAMENOSPACE*"; ValueType: "string"; ValueName: "URL Protocol"; ValueData: ""
 Root: HKCR; Subkey: "*NAMENOSPACE*\DefaultIcon"; ValueType: "string"; ValueData: "{app}\{#MyAppExeName},0"
 Root: HKCR; Subkey: "*NAMENOSPACE*\shell\open\command"; ValueType: "string"; ValueData: """{app}\{#MyAppExeName}"" ""%1"""
-

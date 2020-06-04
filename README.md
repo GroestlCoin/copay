@@ -1,4 +1,4 @@
-GroestlPay is an easy-to-use, open-source, multiplatform, multisignature, secure bitcoin wallet platform for both individuals and companies.  GroestlPay uses [Bitcore Wallet Service](https://github.com/bitpay/bitcore-wallet-service) (BWS) for peer synchronization and network interfacing.
+GroestlPay is an easy-to-use, open-source, multiplatform, multisignature, secure groestlcoin wallet platform for both individuals and companies.  GroestlPay uses [Bitcore Wallet Service](https://github.com/bitpay/bitcore-wallet-service) (BWS) for peer synchronization and network interfacing.
 
 For a list of frequently asked questions please visit the [GroestlPay FAQ](https://github.com/bitpay/copay/wiki/COPAY---FAQ).
 
@@ -11,8 +11,8 @@ For a list of frequently asked questions please visit the [GroestlPay FAQ](https
 - Device-based security: all private keys are stored locally, not in the cloud
 - Support for Groestlcoin testnet wallets
 - Synchronous access across all major mobile and desktop platforms
-- Payment protocol (BIP70-BIP73) support: easily-identifiable payment requests and verifiable, secure bitcoin payments
-- Support for over 150 currency pricing options and unit denomination in BTC or bits
+- Payment protocol (BIP70-BIP73) support: easily-identifiable payment requests and verifiable, secure groestlcoin payments
+- Support for over 150 currency pricing options and unit denomination in GRS or groestls
 - Mnemonic (BIP39) support for wallet backups
 - Paper wallet sweep support (BIP38)
 - Hardware wallet support (Trezor and Ledger) (only in Chrome App version)

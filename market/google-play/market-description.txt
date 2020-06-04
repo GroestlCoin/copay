@@ -15,7 +15,7 @@ Integration for buying and selling Groestlcoin.
 Intuitive multisignature security for personal or shared wallets
 Device-based security: all private keys are stored locally, not in the cloud
 Hierarchical deterministic (HD) address generation and wallet backups
-Payment protocol (BIP70-BIP73) support: easily-identifiable payment requests and verifiably secure bitcoin payments
+Payment protocol (BIP70-BIP73) support: easily-identifiable payment requests and verifiably secure groestlcoin payments
 Support for 150+ currency pricing options and unit denomination in GRS or uGRS
 Email and push notifications for payments and transfers
 Easy spending proposal flow for shared wallets and group payments
