@@ -1,7 +1,7 @@
 <?xml version='1.0' encoding='utf-8'?>
 <widget id="org.groestlcoin.groestlpay"
   version="1.0.4"
-  android-versionCode="121"
+  android-versionCode="1200"
   ios-CFBundleVersion="1.0.4">
     <name>GroestlPay</name>
     <description>

@@ -3,12 +3,12 @@
   "description": "A multisignature Groestlcoin wallet",
   "author": "Groestlcoin",
   "version": "2.7.4",
-  "androidVersionCode": "121",
+  "androidVersionCode": "1200",
   "keywords": [
     "wallet",
     "GroestlPay",
     "multisignature",
-	  "Groestlcoin",
+    "Groestlcoin",
     "groestlcore"
   ],
   "main": "public/index.html",
