@@ -65,7 +65,7 @@
     "bower": "^1.7.9",
     "chai": "^3.5.0",
     "cordova": "5.4.1",
-    "cordova-android": "6.2.3",
+    "cordova-android": "8.0.0",
     "grunt": "^1.0.1",
     "grunt-angular-gettext": "^2.2.3",
     "grunt-browserify": "^5.0.0",
