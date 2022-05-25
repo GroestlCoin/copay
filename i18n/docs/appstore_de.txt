@@ -1,5 +1,5 @@
-Sichere Groestlcoins zu eigenen Bedingungen, mit einem quelloffenen Gemeinschaftswallet (elektronische Brieftasche mit Mehrfachunterschriften) von BitPay.
-GroestlPay Nutzer können ihre Beträge individuell speichern oder ihre Finanzen mit anderen Nutzern in Gemeinschaftswallets teilen, die je nach Einstellung mehrere Bestätigungen (elektronische Unterschriften) benötigen und so nichtautorisierte Zahlungen verhindern. Ein paar Einsatzmöglichkeiten, wie ein solches Wallet mit anderen copayern genutzt werden kann:
+Sichere Groestlcoins zu eigenen Bedingungen, mit einem quelloffenen Gemeinschaftswallet (elektronische Brieftasche mit Mehrfachunterschriften) von Groestlcoin Developers.
+GroestlPay Nutzer können ihre Beträge individuell speichern oder ihre Finanzen mit anderen Nutzern in Gemeinschaftswallets teilen, die je nach Einstellung mehrere Bestätigungen (elektronische Unterschriften) benötigen und so nichtautorisierte Zahlungen verhindern. Ein paar Einsatzmöglichkeiten, wie ein solches Wallet mit anderen groestlpayern genutzt werden kann:
 
 Ansparen von Beträgen für Urlaub oder gemeinsame Anschaffungen (z.B. mit Freunden)
 Überwachung von Ausgaben und Einkünften der Familie.

@@ -1,16 +1,16 @@
-Zabezpečte vaše groestlcoiny open-source, více-podpisovou peněženkou od BitPay. 
+Zabezpečte vaše groestlcoiny open-source, více-podpisovou peněženkou od Groestlcoin Developers. 
 Uživatelé GroestlPay mohou uchovávat své prostředky jednotlivě nebo bezpečně finance sdílet so statními uživatele pomocí více-podpisových peněženek, které eliminují neoprávněné platby, protože ke schválení vyžadují více podpisů. Několik tipů pro využívání GroestlPay peněženky s ostatními:
 
-Úspory pro výlety nebo společná peněženka s přáteli 
+Úspory pro výlety nebo společná peněženka s přáteli
 Přehledy rodinných nákladů a úhrad
 Správa obchodů, klubů a zdrojů či nákladů organizací
 
 Vytvořili jsme následující funkce pro tuto verzi GroestlPay pro groestlcoin peněženku, která je dostupná a bezpečná:
 
-Správa a tvorba více peněženek 
+Správa a tvorba více peněženek
 Intuitivní více-podpisové zabezpečení pro osobní nebo sdílené peněženky
 Snadná tvorba návrhů plateb pro sdílené peněženky s skupinové platby
-Hierarchicky deterministické (HD) vytváření adres a záloh peněženky 
+Hierarchicky deterministické (HD) vytváření adres a záloh peněženky
 Device-based zabezpečení: všechny soukromé klíče jsou uloženy na zařízení, ne v Cloud
 Podpora Groestlcoin test sítě
 Synchronizovaný přístup všech hlavních mobilních a Pc platforem
@@ -20,4 +20,4 @@ E-mailová upozornění pro platby a převody
 Přizpůsobitelné pojmenování a podbarvení peněženky
 9 podporovaných jazyků (EN, CS, FR, DE, IT, ES, JA, PL, RU)
 
-GroestlPay je bezplatný open-source software, fungující na decentralizovaných serverech, není tedy potřeba spoléhat na společnost pro trvalou podporu. Kdokoliv může prohlédnout nebo přispět k GroestlPay zdrojovému kódu na GitHub (https://github.com/Groestlcoin/GroestlPay). 
+GroestlPay je bezplatný open-source software, fungující na decentralizovaných serverech, není tedy potřeba spoléhat na společnost pro trvalou podporu. Kdokoliv může prohlédnout nebo přispět k GroestlPay zdrojovému kódu na GitHub (https://github.com/Groestlcoin/GroestlPay).

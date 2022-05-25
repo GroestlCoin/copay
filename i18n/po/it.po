@@ -53,24 +53,24 @@ msgid "{{item.m}}-of-{{item.n}}"
 msgstr "{{item.m}}-di-{{item.n}}"
 
 #: public/views/modals/txp-details.html
-msgid "* A payment proposal can be deleted if 1) you are the creator, and no other copayer has signed, or 2) 24 hours have passed since the proposal was created."
-msgstr "* Una proposta di pagamento può essere eliminata se 1) Tu sei il creatore e nessun altro copayer ha firmato, oppure 2) Sono passate 24 ore da quando la proposta e' stata creata."
+msgid "* A payment proposal can be deleted if 1) you are the creator, and no other groestlpayer has signed, or 2) 24 hours have passed since the proposal was created."
+msgstr "* Una proposta di pagamento può essere eliminata se 1) Tu sei il creatore e nessun altro groestlpayer ha firmato, oppure 2) Sono passate 24 ore da quando la proposta e' stata creata."
 
 #: public/views/includes/terms.html
 msgid "<b>IF YOU LOSE ACCESS TO YOUR GroestlPay WALLET OR YOUR ENCRYPTED PRIVATE KEYS AND YOU HAVE NOT SEPARATELY STORED A BACKUP OF YOUR WALLET AND CORRESPONDING PASSWORD, YOU ACKNOWLEDGE AND AGREE THAT ANY GROESTLCOINS YOU HAVE ASSOCIATED WITH THAT GroestlPay WALLET WILL BECOME INACCESSIBLE.</b>"
 msgstr "<b>Se perdi l'accesso al tuo portafoglio GroestlPay o tuo crittografato chiavi PRIVATE e non hai archiviato separatamente una copia di BACKUP del vostro portafoglio e la corrispondente PASSWORD, tu riconosci e accetti che qualsiasi GROESTLCOIN associato con quel portafoglio GroestlPay diventerà inaccessibile.</b>"
 
 #: public/views/backup.html
-msgid "<b>OR</b> 1 wallet export file and the remaining quorum of wallet recovery phrases (e.g. in a 3-5 wallet: 1 wallet export file + 2 wallet recovery phrases of any of the other copayers)."
-msgstr "<b>O</b> 1 file di portafoglio esportato e il restante quorum di frasi di recupero portafoglio (ad esempio in un 3-5 portafogli: 1 file di portafoglio esportato + 2 frasi di recupero portafoglio di qualsiasi degli altri copayers)."
+msgid "<b>OR</b> 1 wallet export file and the remaining quorum of wallet recovery phrases (e.g. in a 3-5 wallet: 1 wallet export file + 2 wallet recovery phrases of any of the other groestlpayers)."
+msgstr "<b>O</b> 1 file di portafoglio esportato e il restante quorum di frasi di recupero portafoglio (ad esempio in un 3-5 portafogli: 1 file di portafoglio esportato + 2 frasi di recupero portafoglio di qualsiasi degli altri groestlpayers)."
 
 #: public/views/backup.html
-msgid "<b>OR</b> the wallet recovery phrase of <b>all</b> copayers in the wallet"
-msgstr "<b>O</b> la frase di recupero di portafoglio di <b>tutti</b> i copayers nel portafoglio"
+msgid "<b>OR</b> the wallet recovery phrase of <b>all</b> groestlpayers in the wallet"
+msgstr "<b>O</b> la frase di recupero di portafoglio di <b>tutti</b> i groestlpayers nel portafoglio"
 
 #: public/views/backup.html
-msgid "<b>OR</b> the wallet recovery phrases of <b>all</b> copayers in the wallet"
-msgstr "<b>O</b> le frasi di recupero di portafoglio di <b>tutti</b> i copayers nel portafoglio"
+msgid "<b>OR</b> the wallet recovery phrases of <b>all</b> groestlpayers in the wallet"
+msgstr "<b>O</b> le frasi di recupero di portafoglio di <b>tutti</b> i groestlpayers nel portafoglio"
 
 #: public/views/disclaimer.html
 msgid "A multisignature groestlcoin wallet"
@@ -388,20 +388,20 @@ msgid "Continue"
 msgstr "Continua"
 
 #: src/js/services/bwcError.js
-msgid "copayer already in this wallet"
-msgstr "GroestlPayer già in questo portafoglio"
+msgid "groestlpayer already in this wallet"
+msgstr "groestlpayer già in questo portafoglio"
 
 #: src/js/services/bwcError.js
-msgid "copayer already voted on this spend proposal"
-msgstr "GroestlPayer già votato su questa proposta"
+msgid "groestlpayer already voted on this spend proposal"
+msgstr "groestlpayer già votato su questa proposta"
 
 #: src/js/services/bwcError.js
-msgid "copayer data mismatch"
-msgstr "Mancata corrispondenza dei dati del copayer"
+msgid "groestlpayer data mismatch"
+msgstr "Mancata corrispondenza dei dati del groestlpayer"
 
 #: public/views/preferencesInformation.html
-msgid "copayers"
-msgstr "GroestlPayers"
+msgid "groestlpayers"
+msgstr "groestlpayers"
 
 #: src/js/controllers/copayers.js
 #: src/js/controllers/export.js
@@ -1192,12 +1192,12 @@ msgid "Payment Proposal Rejected"
 msgstr "Proposta di Pagamento Rifiutata"
 
 #: src/js/services/notificationsService.js
-msgid "Payment Proposal Rejected by copayer"
-msgstr "Proposta di Pagamento Rifiutata dai GroestlPayers"
+msgid "Payment Proposal Rejected by groestlpayer"
+msgstr "Proposta di Pagamento Rifiutata dai groestlpayers"
 
 #: src/js/services/notificationsService.js
-msgid "Payment Proposal Signed by copayer"
-msgstr "Proposta di Pagamento Firmata dai GroestlPayers"
+msgid "Payment Proposal Signed by groestlpayer"
+msgstr "Proposta di Pagamento Firmata dai groestlpayers"
 
 #: public/views/walletHome.html
 msgid "Payment Proposals"
@@ -1536,8 +1536,8 @@ msgid "Share invitation"
 msgstr "Condividi l'invito"
 
 #: public/views/copayers.html
-msgid "Share this invitation with your copayers"
-msgstr "Condividi questo invito con i tuoi copayers"
+msgid "Share this invitation with your groestlpayers"
+msgstr "Condividi questo invito con i tuoi groestlpayers"
 
 #: public/views/walletHome.html
 msgid "Share this wallet address to receive payments"
@@ -1711,8 +1711,8 @@ msgid "This transaction has become invalid; possibly due to a double spend attem
 msgstr "Questa transazione è diventata invalida; forse a causa di un tentativo di doppia spesa."
 
 #: public/views/walletHome.html
-msgid "This wallet is not registered at the given Bitcore Wallet Service (BWS). You can recreate it from the local information."
-msgstr "Questo portafoglio non è registrato al Bitcore Wallet Service (BWS). Puoi ricrearlo dalle informazioni locali."
+msgid "This wallet is not registered at the given Groestlcore Wallet Service (GWS). You can recreate it from the local information."
+msgstr "Questo portafoglio non è registrato al Groestlcore Wallet Service (GWS). Puoi ricrearlo dalle informazioni locali."
 
 #: public/views/modals/txp-details.html
 msgid "Time"
@@ -1742,8 +1742,8 @@ msgid "Total Locked Balance"
 msgstr "Totale Importo Bloccato"
 
 #: public/views/create.html
-msgid "Total number of copayers"
-msgstr "Numero totale di copayer"
+msgid "Total number of groestlpayers"
+msgstr "Numero totale di groestlpayer"
 
 #: src/js/services/fingerprintService.js
 msgid "Touch ID Failed"
@@ -1820,8 +1820,8 @@ msgid "View"
 msgstr "Visualizza"
 
 #: public/views/copayers.html
-msgid "Waiting for copayers"
-msgstr "In attesa di copayers"
+msgid "Waiting for groestlpayers"
+msgstr "In attesa di groestlpayers"
 
 #: src/js/services/onGoingProcess.js
 msgid "Waiting for Ledger..."
@@ -1970,8 +1970,8 @@ msgid "We reserve the right to modify this disclaimer from time to time."
 msgstr "Ci riserviamo il diritto di modificare di volta in volta il presente disclaimer."
 
 #: public/views/disclaimer.html
-msgid "WELCOME TO COPAY"
-msgstr "BENVENUTO A COPAY"
+msgid "WELCOME TO GROESTLPAY"
+msgstr "BENVENUTO A GROESTLPAY"
 
 #: public/views/includes/terms.html
 msgid "While the software has undergone beta testing and continues to be improved by feedback from the open-source user and developer community, we cannot guarantee that there will be no bugs in the software."
@@ -2046,4 +2046,3 @@ msgstr "La chiave del tuo portafoglio verrà crittografata. La Password di Spesa
 #: public/views/backup.html
 msgid "Your wallet recovery phrase and access to the server that coordinated the initial wallet creation. You still need {{index.m}} keys to spend."
 msgstr "La tua frase di recupero portafoglio e accesso al server che ha coordinato la creazione iniziale del portafoglio. Hai ancora bisogno delle chiavi {{index.m}} prima di spendere."
-

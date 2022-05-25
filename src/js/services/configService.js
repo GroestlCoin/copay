@@ -10,7 +10,7 @@ angular.module('copayApp.services').factory('configService', function(storageSer
       mPlusN: 100,
     },
 
-    // Bitcore wallet service URL
+    // Groestlcore Wallet service URL
     bws: {
       url: 'https://gws.groestlcoin.org/bws/api',
     },

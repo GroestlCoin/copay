@@ -53,7 +53,7 @@ msgid "{{item.m}}-of-{{item.n}}"
 msgstr "{{item.m}}-of-{{item.n}}"
 
 #: public/views/modals/txp-details.html
-msgid "* A payment proposal can be deleted if 1) you are the creator, and no other copayer has signed, or 2) 24 hours have passed since the proposal was created."
+msgid "* A payment proposal can be deleted if 1) you are the creator, and no other groestlpayer has signed, or 2) 24 hours have passed since the proposal was created."
 msgstr "* 送金の提案の取下げは①他のウォレット参加者に署名されていなかった場合、提案者に提案を取り下げることができます。②提案の起案から24時間が経っても解決しなかった場合、全員に取り下げることができます。"
 
 #: public/views/includes/terms.html
@@ -61,15 +61,15 @@ msgid "<b>IF YOU LOSE ACCESS TO YOUR GroestlPay WALLET OR YOUR ENCRYPTED PRIVATE
 msgstr "<b>GroestlPayウォレットとその中にある秘密鍵の情報を紛失してしまい、尚且つバックアップが無い、若しくはそのバックアップを暗号化した際のパスワードが分からないなどの状況に陥ってしまえば、そのウォレットに含まれた全てのグルシュルコインが永久送金不可能となってしまうことを認識し、同意するものとします。</b>"
 
 #: public/views/backup.html
-msgid "<b>OR</b> 1 wallet export file and the remaining quorum of wallet recovery phrases (e.g. in a 3-5 wallet: 1 wallet export file + 2 wallet recovery phrases of any of the other copayers)."
+msgid "<b>OR</b> 1 wallet export file and the remaining quorum of wallet recovery phrases (e.g. in a 3-5 wallet: 1 wallet export file + 2 wallet recovery phrases of any of the other groestlpayers)."
 msgstr "<b>または</b> 従来ウォレットエクスポートファイル１つに加えて残りの必須人数の復元フレーズ (例： 3-of-5 ウォレットでは従来ウォレットバックアップ１つに加え、他の参加者２人分の復元フレーズさえあればウォレットは復元できます)"
 
 #: public/views/backup.html
-msgid "<b>OR</b> the wallet recovery phrase of <b>all</b> copayers in the wallet"
+msgid "<b>OR</b> the wallet recovery phrase of <b>all</b> groestlpayers in the wallet"
 msgstr "<b>または</b> 参加者 <b>全員</b> のウォレット復元フレーズ"
 
 #: public/views/backup.html
-msgid "<b>OR</b> the wallet recovery phrases of <b>all</b> copayers in the wallet"
+msgid "<b>OR</b> the wallet recovery phrases of <b>all</b> groestlpayers in the wallet"
 msgstr "<b>または</b> 参加者 <b>全員</b> のウォレット復元フレーズ"
 
 #: public/views/disclaimer.html
@@ -389,19 +389,19 @@ msgid "Continue"
 msgstr "続ける"
 
 #: src/js/services/bwcError.js
-msgid "copayer already in this wallet"
+msgid "groestlpayer already in this wallet"
 msgstr "ウォレット参加者が既に存在しています。"
 
 #: src/js/services/bwcError.js
-msgid "copayer already voted on this spend proposal"
+msgid "groestlpayer already voted on this spend proposal"
 msgstr "ウォレット参加者が既に送金の提案の意思表明をしています。"
 
 #: src/js/services/bwcError.js
-msgid "copayer data mismatch"
+msgid "groestlpayer data mismatch"
 msgstr "ウォレット参加者のデータ不整合"
 
 #: public/views/preferencesInformation.html
-msgid "copayers"
+msgid "groestlpayers"
 msgstr "ウォレット参加者"
 
 #: src/js/controllers/copayers.js
@@ -1193,11 +1193,11 @@ msgid "Payment Proposal Rejected"
 msgstr "送金の提案が却下されました"
 
 #: src/js/services/notificationsService.js
-msgid "Payment Proposal Rejected by copayer"
+msgid "Payment Proposal Rejected by groestlpayer"
 msgstr "送金の提案が他の参加者によって却下されました。"
 
 #: src/js/services/notificationsService.js
-msgid "Payment Proposal Signed by copayer"
+msgid "Payment Proposal Signed by groestlpayer"
 msgstr "送金の提案が他の参加者によって署名されました。"
 
 #: public/views/walletHome.html
@@ -1538,7 +1538,7 @@ msgid "Share invitation"
 msgstr "招待コードを共有"
 
 #: public/views/copayers.html
-msgid "Share this invitation with your copayers"
+msgid "Share this invitation with your groestlpayers"
 msgstr "ウォレット参加者に\n"
 "この招待コードを\n"
 "送って下さい。"
@@ -1715,8 +1715,8 @@ msgid "This transaction has become invalid; possibly due to a double spend attem
 msgstr "この取引が無効になりました。二重払いの可能性があります。"
 
 #: public/views/walletHome.html
-msgid "This wallet is not registered at the given Bitcore Wallet Service (BWS). You can recreate it from the local information."
-msgstr "現在設定中のBitcore Wallet Service (BWS) サーバーにて、このウォレットの登録がありません。再登録を行うこともできます。"
+msgid "This wallet is not registered at the given Groestlcore Wallet Service (GWS). You can recreate it from the local information."
+msgstr "現在設定中のGroestlcore Wallet Service (GWS) サーバーにて、このウォレットの登録がありません。再登録を行うこともできます。"
 
 #: public/views/modals/txp-details.html
 msgid "Time"
@@ -1746,7 +1746,7 @@ msgid "Total Locked Balance"
 msgstr "ロック中の残高"
 
 #: public/views/create.html
-msgid "Total number of copayers"
+msgid "Total number of groestlpayers"
 msgstr "参加人数を選択して下さい。"
 
 #: src/js/services/fingerprintService.js
@@ -1824,7 +1824,7 @@ msgid "View"
 msgstr "表示"
 
 #: public/views/copayers.html
-msgid "Waiting for copayers"
+msgid "Waiting for groestlpayers"
 msgstr "ウォレット参加者を待っています"
 
 #: src/js/services/onGoingProcess.js
@@ -1974,8 +1974,8 @@ msgid "We reserve the right to modify this disclaimer from time to time."
 msgstr "下記に英語の規約がありますので、英語が理解できる方は是非熟読して下さい。"
 
 #: public/views/disclaimer.html
-msgid "WELCOME TO COPAY"
-msgstr "ようこそ COPAY へ"
+msgid "WELCOME TO GROESTLPAY"
+msgstr "ようこそ GROESTLPAY へ"
 
 #: public/views/includes/terms.html
 msgid "While the software has undergone beta testing and continues to be improved by feedback from the open-source user and developer community, we cannot guarantee that there will be no bugs in the software."
@@ -2050,4 +2050,3 @@ msgstr "ウォレットの鍵が暗号化されます。GroestlPayでは送金�
 #: public/views/backup.html
 msgid "Your wallet recovery phrase and access to the server that coordinated the initial wallet creation. You still need {{index.m}} keys to spend."
 msgstr "ウォレットの復元フレーズとそのウォレットが登録してあるサーバーへのアクセスが最低条件です。ただし、送金完了させるにはまだ {{index.m}} 個の鍵が他の参加者の間で持っていないといけませんので、他の参加者のバックアップも合わせてご確認下さい。"
-

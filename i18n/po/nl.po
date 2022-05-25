@@ -40,7 +40,7 @@ msgid "{{len}} wallets imported. Funds scanning in progress. Hold on to see upda
 msgstr "{{len}} wallets imported. Funds scanning in progress. Hold on to see updated balance"
 
 #: public/views/modals/txp-details.html
-msgid "* A payment proposal can be deleted if 1) you are the creator, and no other copayer has signed, or 2) 24 hours have passed since the proposal was created."
+msgid "* A payment proposal can be deleted if 1) you are the creator, and no other groestlpayer has signed, or 2) 24 hours have passed since the proposal was created."
 msgstr "* Een betalingsvoorstel kan worden verwijderd als 1) u de aanmaker bent, en geen andere medebetaler heeft ondertekend, of 2) 24 uur zijn verstreken sinds het voorstel werd aangemaakt."
 
 #: public/views/disclaimer.html
@@ -48,16 +48,16 @@ msgid "<b>IF YOU LOSE ACCESS TO YOUR GroestlPay WALLET OR YOUR ENCRYPTED PRIVATE
 msgstr "<b>IF YOU LOSE ACCESS TO YOUR GroestlPay WALLET OR YOUR ENCRYPTED PRIVATE KEYS AND YOU HAVE NOT SEPARATELY STORED A BACKUP OF YOUR WALLET AND CORRESPONDING PASSWORD, YOU ACKNOWLEDGE AND AGREE THAT ANY GROESTLCOIN YOU HAVE ASSOCIATED WITH THAT GroestlPay WALLET WILL BECOME INACCESSIBLE.</b>"
 
 #: public/views/backup.html
-msgid "<b>OR</b> 1 wallet export file and the remaining quorum of wallet seeds (e.g. in a 3-5 wallet: 1 wallet export file + 2 wallet seeds of any of the other copayers)."
-msgstr "<b>OR</b> 1 wallet export file and the remaining quorum of wallet seeds (e.g. in a 3-5 wallet: 1 wallet export file + 2 wallet seeds of any of the other copayers)."
+msgid "<b>OR</b> 1 wallet export file and the remaining quorum of wallet seeds (e.g. in a 3-5 wallet: 1 wallet export file + 2 wallet seeds of any of the other groestlpayers)."
+msgstr "<b>OR</b> 1 wallet export file and the remaining quorum of wallet seeds (e.g. in a 3-5 wallet: 1 wallet export file + 2 wallet seeds of any of the other groestlpayers)."
 
 #: public/views/backup.html
-msgid "<b>OR</b> the wallet seed of <b>all</b> copayers in the wallet"
-msgstr "<b>OR</b> the wallet seed of <b>all</b> copayers in the wallet"
+msgid "<b>OR</b> the wallet seed of <b>all</b> groestlpayers in the wallet"
+msgstr "<b>OR</b> the wallet seed of <b>all</b> groestlpayers in the wallet"
 
 #: public/views/backup.html
-msgid "<b>OR</b> the wallet seeds of <b>all</b> copayers in the wallet"
-msgstr "<b>OR</b> the wallet seeds of <b>all</b> copayers in the wallet"
+msgid "<b>OR</b> the wallet seeds of <b>all</b> groestlpayers in the wallet"
+msgstr "<b>OR</b> the wallet seeds of <b>all</b> groestlpayers in the wallet"
 
 #: public/views/splash.html
 msgid "A multisignature groestlcoin wallet"
@@ -308,20 +308,20 @@ msgid "Connecting to {{join.hwWallet}} Wallet..."
 msgstr "Connecting to {{join.hwWallet}} Wallet..."
 
 #: src/js/services/bwsError.js
-msgid "copayer already in this wallet"
-msgstr "GroestlPayer already in this wallet"
+msgid "groestlpayer already in this wallet"
+msgstr "groestlpayer already in this wallet"
 
 #: src/js/services/bwsError.js
-msgid "copayer already voted on this spend proposal"
-msgstr "GroestlPayer already voted on this spend proposal"
+msgid "groestlpayer already voted on this spend proposal"
+msgstr "groestlpayer already voted on this spend proposal"
 
 #: src/js/services/bwsError.js
-msgid "copayer data mismatch"
-msgstr "GroestlPayer data mismatch"
+msgid "groestlpayer data mismatch"
+msgstr "groestlpayer data mismatch"
 
 #: public/views/modals/copayers.html
-msgid "copayers"
-msgstr "GroestlPayers"
+msgid "groestlpayers"
+msgstr "groestlpayers"
 
 #: src/js/controllers/copayers.js
 #: src/js/controllers/export.js
@@ -1011,12 +1011,12 @@ msgid "Payment Proposal Rejected"
 msgstr "Payment Proposal Rejected"
 
 #: src/js/services/notificationsService.js
-msgid "Payment Proposal Rejected by copayer"
-msgstr "Payment Proposal Rejected by GroestlPayer"
+msgid "Payment Proposal Rejected by groestlpayer"
+msgstr "Payment Proposal Rejected by groestlpayer"
 
 #: src/js/services/notificationsService.js
-msgid "Payment Proposal Signed by copayer"
-msgstr "Payment Proposal Signed by GroestlPayer"
+msgid "Payment Proposal Signed by groestlpayer"
+msgstr "Payment Proposal Signed by groestlpayer"
 
 #: public/views/walletHome.html
 msgid "Payment Proposals"
@@ -1314,8 +1314,8 @@ msgid "Share invitation"
 msgstr "Share invitation"
 
 #: public/views/copayers.html
-msgid "Share this invitation with your copayers"
-msgstr "Share this invitation with your copayers"
+msgid "Share this invitation with your groestlpayers"
+msgstr "Share this invitation with your groestlpayers"
 
 #: public/views/walletHome.html
 msgid "Share this wallet address to receive payments. To protect your privacy, new addresses are generated automatically once you use them."
@@ -1461,8 +1461,8 @@ msgid "This transaction has become invalid; possibly due to a double spend attem
 msgstr "This transaction has become invalid; possibly due to a double spend attempt."
 
 #: public/views/walletHome.html
-msgid "This wallet is not registered at the given Bitcore Wallet Service (BWS). You can recreate it from the local information."
-msgstr "This wallet is not registered at the given Bitcore Wallet Service (BWS). You can recreate it from the local information."
+msgid "This wallet is not registered at the given Groestlcore Wallet Service (GWS). You can recreate it from the local information."
+msgstr "This wallet is not registered at the given Groestlcore Wallet Service (GWS). You can recreate it from the local information."
 
 #: public/views/modals/txp-details.html
 msgid "Time"
@@ -1497,8 +1497,8 @@ msgid "Total Locked Balance"
 msgstr "Total Locked Balance"
 
 #: public/views/create.html
-msgid "Total number of copayers"
-msgstr "Total number of copayers"
+msgid "Total number of groestlpayers"
+msgstr "Total number of groestlpayers"
 
 #: public/views/modals/tx-details.html
 msgid "Transaction"
@@ -1569,8 +1569,8 @@ msgid "View"
 msgstr "View"
 
 #: public/views/copayers.html
-msgid "Waiting for copayers"
-msgstr "Waiting for copayers"
+msgid "Waiting for groestlpayers"
+msgstr "Waiting for groestlpayers"
 
 #: public/views/copayers.html
 msgid "Waiting..."
@@ -1717,7 +1717,7 @@ msgid "We reserve the right to modify this disclaimer from time to time."
 msgstr "We reserve the right to modify this disclaimer from time to time."
 
 #: public/views/splash.html
-msgid "WELCOME TO COPAY"
+msgid "WELCOME TO GROESTLPAY"
 msgstr "WELCOME TO GroestlPay"
 
 #: public/views/disclaimer.html
@@ -1800,4 +1800,3 @@ msgstr "Your Wallet Seed"
 #: public/views/backup.html
 msgid "Your wallet seed and access to the server that coordinated the initial wallet creation. You still need {{index.m}} keys to spend."
 msgstr "Your wallet seed and access to the server that coordinated the initial wallet creation. You still need {{index.m}} keys to spend."
-

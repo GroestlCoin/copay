@@ -40,7 +40,7 @@ msgid "{{len}} wallets imported. Funds scanning in progress. Hold on to see upda
 msgstr "{{len}} cüzdanı içe aktarıldı. Fonlar taranırken ve güncellenirken bekleyiniz"
 
 #: public/views/modals/txp-details.html
-msgid "* A payment proposal can be deleted if 1) you are the creator, and no other copayer has signed, or 2) 24 hours have passed since the proposal was created."
+msgid "* A payment proposal can be deleted if 1) you are the creator, and no other groestlpayer has signed, or 2) 24 hours have passed since the proposal was created."
 msgstr "* Ödeme isteği; 1) kaynağı sizseniz, başka bir kullanıcı tarafından imzalanmamışsa veya 2) üzerinden 24 saat geçmişse silinebilir."
 
 #: public/views/disclaimer.html
@@ -48,15 +48,15 @@ msgid "<b>IF YOU LOSE ACCESS TO YOUR GroestlPay WALLET OR YOUR ENCRYPTED PRIVATE
 msgstr "<b>GroestlPay CÜZDANINIZA ERİŞİMİNİZİ KAYBEDER VEYA GEREKLİ ŞİFRESİ İLE BİRLİKTE CÜZDANINIZI ÖZEL ANAHTARLA BİRLİKTE YEDEKLEMEZSENİZ, GroestlPay CÜZDANINIZDAKİ BİTCOİN'LERE ERİŞİMİNİZİN KALMAYACAĞINI KABUL EDER VE ONAYLIYORSUNUZ DEMEKTİR.</b>"
 
 #: public/views/backup.html
-msgid "<b>OR</b> 1 wallet export file and the remaining quorum of wallet seeds (e.g. in a 3-5 wallet: 1 wallet export file + 2 wallet seeds of any of the other copayers)."
+msgid "<b>OR</b> 1 wallet export file and the remaining quorum of wallet seeds (e.g. in a 3-5 wallet: 1 wallet export file + 2 wallet seeds of any of the other groestlpayers)."
 msgstr ""
 
 #: public/views/backup.html
-msgid "<b>OR</b> the wallet seed of <b>all</b> copayers in the wallet"
+msgid "<b>OR</b> the wallet seed of <b>all</b> groestlpayers in the wallet"
 msgstr ""
 
 #: public/views/backup.html
-msgid "<b>OR</b> the wallet seeds of <b>all</b> copayers in the wallet"
+msgid "<b>OR</b> the wallet seeds of <b>all</b> groestlpayers in the wallet"
 msgstr ""
 
 #: public/views/splash.html
@@ -329,20 +329,20 @@ msgid "Connecting to {{join.hwWallet}} Wallet..."
 msgstr ""
 
 #: src/js/services/bwsError.js
-msgid "copayer already in this wallet"
-msgstr "GroestlPayer zaten bu cüzdan içinde"
+msgid "groestlpayer already in this wallet"
+msgstr "groestlpayer zaten bu cüzdan içinde"
 
 #: src/js/services/bwsError.js
-msgid "copayer already voted on this spend proposal"
-msgstr "GroestlPayer bu teklifi oylamış"
+msgid "groestlpayer already voted on this spend proposal"
+msgstr "groestlpayer bu teklifi oylamış"
 
 #: src/js/services/bwsError.js
-msgid "copayer data mismatch"
-msgstr "GroestlPayer veri uyuşmazlığı"
+msgid "groestlpayer data mismatch"
+msgstr "groestlpayer veri uyuşmazlığı"
 
 #: public/views/preferencesInformation.html
-msgid "copayers"
-msgstr "GroestlPayers"
+msgid "groestlpayers"
+msgstr "groestlpayers"
 
 #: src/js/controllers/copayers.js
 #: src/js/controllers/export.js
@@ -1057,12 +1057,12 @@ msgid "Payment Proposal Rejected"
 msgstr "Ödeme Teklifi Reddedildi"
 
 #: src/js/services/notificationsService.js
-msgid "Payment Proposal Rejected by copayer"
-msgstr "Ödeme teklifi bir GroestlPayer tarafından reddedildi"
+msgid "Payment Proposal Rejected by groestlpayer"
+msgstr "Ödeme teklifi bir groestlpayer tarafından reddedildi"
 
 #: src/js/services/notificationsService.js
-msgid "Payment Proposal Signed by copayer"
-msgstr "Ödeme teklifi bir GroestlPayer tarafından kabul edildi"
+msgid "Payment Proposal Signed by groestlpayer"
+msgstr "Ödeme teklifi bir groestlpayer tarafından kabul edildi"
 
 #: public/views/walletHome.html
 msgid "Payment Proposals"
@@ -1373,8 +1373,8 @@ msgid "Share invitation"
 msgstr "Davet paylaş"
 
 #: public/views/copayers.html
-msgid "Share this invitation with your copayers"
-msgstr "Bu daveti copayers ile paylaş"
+msgid "Share this invitation with your groestlpayers"
+msgstr "Bu daveti groestlpayers ile paylaş"
 
 #: public/views/walletHome.html
 msgid "Share this wallet address to receive payments. To protect your privacy, new addresses are generated automatically once you use them."
@@ -1528,8 +1528,8 @@ msgid "This transaction has become invalid; possibly due to a double spend attem
 msgstr "Bu işlem muhtemel bir çift harcama girişimi yüzünden geçersiz hale geldi."
 
 #: public/views/walletHome.html
-msgid "This wallet is not registered at the given Bitcore Wallet Service (BWS). You can recreate it from the local information."
-msgstr "Bu cüzdan Bitcore cüzdan Servisi'ne (BWS) kayıtlı değil. Yerel bilgilerle yeniden oluşturabilirsiniz."
+msgid "This wallet is not registered at the given Groestlcore Wallet Service (GWS). You can recreate it from the local information."
+msgstr "Bu cüzdan Groestlcore cüzdan Servisi'ne (GWS) kayıtlı değil. Yerel bilgilerle yeniden oluşturabilirsiniz."
 
 #: public/views/modals/txp-details.html
 msgid "Time"
@@ -1564,8 +1564,8 @@ msgid "Total Locked Balance"
 msgstr "Toplam Kilitli Bakiye"
 
 #: public/views/create.html
-msgid "Total number of copayers"
-msgstr "GroestlPayers toplam sayısı"
+msgid "Total number of groestlpayers"
+msgstr "groestlayers toplam sayısı"
 
 #: public/views/modals/tx-details.html
 msgid "Transaction"
@@ -1634,8 +1634,8 @@ msgid "View"
 msgstr ""
 
 #: public/views/copayers.html
-msgid "Waiting for copayers"
-msgstr "GroestlPayers bekleniyor"
+msgid "Waiting for groestlpayers"
+msgstr "groestlpayers bekleniyor"
 
 #: public/views/copayers.html
 msgid "Waiting..."
@@ -1786,8 +1786,8 @@ msgid "We reserve the right to modify this disclaimer from time to time."
 msgstr "Zaman zaman bu reddi değiştirme hakkımızı saklı tutarız."
 
 #: public/views/splash.html
-msgid "WELCOME TO COPAY"
-msgstr "COPAY'E HOŞGELDİNİZ"
+msgid "WELCOME TO GROESTLPAY"
+msgstr "GROESTLPAY'E HOŞGELDİNİZ"
 
 #: public/views/disclaimer.html
 msgid "While the software has undergone beta testing and continues to be improved by feedback from the open-source user and developer community, we cannot guarantee that there will be no bugs in the software."
@@ -1869,4 +1869,3 @@ msgstr "Cüzdan Kurtama Sözcükleriniz"
 #: public/views/backup.html
 msgid "Your wallet seed and access to the server that coordinated the initial wallet creation. You still need {{index.m}} keys to spend."
 msgstr ""
-

@@ -1,4 +1,4 @@
-GroestlPay is an easy-to-use, open-source, multiplatform, multisignature, secure groestlcoin wallet platform for both individuals and companies.  GroestlPay uses [Bitcore Wallet Service](https://github.com/bitpay/bitcore-wallet-service) (BWS) for peer synchronization and network interfacing.
+GroestlPay is an easy-to-use, open-source, multiplatform, multisignature, secure groestlcoin wallet platform for both individuals and companies.  GroestlPay uses [Groestlcore Wallet Service](https://github.com/Groestlcoin/bitcore-wallet-service) (GWS) for peer synchronization and network interfacing.
 
 For a list of frequently asked questions please visit the [GroestlPay FAQ](https://github.com/bitpay/copay/wiki/COPAY---FAQ).
 
@@ -150,44 +150,14 @@ Depending on the key `derivationStrategy`, addresses are derived using
 | >=1.2  | Multisig  |  BIP44 |  P2SH   |
 | >=1.5  | Multisig Hardware wallets  |  BIP44 (root m/48') |  P2SH   |
 
-Using a tool like [Bitcore PlayGround](http://bitcore.io/playground) all wallet addresses can be generated. (TIP: Use the `Address` section for P2PKH address type wallets and `Multisig Address` for P2SH address type wallets). For multisig addresses, the required number of signatures (key `m` on the export) is also needed to recreate the addresses.
-
 BIP45 note: All addresses generated at BWS with BIP45 use the 'shared cosigner index' (2147483647) so GroestlPay address indexes look like: `m/45'/2147483647/0/x` for main addresses and `m/45'/2147483647/1/y` for change addresses.
 
 Since version 1.5, GroestlPay uses the root `m/48'` for hardware multisignature wallets. This was coordinated with Ledger and Trezor teams. While the derivation path format is still similar to BIP44, the root was in order to indicate that these wallets are not discoverable by scanning addresses for funds. Address generation for multisignature wallets requires the other payers extended public keys.
 
 
-## Bitcore Wallet Service
+## Groestlcore Wallet Service
 
-GroestlPay depends on [Bitcore Wallet Service](https://github.com/bitpay/bitcore-wallet-service) (BWS) for blockchain information, networking and payer synchronization.  A BWS instance can be setup and operational within minutes or you can use a public instance like `https://bws.bitpay.com`.  Switching between BWS instances is very simple and can be done with a click from within GroestlPay.  BWS also allows GroestlPay to interoperate with other wallets like [Bitcore Wallet CLI] (https://github.com/bitpay/bitcore-wallet).
-
-## Hardware Wallet Support
-
-GroestlPay supports Ledger and Trezor hardware wallets. Hardware wallet support is only available through the Chrome App. Ledger support is only available on multisig wallets.
-
-To use Ledger, you need to have the Ledger Chrome App installed, available at:
-https://chrome.google.com/webstore/detail/ledger-wallet/kkdpmhnladdopljabkgpacgpliggeeaf
-
-To use Trezor, you need to have the Trezor Chrome Extension installed, available at:
-https://chrome.google.com/webstore/detail/trezor-chrome-extension/jcjjhjgimijdkoamemaghajlhegmoclj
-
-To create or join a wallet using Ledger or Trezor go to:
-
-  Add Wallet -> Create or Join -> Advanced options -> Wallet Seed -> select Trezor or Ledger
-
-Both devices support multiple accounts, so you can use them for multiple wallets. Select the account and then click on create or join.
-
-It is also possible to import a wallet from a device using:
-  Add Wallet -> Import -> Hardware wallet
-
-Here it is also necesary to select the account number.
-
-When creating or joining a wallet, GroestlPay will ask for two public keys for the device. One public keys is used for the wallet itself and the other is used as an entropy source to create a private / public key pair for signing requests to the Wallet Service.
-
-Every time you need to sign a transaction, the device will be needed to perform the signature. Follow the on screen instructions after clicking the `send` or `accept` buttons.
-
-Finally, in case you lose the device and you have the 24 word seed for the device, you can recover access to your funds using GroestlPay, see: https://github.com/Groestlcoinofficial/GroestlPay/blob/master/backupRecovery.md#hardware-wallets
-
+GroestlPay depends on [Groestlcore Wallet Service](https://github.com/Groestlcoin/bitcore-wallet-service) (GWS) for blockchain information, networking and payer synchronization.  A GWS instance can be setup and operational within minutes or you can use a public instance like `https://gws.groestlcoin.org`.  Switching between GWS instances is very simple and can be done with a click from within GroestlPay. GWS also allows GroestlPay to interoperate with other wallets like [Groestlcore Wallet CLI] (https://github.com/Groestlcoin/bitcore-wallet-service).
 
 ## Translations
 GroestlPay uses standard gettext PO files for translations and [Crowdin](https://crowdin.com/project/copay) as the front-end tool for translators.  To join our team of translators, please create an account at [Crowdin](https://crowdin.com) and translate the GroestlPay documentation and application text into your native language.

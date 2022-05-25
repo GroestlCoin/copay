@@ -1,4 +1,4 @@
-Groestlcoinlerinizi kendi kurallarınıza göre BitPay tarafından oluşturulan açık kaynak, çoklu imzalı bir cüzdan ile koruyun.
+Groestlcoinlerinizi kendi kurallarınıza göre Groestlcoin Developers tarafından oluşturulan açık kaynak, çoklu imzalı bir cüzdan ile koruyun.
 GroestlPay kullanıcıları paralarını ayrı ayrı tutabilir veya çoklu imzalı cüzdanlar ile diğer kullanıcılarla arasında mali durumları paylaşabilirler ki birden fazla onay isteyen yetkilendirilmemiş ödemeleri önleyebilirler. Diğerleri ile kullanmak için bazı GroestlPay yolları:
 
 Tatil veya arkadaşlarınızla ortak siparişler vermek için

@@ -43,7 +43,7 @@ msgid "{{item.m}}-of-{{item.n}}"
 msgstr ""
 
 #: public/views/modals/txp-details.html
-msgid "* A payment proposal can be deleted if 1) you are the creator, and no other copayer has signed, or 2) 24 hours have passed since the proposal was created."
+msgid "* A payment proposal can be deleted if 1) you are the creator, and no other groestlpayer has signed, or 2) 24 hours have passed since the proposal was created."
 msgstr ""
 
 #: public/views/includes/terms.html
@@ -51,15 +51,15 @@ msgid "<b>IF YOU LOSE ACCESS TO YOUR GROESTLPAY WALLET OR YOUR ENCRYPTED PRIVATE
 msgstr ""
 
 #: public/views/backup.html
-msgid "<b>OR</b> 1 wallet export file and the remaining quorum of wallet recovery phrases (e.g. in a 3-5 wallet: 1 wallet export file + 2 wallet recovery phrases of any of the other copayers)."
+msgid "<b>OR</b> 1 wallet export file and the remaining quorum of wallet recovery phrases (e.g. in a 3-5 wallet: 1 wallet export file + 2 wallet recovery phrases of any of the other groestlpayers)."
 msgstr ""
 
 #: public/views/backup.html
-msgid "<b>OR</b> the wallet recovery phrase of <b>all</b> copayers in the wallet"
+msgid "<b>OR</b> the wallet recovery phrase of <b>all</b> groestlpayers in the wallet"
 msgstr ""
 
 #: public/views/backup.html
-msgid "<b>OR</b> the wallet recovery phrases of <b>all</b> copayers in the wallet"
+msgid "<b>OR</b> the wallet recovery phrases of <b>all</b> groestlpayers in the wallet"
 msgstr ""
 
 #: public/views/disclaimer.html
@@ -378,19 +378,19 @@ msgid "Continue"
 msgstr ""
 
 #: src/js/services/bwcError.js
-msgid "copayer already in this wallet"
+msgid "groestlpayer already in this wallet"
 msgstr ""
 
 #: src/js/services/bwcError.js
-msgid "copayer already voted on this spend proposal"
+msgid "groestlpayer already voted on this spend proposal"
 msgstr ""
 
 #: src/js/services/bwcError.js
-msgid "copayer data mismatch"
+msgid "groestlpayer data mismatch"
 msgstr ""
 
 #: public/views/preferencesInformation.html
-msgid "copayers"
+msgid "groestlpayers"
 msgstr ""
 
 #: src/js/controllers/copayers.js
@@ -904,7 +904,7 @@ msgid "Join"
 msgstr ""
 
 #: src/js/controllers/copayers.js
-msgid "Join my GroestlPay wallet. Here is the invitation code: {{secret}} You can download GroestlPay for your phone or desktop at https://GroestlPay.io"
+msgid "Join my GroestlPay wallet. Here is the invitation code: {{secret}} You can download GroestlPay for your phone or desktop at https://www.groestlcoin.org"
 msgstr ""
 
 #: public/views/add.html
@@ -1182,11 +1182,11 @@ msgid "Payment Proposal Rejected"
 msgstr ""
 
 #: src/js/services/notificationsService.js
-msgid "Payment Proposal Rejected by copayer"
+msgid "Payment Proposal Rejected by groestlpayer"
 msgstr ""
 
 #: src/js/services/notificationsService.js
-msgid "Payment Proposal Signed by copayer"
+msgid "Payment Proposal Signed by groestlpayer"
 msgstr ""
 
 #: public/views/walletHome.html
@@ -1526,7 +1526,7 @@ msgid "Share invitation"
 msgstr ""
 
 #: public/views/copayers.html
-msgid "Share this invitation with your copayers"
+msgid "Share this invitation with your groestlpayers"
 msgstr ""
 
 #: public/views/walletHome.html
@@ -1656,7 +1656,7 @@ msgid "The request could not be understood by the server"
 msgstr ""
 
 #: public/views/includes/terms.html
-msgid "The software does not constitute an account where BitPay or other third parties serve as financial intermediaries or custodians of your groestlcoin."
+msgid "The software does not constitute an account where GroestlPay or other third parties serve as financial intermediaries or custodians of your groestlcoin."
 msgstr ""
 
 #: public/views/includes/terms.html
@@ -1701,7 +1701,7 @@ msgid "This transaction has become invalid; possibly due to a double spend attem
 msgstr ""
 
 #: public/views/walletHome.html
-msgid "This wallet is not registered at the given Bitcore Wallet Service (BWS). You can recreate it from the local information."
+msgid "This wallet is not registered at the given Groestlcore Wallet Service (GWS). You can recreate it from the local information."
 msgstr ""
 
 #: public/views/modals/txp-details.html
@@ -1732,7 +1732,7 @@ msgid "Total Locked Balance"
 msgstr ""
 
 #: public/views/create.html
-msgid "Total number of copayers"
+msgid "Total number of groestlpayers"
 msgstr ""
 
 #: src/js/services/fingerprintService.js
@@ -1810,7 +1810,7 @@ msgid "View"
 msgstr ""
 
 #: public/views/copayers.html
-msgid "Waiting for copayers"
+msgid "Waiting for groestlpayers"
 msgstr ""
 
 #: src/js/services/onGoingProcess.js
@@ -1960,7 +1960,7 @@ msgid "We reserve the right to modify this disclaimer from time to time."
 msgstr ""
 
 #: public/views/disclaimer.html
-msgid "WELCOME TO COPAY"
+msgid "WELCOME TO GROESTLPAY"
 msgstr ""
 
 #: public/views/includes/terms.html

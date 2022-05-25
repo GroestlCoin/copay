@@ -53,7 +53,7 @@ msgid "{{item.m}}-of-{{item.n}}"
 msgstr "{{item.m}} z {{item.n}}"
 
 #: public/views/modals/txp-details.html
-msgid "* A payment proposal can be deleted if 1) you are the creator, and no other copayer has signed, or 2) 24 hours have passed since the proposal was created."
+msgid "* A payment proposal can be deleted if 1) you are the creator, and no other groestlpayer has signed, or 2) 24 hours have passed since the proposal was created."
 msgstr "* Návrh k platbě může být odstraněn pokud 1) jste jej vytvořil(a) a žádný spoluplátce jej nepodepsal 2) Uběhlo 24 hodin od vytvoření návrhu."
 
 #: public/views/includes/terms.html
@@ -61,15 +61,15 @@ msgid "<b>IF YOU LOSE ACCESS TO YOUR GROESTLPAY WALLET OR YOUR ENCRYPTED PRIVATE
 msgstr "<b>POKUD ZTRATÍTE PŘÍSTUP K VAŠI SPOLUPLÁTCOVSKÉ PENĚŽENCE NEBO VAŠÍM ŠIFROVANÝM KLÍČŮM A NEMÁTE ULOŽENOU ZÁLOHU VAŠI PENĚŽENKY A HESLEM ZVLÁŠTĚ, BERETE NA VĚDOMÍ ŽE VŠECHNY GROESTLCOINY ULOŽENÉ V TÉTO SPOLUPLÁTCOVSKÉ PENĚŽENCE NEBUDOU DOSTUPNÉ. </b>"
 
 #: public/views/backup.html
-msgid "<b>OR</b> 1 wallet export file and the remaining quorum of wallet recovery phrases (e.g. in a 3-5 wallet: 1 wallet export file + 2 wallet recovery phrases of any of the other copayers)."
+msgid "<b>OR</b> 1 wallet export file and the remaining quorum of wallet recovery phrases (e.g. in a 3-5 wallet: 1 wallet export file + 2 wallet recovery phrases of any of the other groestlpayers)."
 msgstr ""
 
 #: public/views/backup.html
-msgid "<b>OR</b> the wallet recovery phrase of <b>all</b> copayers in the wallet"
+msgid "<b>OR</b> the wallet recovery phrase of <b>all</b> groestlpayers in the wallet"
 msgstr ""
 
 #: public/views/backup.html
-msgid "<b>OR</b> the wallet recovery phrases of <b>all</b> copayers in the wallet"
+msgid "<b>OR</b> the wallet recovery phrases of <b>all</b> groestlpayers in the wallet"
 msgstr ""
 
 #: public/views/disclaimer.html
@@ -388,19 +388,19 @@ msgid "Continue"
 msgstr "Pokračovat"
 
 #: src/js/services/bwcError.js
-msgid "copayer already in this wallet"
+msgid "groestlpayer already in this wallet"
 msgstr "Spoluplátce je již v peněžence"
 
 #: src/js/services/bwcError.js
-msgid "copayer already voted on this spend proposal"
+msgid "groestlpayer already voted on this spend proposal"
 msgstr "Spoluplátce pro tento návrh již hlasoval"
 
 #: src/js/services/bwcError.js
-msgid "copayer data mismatch"
+msgid "groestlpayer data mismatch"
 msgstr "Data spoluplátce nesouhlasí"
 
 #: public/views/preferencesInformation.html
-msgid "copayers"
+msgid "groestlpayers"
 msgstr "Spoluplátci"
 
 #: src/js/controllers/copayers.js
@@ -1192,11 +1192,11 @@ msgid "Payment Proposal Rejected"
 msgstr "Návrh platby byl odmítnut"
 
 #: src/js/services/notificationsService.js
-msgid "Payment Proposal Rejected by copayer"
+msgid "Payment Proposal Rejected by groestlpayer"
 msgstr "Návrh platby odmítnut spoluplátcem"
 
 #: src/js/services/notificationsService.js
-msgid "Payment Proposal Signed by copayer"
+msgid "Payment Proposal Signed by groestlpayer"
 msgstr "Návrh platby byl podepsán spoluplátcem"
 
 #: public/views/walletHome.html
@@ -1536,7 +1536,7 @@ msgid "Share invitation"
 msgstr "Sdílet pozvánku"
 
 #: public/views/copayers.html
-msgid "Share this invitation with your copayers"
+msgid "Share this invitation with your groestlpayers"
 msgstr "Sdílet tuto pozvánku se spoluplátci"
 
 #: public/views/walletHome.html
@@ -1711,8 +1711,8 @@ msgid "This transaction has become invalid; possibly due to a double spend attem
 msgstr "Transakce je neplatná, zřejmě kvůli pokusu o dvojí platbu."
 
 #: public/views/walletHome.html
-msgid "This wallet is not registered at the given Bitcore Wallet Service (BWS). You can recreate it from the local information."
-msgstr "Tato peněženka není registrována na Bitcore Wallet Service (BWS). Můžete jej znovu vytvořit z lokální informací."
+msgid "This wallet is not registered at the given Groestlcore Wallet Service (GWS). You can recreate it from the local information."
+msgstr "Tato peněženka není registrována na Groestlcore Wallet Service (GWS). Můžete jej znovu vytvořit z lokální informací."
 
 #: public/views/modals/txp-details.html
 msgid "Time"
@@ -1742,7 +1742,7 @@ msgid "Total Locked Balance"
 msgstr "Blokovaný zůstatek"
 
 #: public/views/create.html
-msgid "Total number of copayers"
+msgid "Total number of groestlpayers"
 msgstr "Počet spoluplátců"
 
 #: src/js/services/fingerprintService.js
@@ -1820,7 +1820,7 @@ msgid "View"
 msgstr "Pohled"
 
 #: public/views/copayers.html
-msgid "Waiting for copayers"
+msgid "Waiting for groestlpayers"
 msgstr "Vyčkávání na spoluplátce"
 
 #: src/js/services/onGoingProcess.js
@@ -1970,7 +1970,7 @@ msgid "We reserve the right to modify this disclaimer from time to time."
 msgstr "Rezervujeme si právu upravit podmínky užívání."
 
 #: public/views/disclaimer.html
-msgid "WELCOME TO COPAY"
+msgid "WELCOME TO GROESTLPAY"
 msgstr "VÍTEJTE V GroestlPay"
 
 #: public/views/includes/terms.html
@@ -2046,4 +2046,3 @@ msgstr ""
 #: public/views/backup.html
 msgid "Your wallet recovery phrase and access to the server that coordinated the initial wallet creation. You still need {{index.m}} keys to spend."
 msgstr ""
-
